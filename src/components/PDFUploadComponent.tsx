@@ -130,7 +130,7 @@ export function PDFUploadComponent({ onUploadSuccess }: PDFUploadProps) {
           <p className="text-lg font-semibold text-gray-700 mb-1">
             Drop your PDF here or click to browse
           </p>
-          <p className="text-sm text-gray-500">
+          <p className="text-sm text-gray-700">
             Upload community guides, policies, and residential information
           </p>
 
@@ -175,7 +175,7 @@ export function PDFUploadComponent({ onUploadSuccess }: PDFUploadProps) {
                   <File className="w-5 h-5 text-indigo-600" />
                   <div>
                     <p className="font-medium text-gray-800">{file.name}</p>
-                    <p className="text-xs text-gray-500">
+                    <p className="text-xs text-gray-700">
                       {(file.size / 1024).toFixed(2)} KB • Uploaded at{' '}
                       {file.uploadedAt.toLocaleTimeString()}
                     </p>
@@ -191,7 +191,7 @@ export function PDFUploadComponent({ onUploadSuccess }: PDFUploadProps) {
       )}
 
       {uploadedFiles.length === 0 && (
-        <p className="mt-6 text-center text-gray-500 text-sm">
+        <p className="mt-6 text-center text-gray-700 text-sm">
           No documents uploaded yet. Start by uploading a PDF with community
           guides.
         </p>

@@ -113,7 +113,7 @@ export function ChatComponent() {
             <h1 className="text-5xl font-bold text-gray-900 mb-4 text-center">
               How can I help?
             </h1>
-            <p className="text-xl text-gray-600 text-center mb-12 max-w-md">
+            <p className="text-xl text-gray-800 text-center mb-12 max-w-md">
               Ask questions about campus resources, dorm policies, and residential life
             </p>
 
@@ -187,7 +187,7 @@ export function ChatComponent() {
                           className={`${
                             message.role === 'user'
                               ? 'text-red-100'
-                              : 'text-gray-600'
+                              : 'text-gray-800'
                           }`}
                         >
                           📄 {source}
@@ -200,7 +200,7 @@ export function ChatComponent() {
                     className={`text-xs mt-2 block ${
                       message.role === 'user'
                         ? 'text-red-100'
-                        : 'text-gray-500'
+                        : 'text-gray-600'
                     }`}
                   >
                     {message.timestamp.toLocaleTimeString()}

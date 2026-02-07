@@ -11,8 +11,8 @@ export default function Home() {
       <Navigation />
 
       {/* Main Chat Area */}
-      <div className="flex-1 overflow-hidden p-6">
-        <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="flex-1 overflow-hidden px-4 py-4 sm:p-6">
+        <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
           <div className="md:col-span-2">
             <ChatComponent />
           </div>

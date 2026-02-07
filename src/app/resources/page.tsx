@@ -182,14 +182,14 @@ export default function ResourcesPage() {
         <div className="bg-white border-b border-gray-200 py-8 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             <h1 className="text-4xl font-bold text-gray-900 mb-2">UGA Campus Resources</h1>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-gray-800">
               Explore the services and facilities available to support your college experience
             </p>
           </div>
 
                   {/* Search Bar */}
                   <div className="relative mt-4">
-                    <Search className="absolute left-3 top-3 w-5 h-5 text-gray-400" />
+                    <Search className="absolute left-3 top-3 w-5 h-5 text-gray-600" />
                     <input
                       type="text"
                       placeholder="Search resources by name, category, or location..."
@@ -200,7 +200,7 @@ export default function ResourcesPage() {
                     {searchTerm && (
                       <button
                         onClick={() => setSearchTerm('')}
-                        className="absolute right-3 top-3 text-gray-400 hover:text-gray-600"
+                        className="absolute right-3 top-3 text-gray-600 hover:text-gray-800"
                       >
                         <X className="w-5 h-5" />
                       </button>
@@ -208,7 +208,7 @@ export default function ResourcesPage() {
                   </div>
 
                   {/* Results count */}
-                  <p className="text-sm text-gray-600 mt-3">
+                  <p className="text-sm text-gray-800 mt-3">
                     {filteredResources.length} of {resources.length} resources
                   </p>
         </div>
@@ -238,7 +238,7 @@ export default function ResourcesPage() {
                     </span>
                   </div>
 
-                  <p className="text-gray-600 text-sm mb-4">{resource.description}</p>
+                  <p className="text-gray-800 text-sm mb-4">{resource.description}</p>
 
                   {/* Details */}
                   <div className="space-y-3 border-t border-gray-200 pt-4">
@@ -278,7 +278,7 @@ export default function ResourcesPage() {
             </div>
           ) : (
             <div className="text-center py-12">
-              <p className="text-xl text-gray-600 mb-4">No resources found matching "{searchTerm}"</p>
+              <p className="text-xl text-gray-800 mb-4">No resources found matching "{searchTerm}"</p>
               <button
                 onClick={() => setSearchTerm('')}
                 className="text-red-700 hover:text-red-800 font-medium"

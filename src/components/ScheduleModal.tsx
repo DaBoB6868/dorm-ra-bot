@@ -43,7 +43,7 @@ export function ScheduleModal({ open, onClose, frontDeskName }: ScheduleModalPro
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40">
       <div className="bg-white rounded-lg w-full max-w-md p-6">
         <h3 className="text-lg font-bold mb-2">Schedule time with an RA</h3>
-        <p className="text-sm text-gray-600 mb-4">Front desk: {frontDeskName ?? 'Unspecified'}</p>
+        <p className="text-sm text-gray-800 mb-4">Front desk: {frontDeskName ?? 'Unspecified'}</p>
 
         <input className="w-full mb-2 p-2 border rounded" placeholder="Your name" value={name} onChange={(e) => setName(e.target.value)} />
         <input className="w-full mb-2 p-2 border rounded" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
