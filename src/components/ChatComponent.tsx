@@ -2,6 +2,8 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import { Send, Loader, MessageCircle } from 'lucide-react';
+import { EmergencyBanner } from './EmergencyBanner';
+import { ScheduleModal } from './ScheduleModal';
 
 interface Message {
   id: string;
@@ -17,6 +19,8 @@ export function ChatComponent() {
   const [loading, setLoading] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const [showSources, setShowSources] = useState<string | null>(null);
+  const [showEmergencyBanner, setShowEmergencyBanner] = useState(true);
+  const [showScheduleModal, setShowScheduleModal] = useState(false);
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -134,6 +138,13 @@ export function ChatComponent() {
                   <p className="text-gray-800 group-hover:text-red-700 font-medium">{question}</p>
                 </button>
               ))}
+
+                        {/* Emergency Banner on Landing */}
+                        {showEmergencyBanner && (
+                          <div className="w-full max-w-4xl mt-12">
+                            <EmergencyBanner onClose={() => setShowEmergencyBanner(false)} onRequestSchedule={() => setShowScheduleModal(true)} />
+                          </div>
+                        )}
             </div>
           </div>
         ) : (
@@ -233,6 +244,7 @@ export function ChatComponent() {
           </button>
         </form>
       </div>
+      <ScheduleModal open={showScheduleModal} onClose={() => setShowScheduleModal(false)} frontDeskName={undefined} />
     </div>
   );
 }

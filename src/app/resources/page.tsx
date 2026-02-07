@@ -1,7 +1,7 @@
 'use client';
-
 import { Navigation } from '@/components/Navigation';
-import { MapPin, Phone, Globe } from 'lucide-react';
+import { MapPin, Phone, Globe, Search, X } from 'lucide-react';
+import { useState, useMemo } from 'react';
 
 interface CampusResource {
   id: string;
@@ -15,13 +15,15 @@ interface CampusResource {
 }
 
 export default function ResourcesPage() {
+    const [searchTerm, setSearchTerm] = useState('');
+
   // Sample UGA campus resources - can be replaced with API call
   const resources: CampusResource[] = [
     {
       id: '1',
       name: 'Tate Student Center',
       description: 'Multipurpose student center with dining, meeting spaces, and recreational facilities.',
-      image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=300&fit=crop',
+      image: '/images/resources/facilities.svg',
       location: 'Downtown Campus',
       phone: '(706) 542-9000',
       website: 'https://tate.uga.edu',
@@ -31,7 +33,7 @@ export default function ResourcesPage() {
       id: '2',
       name: 'Ramsey Student Center',
       description: 'Student hub featuring dining options, meeting rooms, and student organization spaces.',
-      image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop',
+      image: '/images/resources/facilities.svg',
       location: 'North Campus',
       phone: '(706) 542-9100',
       website: 'https://ramsey.uga.edu',
@@ -41,7 +43,7 @@ export default function ResourcesPage() {
       id: '3',
       name: 'University Health Center',
       description: 'Comprehensive healthcare services for students including medical, mental health, and wellness.',
-      image: 'https://images.unsplash.com/photo-1576091160550-112173f31c77?w=400&h=300&fit=crop',
+      image: '/images/resources/health.svg',
       location: 'Downtown Campus',
       phone: '(706) 542-1441',
       website: 'https://www.uhs.uga.edu',
@@ -51,7 +53,7 @@ export default function ResourcesPage() {
       id: '4',
       name: 'Zell B. Miller Learning Center',
       description: 'Tutoring, writing support, and academic skills development for all UGA students.',
-      image: 'https://images.unsplash.com/photo-1427504494785-cdcdfe80b537?w=400&h=300&fit=crop',
+      image: '/images/resources/academic.svg',
       location: 'Downtown Campus',
       phone: '(706) 542-8105',
       website: 'https://irc.uga.edu',
@@ -61,7 +63,7 @@ export default function ResourcesPage() {
       id: '5',
       name: 'Counseling and Psychological Services',
       description: 'Mental health support including individual counseling, group therapy, and crisis services.',
-      image: 'https://images.unsplash.com/photo-1577720643272-265f434b0b5f?w=400&h=300&fit=crop',
+      image: '/images/resources/health.svg',
       location: 'Downtown Campus',
       phone: '(706) 542-2273',
       website: 'https://www.caps.uga.edu',
@@ -71,7 +73,7 @@ export default function ResourcesPage() {
       id: '6',
       name: 'Office of Campus Safety',
       description: 'Campus police, emergency response, and safety services for the UGA community.',
-      image: 'https://images.unsplash.com/photo-1516534775068-bb57103fc0ee?w=400&h=300&fit=crop',
+      image: '/images/resources/safety.svg',
       location: 'Multiple Locations',
       phone: '(706) 542-2200',
       website: 'https://police.uga.edu',
@@ -81,7 +83,7 @@ export default function ResourcesPage() {
       id: '7',
       name: 'Career Center',
       description: 'Job search assistance, resume building, interview prep, and networking events.',
-      image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop',
+      image: '/images/resources/career.svg',
       location: 'Downtown Campus',
       phone: '(706) 542-8406',
       website: 'https://career.uga.edu',
@@ -91,15 +93,85 @@ export default function ResourcesPage() {
       id: '8',
       name: 'International Student Office',
       description: 'Support services for international students including visa guidance and cultural events.',
-      image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop',
+      image: '/images/resources/student-services.svg',
       location: 'Downtown Campus',
       phone: '(706) 542-6820',
       website: 'https://iso.uga.edu',
       category: 'Student Services',
     },
+    {
+      id: '9',
+      name: 'Writing Center',
+      description: 'Free peer-tutoring for writing assignments across all disciplines and skill levels.',
+      image: '/images/resources/academic.svg',
+      location: 'Milledge Avenue',
+      phone: '(706) 542-8844',
+      website: 'https://writingcenter.uga.edu',
+      category: 'Academic',
+    },
+    {
+      id: '10',
+      name: 'Math Tutoring Center',
+      description: 'Specialized tutoring for mathematics courses including calculus, algebra, and statistics.',
+      image: '/images/resources/academic.svg',
+      location: 'Boyd Graduate Studies',
+      phone: '(706) 542-4114',
+      website: 'https://math.uga.edu',
+      category: 'Academic',
+    },
+    {
+      id: '11',
+      name: 'Science Learning Center',
+      description: 'Tutoring support for biology, chemistry, physics, and other science disciplines.',
+      image: '/images/resources/academic.svg',
+      location: 'Science Building',
+      phone: '(706) 542-5400',
+      website: 'https://sciencelearning.uga.edu',
+      category: 'Academic',
+    },
+    {
+      id: '12',
+      name: 'Language Learning Lab',
+      description: 'Tutoring and resources for foreign language studies and conversational practice.',
+      image: '/images/resources/academic.svg',
+      location: 'Romance Languages Building',
+      phone: '(706) 542-3475',
+      website: 'https://languages.uga.edu',
+      category: 'Academic',
+    },
+    {
+      id: '13',
+      name: 'Disability Resource Center',
+      description: 'Accommodations and support services for students with disabilities.',
+      image: '/images/resources/student-services.svg',
+      location: 'Downtown Campus',
+      phone: '(706) 542-8719',
+      website: 'https://drc.uga.edu',
+      category: 'Student Services',
+    },
+    {
+      id: '14',
+      name: 'Office of Diversity and Inclusion',
+      description: 'Resources and programs supporting underrepresented students and promoting campus diversity.',
+      image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop',
+      location: 'Downtown Campus',
+      phone: '(706) 542-3344',
+      website: 'https://diversity.uga.edu',
+      category: 'Student Services',
+    },
   ];
 
-  const categories = Array.from(new Set(resources.map(r => r.category)));
+  const filteredResources = useMemo(() => {
+    return resources.filter((resource) => {
+      const searchLower = searchTerm.toLowerCase();
+      return (
+        resource.name.toLowerCase().includes(searchLower) ||
+        resource.description.toLowerCase().includes(searchLower) ||
+        resource.category.toLowerCase().includes(searchLower) ||
+        resource.location.toLowerCase().includes(searchLower)
+      );
+    });
+  }, [searchTerm, resources]);
 
   return (
     <div className="h-screen flex flex-col bg-gray-50">
@@ -114,12 +186,38 @@ export default function ResourcesPage() {
               Explore the services and facilities available to support your college experience
             </p>
           </div>
+
+                  {/* Search Bar */}
+                  <div className="relative mt-4">
+                    <Search className="absolute left-3 top-3 w-5 h-5 text-gray-400" />
+                    <input
+                      type="text"
+                      placeholder="Search resources by name, category, or location..."
+                      value={searchTerm}
+                      onChange={(e) => setSearchTerm(e.target.value)}
+                      className="w-full pl-10 pr-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-red-700 transition-colors"
+                    />
+                    {searchTerm && (
+                      <button
+                        onClick={() => setSearchTerm('')}
+                        className="absolute right-3 top-3 text-gray-400 hover:text-gray-600"
+                      >
+                        <X className="w-5 h-5" />
+                      </button>
+                    )}
+                  </div>
+
+                  {/* Results count */}
+                  <p className="text-sm text-gray-600 mt-3">
+                    {filteredResources.length} of {resources.length} resources
+                  </p>
         </div>
 
         {/* Resources Grid */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {resources.map((resource) => (
+          {filteredResources.length > 0 ? (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {filteredResources.map((resource) => (
               <div
                 key={resource.id}
                 className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow"
@@ -135,7 +233,7 @@ export default function ResourcesPage() {
                 <div className="p-6">
                   <div className="flex items-center justify-between mb-2">
                     <h3 className="text-lg font-bold text-gray-900">{resource.name}</h3>
-                    <span className="text-xs font-semibold text-red-700 bg-red-50 px-3 py-1 rounded-full">
+                    <span className="text-xs font-semibold text-red-700 bg-red-50 px-3 py-1 rounded-full whitespace-nowrap ml-2">
                       {resource.category}
                     </span>
                   </div>
@@ -176,8 +274,19 @@ export default function ResourcesPage() {
                   </div>
                 </div>
               </div>
-            ))}
-          </div>
+              ))}
+            </div>
+          ) : (
+            <div className="text-center py-12">
+              <p className="text-xl text-gray-600 mb-4">No resources found matching "{searchTerm}"</p>
+              <button
+                onClick={() => setSearchTerm('')}
+                className="text-red-700 hover:text-red-800 font-medium"
+              >
+                Clear search
+              </button>
+            </div>
+          )}
         </div>
       </div>
     </div>

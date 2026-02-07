@@ -1,15 +1,25 @@
 export async function extractTextFromPDF(file: File): Promise<string> {
   const buffer = await file.arrayBuffer();
   
-  // For server-side: use dynamic import
+  // For server-side: use pdf-parse with minimal polyfills (more compatible on Node)
   if (typeof window === 'undefined') {
-    // Server-side: use pdf-parse
     try {
+      // Provide minimal polyfills for DOM classes that pdf-parse/pdfjs may reference
+      if (typeof (globalThis as any).DOMMatrix === 'undefined') {
+        (globalThis as any).DOMMatrix = class DOMMatrix {};
+      }
+      if (typeof (globalThis as any).ImageData === 'undefined') {
+        (globalThis as any).ImageData = class ImageData { constructor() {} };
+      }
+      if (typeof (globalThis as any).Path2D === 'undefined') {
+        (globalThis as any).Path2D = class Path2D {};
+      }
+
       const pdfParse = require('pdf-parse');
       const data = await pdfParse(Buffer.from(buffer));
       return data.text;
     } catch (error) {
-      console.error('Error parsing PDF on server:', error);
+      console.error('Error parsing PDF on server (pdf-parse):', error);
       throw error;
     }
   } else {
@@ -46,6 +56,17 @@ export async function extractPDFMetadata(file: File): Promise<{
   // For server-side
   if (typeof window === 'undefined') {
     try {
+      // Ensure minimal DOM polyfills
+      if (typeof (globalThis as any).DOMMatrix === 'undefined') {
+        (globalThis as any).DOMMatrix = class DOMMatrix {};
+      }
+      if (typeof (globalThis as any).ImageData === 'undefined') {
+        (globalThis as any).ImageData = class ImageData { constructor() {} };
+      }
+      if (typeof (globalThis as any).Path2D === 'undefined') {
+        (globalThis as any).Path2D = class Path2D {};
+      }
+
       const pdfParse = require('pdf-parse');
       const data = await pdfParse(Buffer.from(buffer));
       return {
@@ -54,7 +75,7 @@ export async function extractPDFMetadata(file: File): Promise<{
         uploadDate: new Date(),
       };
     } catch (error) {
-      console.error('Error extracting PDF metadata on server:', error);
+      console.error('Error extracting PDF metadata on server (pdf-parse):', error);
       throw error;
     }
   } else {

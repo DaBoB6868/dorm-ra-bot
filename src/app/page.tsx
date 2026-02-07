@@ -2,6 +2,7 @@
 
 import { ChatComponent } from '@/components/ChatComponent';
 import { Navigation } from '@/components/Navigation';
+import RecycleChecker from '@/components/RecycleChecker';
 
 export default function Home() {
   return (
@@ -10,8 +11,15 @@ export default function Home() {
       <Navigation />
 
       {/* Main Chat Area */}
-      <div className="flex-1 overflow-hidden">
-        <ChatComponent />
+      <div className="flex-1 overflow-hidden p-6">
+        <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="md:col-span-2">
+            <ChatComponent />
+          </div>
+          <aside className="md:col-span-1">
+            <RecycleChecker />
+          </aside>
+        </div>
       </div>
     </div>
   );
