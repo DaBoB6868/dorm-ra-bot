@@ -14,11 +14,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "RA Assistant - UGA Dorm Support",
-  description: "Ask questions about UGA campus resources, dorm policies, and residential life",
-  keywords: ["UGA", "dorm", "RA", "resident assistant", "housing", "Georgia"],
+  title: "AURA — AI-powered University Resident Assistant",
+  description: "Your AI-powered UGA dorm assistant — ask about campus resources, dorm policies, and residential life",
+  keywords: ["AURA", "UGA", "dorm", "RA", "resident assistant", "housing", "Georgia", "AI"],
   openGraph: {
-    title: "RA Assistant - UGA Dorm Support",
+    title: "AURA — AI-powered University Resident Assistant",
     description: "Your AI-powered UGA dorm assistant",
     type: "website",
     url: "https://ra-bot.tech",

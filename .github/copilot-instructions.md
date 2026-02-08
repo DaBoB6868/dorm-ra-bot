@@ -1,7 +1,7 @@
-# Dorm RA Chatbot - Project Instructions
+# AURA - AI-powered University Resident Assistant
 
 ## Project Overview
-A Next.js-based intelligent chatbot system for Resident Assistants with Retrieval-Augmented Generation (RAG) capabilities. Uses OpenAI embeddings and LangChain for semantic document retrieval and response generation.
+A Next.js-based intelligent chatbot system (AURA) for university dorm residents with Retrieval-Augmented Generation (RAG) capabilities. Uses OpenAI embeddings and LangChain for semantic document retrieval and response generation.
 
 ## Key Technologies
 - Next.js 16 with TypeScript

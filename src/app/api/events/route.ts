@@ -72,7 +72,7 @@ export async function GET() {
     const response = await fetch(rssUrl, {
       next: { revalidate: 300 }, // cache for 5 minutes
       headers: {
-        'User-Agent': 'UGA-RA-Bot/1.0',
+        'User-Agent': 'AURA/1.0',
       },
     });
 

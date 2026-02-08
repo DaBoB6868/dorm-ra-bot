@@ -21,8 +21,7 @@ export function Navigation() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="text-xl sm:text-2xl font-bold">
-              <span className="bg-white text-red-700 px-2 sm:px-3 py-0.5 sm:py-1 rounded-lg font-bold">RA</span>
-              <span className="ml-1.5 sm:ml-2">Assistant</span>
+              <span className="bg-white text-red-700 px-2 sm:px-3 py-0.5 sm:py-1 rounded-lg font-bold">AURA</span>
             </Link>
           </div>
 

@@ -81,14 +81,14 @@ export async function POST(request: Request) {
         console.log('Sending email to:', recipients);
 
         await transporter.sendMail({
-          from: `UGA Dorm RA Bot <${gmailUser}>`,
+          from: `AURA <${gmailUser}>`,
           to: recipients.join(', '),
           subject: `Appointment Request: ${body.studentName || 'A Resident'} → ${body.raName || 'RA'}`,
           html: `
             <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
               <div style="background: #BA0C2F; color: white; padding: 20px; text-align: center; border-radius: 8px 8px 0 0;">
                 <h2 style="margin: 0;">📋 New Appointment Request</h2>
-                <p style="margin: 4px 0 0; opacity: 0.9;">UGA Dorm RA Bot</p>
+                <p style="margin: 4px 0 0; opacity: 0.9;">AURA — AI-powered University Resident Assistant</p>
               </div>
               <div style="padding: 24px; background: #f9f9f9; border: 1px solid #eee; border-radius: 0 0 8px 8px;">
                 <p>Hi <strong>${body.raName || 'RA'}</strong>,</p>
@@ -101,7 +101,7 @@ export async function POST(request: Request) {
                   <tr><td style="padding: 8px; font-weight: bold;">Reason</td><td style="padding: 8px;">${body.reason || 'No reason provided'}</td></tr>
                 </table>
                 <p style="color: #666; font-size: 14px;">Please reply to the student at <a href="mailto:${studentEmail || ''}">${studentEmail || ''}</a> to confirm or reschedule.</p>
-                <p style="color: #999; font-size: 12px; margin-top: 20px;">— Sent automatically by UGA Dorm RA Bot</p>
+                <p style="color: #999; font-size: 12px; margin-top: 20px;">— Sent automatically by AURA</p>
               </div>
             </div>
           `,

@@ -1,4 +1,4 @@
-# RA-Bot — UGA Dorm Resident Assistant Chatbot
+# AURA — AI-powered University Resident Assistant
 
 > An AI-powered web app that helps University of Georgia students get instant, accurate answers about dorm policies, find their RA, schedule meetings, check if items are recyclable, and stay informed about campus events — all in one place.
 
@@ -19,7 +19,7 @@
 
 Resident Assistants (RAs) at UGA repeatedly answer the same questions — quiet hours, guest policies, lockout procedures, maintenance requests. Students often don't know where to look or who to contact, especially late at night when the front desk is busy.
 
-**RA-Bot** solves this by providing a 24/7 AI assistant that:
+**AURA** solves this by providing a 24/7 AI assistant that:
 - Instantly answers policy questions using official UGA Housing documents
 - Helps students find and schedule meetings with their specific RA
 - Identifies whether everyday items are recyclable using phone-camera AI
@@ -121,7 +121,7 @@ The app has two distinct layouts:
 
 ---
 
-## What's Next for RA-Bot
+## What's Next for AURA
 
 1. **Persistent Vector Database** — Replace the in-memory store with Pinecone or Supabase pgvector for persistent, scalable document search across server restarts.
 2. **User Authentication** — Add UGA CAS / OAuth login so students see personalized info (their dorm, their RA, their past conversations).
