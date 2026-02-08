@@ -24,8 +24,25 @@ export function RASelector() {
   const [studentEmail, setStudentEmail] = useState('');
   const [preferredTime, setPreferredTime] = useState('');
   const [reason, setReason] = useState('');
+  const [customReason, setCustomReason] = useState('');
   const [submitting, setSubmitting] = useState(false);
   const [submitResult, setSubmitResult] = useState<{ ok: boolean; msg: string } | null>(null);
+
+  const REASON_OPTIONS = [
+    { emoji: '💬', label: 'Just to chat' },
+    { emoji: '🏠', label: 'Roommate conflict' },
+    { emoji: '📚', label: 'Academic issues' },
+    { emoji: '🏡', label: 'Homesickness' },
+    { emoji: '🔒', label: 'Safety concern' },
+    { emoji: '📋', label: 'Policy question' },
+  ];
+
+  // Compute the minimum datetime (now, rounded up to next 30 min)
+  const minDateTime = useMemo(() => {
+    const now = new Date();
+    now.setMinutes(now.getMinutes() + 30 - (now.getMinutes() % 30), 0, 0);
+    return now.toISOString().slice(0, 16);
+  }, []);
 
   useEffect(() => {
     fetch('/api/ra-directory')
@@ -58,8 +75,13 @@ export function RASelector() {
           raFloor: selectedRA.floor,
           studentName: studentName.trim(),
           studentEmail: studentEmail.trim(),
-          preferredTime: preferredTime.trim(),
-          reason: reason.trim(),
+          preferredTime: preferredTime
+            ? new Date(preferredTime).toLocaleString('en-US', {
+                weekday: 'short', month: 'short', day: 'numeric',
+                hour: 'numeric', minute: '2-digit',
+              })
+            : '',
+          reason: reason === 'Other' ? customReason.trim() : reason,
         }),
       });
       const data = await res.json();
@@ -69,6 +91,7 @@ export function RASelector() {
         setStudentEmail('');
         setPreferredTime('');
         setReason('');
+        setCustomReason('');
       } else {
         setSubmitResult({ ok: false, msg: data.error || 'Failed to send request.' });
       }
@@ -175,16 +198,50 @@ export function RASelector() {
             <input
               value={preferredTime}
               onChange={(e) => setPreferredTime(e.target.value)}
-              placeholder="Preferred date & time (e.g. Feb 10, 3 PM)"
-              className="w-full px-3 py-2.5 border border-gray-300 rounded-xl text-sm text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-red-700"
+              type="datetime-local"
+              min={minDateTime}
+              className="w-full px-3 py-2.5 border border-gray-300 rounded-xl text-sm text-gray-900 focus:outline-none focus:border-red-700 bg-white"
             />
-            <textarea
-              value={reason}
-              onChange={(e) => setReason(e.target.value)}
-              placeholder="Reason (optional)"
-              rows={2}
-              className="w-full px-3 py-2.5 border border-gray-300 rounded-xl text-sm text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-red-700 resize-none"
-            />
+
+            {/* Reason chips */}
+            <div>
+              <p className="text-xs text-gray-500 mb-1.5">Reason for meeting</p>
+              <div className="flex flex-wrap gap-1.5">
+                {REASON_OPTIONS.map((opt) => (
+                  <button
+                    key={opt.label}
+                    type="button"
+                    onClick={() => { setReason(opt.label); setCustomReason(''); }}
+                    className={`px-2.5 py-1.5 rounded-lg text-xs font-medium border transition-all active:scale-[0.96] ${
+                      reason === opt.label
+                        ? 'border-red-700 bg-red-50 text-red-700'
+                        : 'border-gray-200 bg-white text-gray-700 hover:border-red-300'
+                    }`}
+                  >
+                    {opt.emoji} {opt.label}
+                  </button>
+                ))}
+                <button
+                  type="button"
+                  onClick={() => setReason('Other')}
+                  className={`px-2.5 py-1.5 rounded-lg text-xs font-medium border transition-all active:scale-[0.96] ${
+                    reason === 'Other'
+                      ? 'border-red-700 bg-red-50 text-red-700'
+                      : 'border-gray-200 bg-white text-gray-700 hover:border-red-300'
+                  }`}
+                >
+                  ✏️ Other
+                </button>
+              </div>
+              {reason === 'Other' && (
+                <input
+                  value={customReason}
+                  onChange={(e) => setCustomReason(e.target.value)}
+                  placeholder="Describe your reason..."
+                  className="w-full mt-1.5 px-3 py-2.5 border border-gray-300 rounded-xl text-sm text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-red-700"
+                />
+              )}
+            </div>
             <button
               onClick={handleSchedule}
               disabled={submitting || !studentName.trim() || !studentEmail.trim() || !preferredTime.trim()}
