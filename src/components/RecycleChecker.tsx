@@ -131,13 +131,11 @@ export function RecycleChecker() {
           )}
 
           {/* Action buttons — two pickers + submit */}
-          <div className="grid grid-cols-2 gap-2">
+          <div className="grid grid-cols-2 sm:grid-cols-1 gap-2">
             {/* Mobile: opens native camera; Desktop: opens file picker */}
             <button
               type="button"
               onClick={() => {
-                // On mobile, use cameraRef (has capture="environment")
-                // On desktop, use galleryRef (regular file picker)
                 const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
                 if (isMobile) {
                   cameraRef.current?.click();
@@ -151,10 +149,11 @@ export function RecycleChecker() {
               <span className="sm:hidden">Take Photo</span>
               <span className="hidden sm:inline">Upload Photo</span>
             </button>
+            {/* Gallery button — mobile only (on desktop, Upload Photo already opens file picker) */}
             <button
               type="button"
               onClick={() => galleryRef.current?.click()}
-              className="flex items-center justify-center gap-1.5 px-3 py-3 bg-green-100 text-green-800 rounded-xl text-sm font-semibold hover:bg-green-200 active:bg-green-300 active:scale-[0.98] transition-all"
+              className="flex sm:hidden items-center justify-center gap-1.5 px-3 py-3 bg-green-100 text-green-800 rounded-xl text-sm font-semibold hover:bg-green-200 active:bg-green-300 active:scale-[0.98] transition-all"
             >
               <Upload className="w-4 h-4" />
               Gallery
