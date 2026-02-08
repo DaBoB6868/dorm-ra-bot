@@ -55,3 +55,48 @@ aside > div {
   box-shadow: 0 0 0 1px rgba(186, 12, 47, 0.06);
 }
 
+/* ── Mobile-specific utilities ── */
+
+/* Safe-area padding for iOS bottom bar / notch */
+.safe-area-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+/* Remove default tap highlight on mobile WebKit browsers */
+button,
+a,
+label,
+select,
+input,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Prevent text-size adjustments on orientation change */
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+/* Smooth momentum scrolling for panels */
+.overflow-y-auto,
+.overflow-y-scroll {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Better touch targets — minimum 44px on mobile */
+@media (max-width: 1023px) {
+  button,
+  a,
+  label[for],
+  select {
+    min-height: 44px;
+  }
+
+  /* Disable dark mode on mobile to keep clean look */
+  :root {
+    --background: #ffffff;
+    --foreground: #171717;
+  }
+}
+

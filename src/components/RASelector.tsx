@@ -82,17 +82,17 @@ export function RASelector() {
   return (
     <div className="w-full bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden">
       {/* Header */}
-      <div className="bg-red-700 text-white px-4 py-4 flex items-center gap-2">
+      <div className="bg-red-700 text-white px-4 py-3 sm:py-4 flex items-center gap-2">
         <Users className="w-5 h-5" />
-        <h3 className="font-bold text-lg">Find Your RA</h3>
+        <h3 className="font-bold text-base sm:text-lg">Find Your RA</h3>
       </div>
 
-      <div className="p-4 space-y-3">
+      <div className="p-3 sm:p-4 space-y-3">
         {/* Dorm filter */}
         <select
           value={filterDorm}
           onChange={(e) => { setFilterDorm(e.target.value); setSelectedRA(null); setShowSchedule(false); }}
-          className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm text-gray-900 focus:outline-none focus:border-red-700"
+          className="w-full px-3 py-2.5 border border-gray-300 rounded-xl text-sm text-gray-900 focus:outline-none focus:border-red-700 bg-white"
         >
           <option value="">All Dorms</option>
           {dorms.map((d) => (
@@ -101,9 +101,9 @@ export function RASelector() {
         </select>
 
         {/* RA list */}
-        <div className="space-y-2 max-h-48 overflow-y-auto">
+        <div className="space-y-2 max-h-60 sm:max-h-48 overflow-y-auto">
           {filtered.length === 0 ? (
-            <p className="text-sm text-gray-500 text-center py-3">No RAs found</p>
+            <p className="text-sm text-gray-500 text-center py-4">No RAs found</p>
           ) : (
             filtered.map((ra) => (
               <button
@@ -113,9 +113,9 @@ export function RASelector() {
                   setShowSchedule(false);
                   setSubmitResult(null);
                 }}
-                className={`w-full text-left p-3 rounded-lg border transition-colors ${
+                className={`w-full text-left p-3 sm:p-3 rounded-xl border transition-all active:scale-[0.98] ${
                   selectedRA?.id === ra.id
-                    ? 'border-red-700 bg-red-50'
+                    ? 'border-red-700 bg-red-50 shadow-sm'
                     : 'border-gray-200 hover:border-red-300 hover:bg-gray-50'
                 }`}
               >
@@ -146,7 +146,7 @@ export function RASelector() {
 
             <button
               onClick={() => { setShowSchedule(!showSchedule); setSubmitResult(null); }}
-              className="w-full flex items-center justify-center gap-2 px-3 py-2.5 bg-red-700 text-white rounded-lg text-sm font-medium hover:bg-red-800 transition-colors"
+              className="w-full flex items-center justify-center gap-2 px-3 py-3 bg-red-700 text-white rounded-xl text-sm font-semibold hover:bg-red-800 active:bg-red-900 active:scale-[0.98] transition-all"
             >
               <Calendar className="w-4 h-4" />
               Schedule Appointment
@@ -163,32 +163,32 @@ export function RASelector() {
               value={studentName}
               onChange={(e) => setStudentName(e.target.value)}
               placeholder="Your name"
-              className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-red-700"
+              className="w-full px-3 py-2.5 border border-gray-300 rounded-xl text-sm text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-red-700"
             />
             <input
               value={studentEmail}
               onChange={(e) => setStudentEmail(e.target.value)}
               placeholder="Your email"
               type="email"
-              className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-red-700"
+              className="w-full px-3 py-2.5 border border-gray-300 rounded-xl text-sm text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-red-700"
             />
             <input
               value={preferredTime}
               onChange={(e) => setPreferredTime(e.target.value)}
               placeholder="Preferred date & time (e.g. Feb 10, 3 PM)"
-              className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-red-700"
+              className="w-full px-3 py-2.5 border border-gray-300 rounded-xl text-sm text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-red-700"
             />
             <textarea
               value={reason}
               onChange={(e) => setReason(e.target.value)}
               placeholder="Reason (optional)"
               rows={2}
-              className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-red-700 resize-none"
+              className="w-full px-3 py-2.5 border border-gray-300 rounded-xl text-sm text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-red-700 resize-none"
             />
             <button
               onClick={handleSchedule}
               disabled={submitting || !studentName.trim() || !studentEmail.trim() || !preferredTime.trim()}
-              className="w-full flex items-center justify-center gap-2 px-3 py-2.5 bg-red-700 text-white rounded-lg text-sm font-medium hover:bg-red-800 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+              className="w-full flex items-center justify-center gap-2 px-3 py-3 bg-red-700 text-white rounded-xl text-sm font-semibold hover:bg-red-800 active:bg-red-900 disabled:opacity-50 disabled:cursor-not-allowed transition-all active:scale-[0.98]"
             >
               {submitting ? <Loader className="w-4 h-4 animate-spin" /> : <Mail className="w-4 h-4" />}
               {submitting ? 'Sending...' : 'Send Request'}

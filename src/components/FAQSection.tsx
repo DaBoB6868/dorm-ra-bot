@@ -57,9 +57,9 @@ export function FAQSection() {
   return (
     <div className="w-full bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden">
       {/* Header */}
-      <div className="bg-red-700 text-white px-4 py-4 flex items-center gap-2">
+      <div className="bg-red-700 text-white px-4 py-3 sm:py-4 flex items-center gap-2">
         <HelpCircle className="w-5 h-5" />
-        <h3 className="font-bold text-lg">Frequently Asked Questions</h3>
+        <h3 className="font-bold text-base sm:text-lg">Frequently Asked Questions</h3>
       </div>
 
       {/* Questions */}
@@ -68,7 +68,7 @@ export function FAQSection() {
           <div key={idx}>
             <button
               onClick={() => setOpenIndex(openIndex === idx ? null : idx)}
-              className="w-full flex items-center justify-between gap-3 px-4 py-3 text-left hover:bg-gray-50 transition-colors"
+              className="w-full flex items-center justify-between gap-3 px-4 py-3.5 sm:py-3 text-left hover:bg-gray-50 active:bg-gray-100 transition-all"
             >
               <span className="text-sm font-medium text-gray-900">{item.question}</span>
               {openIndex === idx ? (

@@ -77,20 +77,20 @@ export function RecycleChecker() {
   return (
     <div className="w-full bg-gradient-to-b from-green-50 to-white rounded-xl shadow-md border border-green-100 overflow-hidden">
       {/* Header with logos */}
-      <div className="bg-green-700 text-white px-4 py-5 text-center">
-        <div className="flex items-center justify-center gap-3 mb-2">
-          <Recycle className="w-8 h-8" />
-          <Leaf className="w-7 h-7" />
+      <div className="bg-green-700 text-white px-4 py-3 sm:py-5 text-center">
+        <div className="flex items-center justify-center gap-3 mb-1 sm:mb-2">
+          <Recycle className="w-6 h-6 sm:w-8 sm:h-8" />
+          <Leaf className="w-5 h-5 sm:w-7 sm:h-7" />
         </div>
-        <h3 className="text-xl font-bold">♻️ Recycle or Compost?</h3>
-        <p className="text-green-100 text-sm mt-1">Snap a photo and we&apos;ll tell you what to do with it!</p>
+        <h3 className="text-lg sm:text-xl font-bold">♻️ Recycle or Compost?</h3>
+        <p className="text-green-100 text-xs sm:text-sm mt-1">Snap a photo and we&apos;ll tell you what to do with it!</p>
       </div>
 
       {/* Content */}
-      <div className="p-4">
+      <div className="p-3 sm:p-4">
         <form onSubmit={onSubmit} className="space-y-3">
           {/* File / camera upload */}
-          <label className="flex items-center justify-center gap-2 w-full px-4 py-3 border-2 border-dashed border-green-300 rounded-lg cursor-pointer hover:border-green-500 hover:bg-green-50 transition-colors">
+          <label className="flex items-center justify-center gap-2 w-full px-4 py-3.5 border-2 border-dashed border-green-300 rounded-xl cursor-pointer hover:border-green-500 hover:bg-green-50 active:bg-green-100 transition-all">
             <Upload className="w-5 h-5 text-green-600" />
             <span className="text-sm text-gray-800 font-medium">
               {file ? file.name : "Choose or take a photo"}
@@ -109,7 +109,7 @@ export function RecycleChecker() {
             <button
               type="button"
               onClick={() => (cameraActive ? stopCamera() : startCamera())}
-              className="flex-1 flex items-center justify-center gap-1 px-3 py-2.5 bg-green-600 text-white rounded-lg text-sm font-medium hover:bg-green-700 transition-colors"
+              className="flex-1 flex items-center justify-center gap-1 px-3 py-3 bg-green-600 text-white rounded-xl text-sm font-semibold hover:bg-green-700 active:bg-green-800 active:scale-[0.98] transition-all"
             >
               <Camera className="w-4 h-4" />
               {cameraActive ? "Stop" : "Camera"}
@@ -117,7 +117,7 @@ export function RecycleChecker() {
             <button
               type="submit"
               disabled={!file || loading}
-              className="flex-1 flex items-center justify-center gap-1 px-3 py-2.5 bg-emerald-600 text-white rounded-lg text-sm font-medium hover:bg-emerald-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+              className="flex-1 flex items-center justify-center gap-1 px-3 py-3 bg-emerald-600 text-white rounded-xl text-sm font-semibold hover:bg-emerald-700 active:bg-emerald-800 active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed transition-all"
             >
               {loading ? <Loader className="w-4 h-4 animate-spin" /> : <Recycle className="w-4 h-4" />}
               {loading ? "Checking…" : "Check It"}
@@ -128,10 +128,10 @@ export function RecycleChecker() {
         {/* Camera viewfinder */}
         {cameraActive && (
           <div className="mt-3">
-            <video ref={videoRef} className="w-full rounded-lg border-2 border-green-200" playsInline />
+            <video ref={videoRef} className="w-full rounded-xl border-2 border-green-200" playsInline />
             <div className="flex gap-2 mt-2">
-              <button onClick={capturePhoto} className="flex-1 px-3 py-2 bg-green-700 text-white rounded-lg font-medium">📸 Capture</button>
-              <button onClick={stopCamera} className="flex-1 px-3 py-2 bg-gray-200 text-gray-800 rounded-lg font-medium">Cancel</button>
+              <button onClick={capturePhoto} className="flex-1 px-3 py-2.5 bg-green-700 text-white rounded-xl font-semibold active:bg-green-800 active:scale-[0.98] transition-all">📸 Capture</button>
+              <button onClick={stopCamera} className="flex-1 px-3 py-2.5 bg-gray-200 text-gray-800 rounded-xl font-semibold active:bg-gray-300 active:scale-[0.98] transition-all">Cancel</button>
             </div>
             <canvas ref={canvasRef} className="hidden" />
           </div>

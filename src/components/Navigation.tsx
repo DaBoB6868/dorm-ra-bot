@@ -17,12 +17,12 @@ export function Navigation() {
   return (
     <nav className="bg-red-700 text-white shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-12 sm:h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link href="/" className="text-2xl font-bold">
-              <span className="bg-white text-red-700 px-3 py-1 rounded-lg font-bold">RA</span>
-              <span className="ml-2">Assistant</span>
+            <Link href="/" className="text-xl sm:text-2xl font-bold">
+              <span className="bg-white text-red-700 px-2 sm:px-3 py-0.5 sm:py-1 rounded-lg font-bold">RA</span>
+              <span className="ml-1.5 sm:ml-2">Assistant</span>
             </Link>
           </div>
 

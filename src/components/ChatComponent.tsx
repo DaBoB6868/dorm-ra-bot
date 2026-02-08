@@ -107,33 +107,33 @@ export function ChatComponent() {
   return (
     <div className="flex flex-col h-full bg-white">
       {/* Emergency Warning Tag - always visible at top */}
-      <div className="px-3 pt-3">
+      <div className="px-2 pt-2 sm:px-3 sm:pt-3">
         <EmergencyBanner onRequestSchedule={() => setShowScheduleModal(true)} />
       </div>
 
       {/* Messages Container */}
-      <div className="flex-1 overflow-y-auto p-6">
+      <div className="flex-1 overflow-y-auto p-3 sm:p-6">
         {messages.length === 0 ? (
           // Landing Page - Empty State
-          <div className="flex flex-col items-center justify-center h-full">
+          <div className="flex flex-col items-center justify-center h-full px-2">
             {/* Animated Bot Icon */}
-            <div className="mb-8 relative">
-              <div className="absolute inset-0 bg-red-100 rounded-full animate-pulse" style={{ width: '120px', height: '120px' }}></div>
-              <div className="relative w-24 h-24 bg-red-700 rounded-full flex items-center justify-center shadow-lg">
-                <MessageCircle className="w-12 h-12 text-white" />
+            <div className="mb-4 sm:mb-8 relative">
+              <div className="absolute inset-0 bg-red-100 rounded-full animate-pulse" style={{ width: '80px', height: '80px' }}></div>
+              <div className="relative w-16 h-16 sm:w-24 sm:h-24 bg-red-700 rounded-full flex items-center justify-center shadow-lg">
+                <MessageCircle className="w-8 h-8 sm:w-12 sm:h-12 text-white" />
               </div>
             </div>
 
             {/* Greeting Text */}
-            <h1 className="text-5xl font-bold text-gray-900 mb-4 text-center">
+            <h1 className="text-2xl sm:text-5xl font-bold text-gray-900 mb-2 sm:mb-4 text-center">
               How can I help?
             </h1>
-            <p className="text-xl text-gray-800 text-center mb-6 max-w-md">
-              Ask questions about campus resources, dorm policies, and residential life
+            <p className="text-sm sm:text-xl text-gray-800 text-center mb-4 sm:mb-6 max-w-md">
+              Ask about campus resources, dorm policies, and residential life
             </p>
 
             {/* Location Input */}
-            <div className="flex items-center gap-2 mb-8 w-full max-w-sm">
+            <div className="flex items-center gap-2 mb-4 sm:mb-8 w-full max-w-sm">
               <MapPin className="w-4 h-4 text-red-700 flex-shrink-0" />
               <input
                 type="text"
@@ -148,7 +148,7 @@ export function ChatComponent() {
             </div>
 
             {/* Quick Questions */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full max-w-2xl">
+            <div className="grid grid-cols-2 gap-2 sm:gap-4 w-full max-w-2xl">
               {[
                 'What are dorm quiet hours?',
                 'How do I report maintenance issues?',
@@ -163,9 +163,9 @@ export function ChatComponent() {
                       document.querySelector('form')?.dispatchEvent(new Event('submit', { bubbles: true }));
                     }, 0);
                   }}
-                  className="p-4 border-2 border-gray-300 rounded-lg text-left hover:border-red-700 hover:bg-red-50 transition-all group"
+                  className="p-3 sm:p-4 border-2 border-gray-300 rounded-xl text-left hover:border-red-700 hover:bg-red-50 active:bg-red-100 active:scale-[0.98] transition-all group"
                 >
-                  <p className="text-gray-800 group-hover:text-red-700 font-medium">{question}</p>
+                  <p className="text-xs sm:text-base text-gray-800 group-hover:text-red-700 font-medium leading-snug">{question}</p>
                 </button>
               ))}
             </div>
@@ -176,10 +176,10 @@ export function ChatComponent() {
             {messages.map((message) => (
               <div key={message.id} className={`flex ${message.role === 'user' ? 'justify-end' : 'justify-start'}`}>
                 <div
-                  className={`max-w-lg px-4 py-3 rounded-lg ${
+                  className={`max-w-[85%] sm:max-w-lg px-3 py-2.5 sm:px-4 sm:py-3 rounded-2xl ${
                     message.role === 'user'
-                      ? 'bg-red-700 text-white rounded-br-none'
-                      : 'bg-gray-100 text-gray-900 rounded-bl-none'
+                      ? 'bg-red-700 text-white rounded-br-sm'
+                      : 'bg-gray-100 text-gray-900 rounded-bl-sm'
                   }`}
                 >
                   <p className="text-sm">{message.content}</p>
@@ -247,23 +247,23 @@ export function ChatComponent() {
       </div>
 
       {/* Input Area */}
-      <div className="border-t-2 border-gray-200 bg-white p-6">
-        <form onSubmit={handleSendMessage} className="flex space-x-3">
+      <div className="border-t-2 border-gray-200 bg-white p-2 sm:p-6">
+        <form onSubmit={handleSendMessage} className="flex space-x-2 sm:space-x-3">
           <input
             type="text"
             value={input}
             onChange={(e) => setInput(e.target.value)}
             disabled={loading}
             placeholder="Ask a question..."
-            className="flex-1 px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-red-700 disabled:bg-gray-100 transition-colors text-gray-900 placeholder:text-gray-500"
+            className="flex-1 px-3 py-2.5 sm:px-4 sm:py-3 border-2 border-gray-300 rounded-xl focus:outline-none focus:border-red-700 disabled:bg-gray-100 transition-colors text-gray-900 placeholder:text-gray-500 text-sm sm:text-base"
           />
           <button
             type="submit"
             disabled={loading || !input.trim()}
-            className="bg-red-700 text-white px-6 py-3 rounded-lg hover:bg-red-800 disabled:bg-gray-400 transition-colors flex items-center space-x-2 font-medium"
+            className="bg-red-700 text-white px-4 py-2.5 sm:px-6 sm:py-3 rounded-xl hover:bg-red-800 active:bg-red-900 disabled:bg-gray-400 transition-colors flex items-center space-x-1 sm:space-x-2 font-medium"
           >
             <Send className="w-4 h-4" />
-            <span>Send</span>
+            <span className="hidden sm:inline">Send</span>
           </button>
         </form>
       </div>
