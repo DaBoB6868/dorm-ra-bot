@@ -1,0 +1,228 @@
+{
+  "document_id": "uga_code_of_conduct_procedures",
+  "title": "The University of Georgia Code of Conduct - Procedures and Sanctions",
+  "category": "Student Conduct Policy - Procedures",
+  "continuation_of": "uga_code_of_conduct",
+  
+  "conduct_procedures": {
+    "filing_report": {
+      "where_to_report": "Director for Student Conduct, Office of Student Conduct, or designee. For sexual misconduct, harassment, or discrimination: Title IX Coordinator/Equal Opportunity Office",
+      "timing": "As soon as possible after alleged violation",
+      "method": "Written reports encouraged but verbal reports accepted",
+      "required_information": [
+        "Type of misconduct alleged",
+        "Name and contact information of student(s)/organization(s) involved",
+        "Date(s), time(s), and place(s) of alleged misconduct",
+        "Name(s) and contact information of individuals with knowledge",
+        "Whether evidence has been preserved",
+        "Whether criminal complaint filed"
+      ],
+      "verification": "Reports not submitted in writing will be independently verified before initiating conduct process",
+      "review_process": "Administrative officer reviews circumstances and determines which conduct regulations, if any, are alleged to have been violated. Reports not describing violations or lacking sufficient information may result in no action.",
+      "mediation_option": "For unresolved ongoing disputes or reports not involving violations, mediation may be offered as voluntary process using impartial neutral third party"
+    },
+    
+    "reporting_parties": {
+      "who_can_report": "University students, faculty, staff, law enforcement, or other third parties",
+      
+      "limited_confidentiality": "Where reporting party or alleged victim requests identity withheld or allegation not investigated, administrative officer considers if request can be honored while providing safe, nondiscriminatory environment. Requesting party informed: (1) University generally cannot guarantee confidentiality; (2) honoring request may limit ability to respond fully; (3) request may limit University's ability to carry out conduct process.",
+      
+      "retaliation_prohibited": "Anyone who in good faith reports what they believe to be student misconduct, participates, cooperates, or is otherwise associated with investigation shall not be subjected to retaliation. Anyone believing they've been target of retaliation should immediately contact Director for Student Conduct or Title IX Coordinator. Students/organizations alleged to have engaged in retaliation subject to conduct process.",
+      
+      "amnesty": "Individuals encouraged to come forward and report student misconduct and/or participate in investigation notwithstanding their choice to consume alcohol or use drugs. If individual voluntarily and in good faith reports their use of alcohol/drugs or use by others prior to or during investigation, such information not used against any individual in disciplinary proceeding and not voluntarily reported to law enforcement. However, individuals may be provided resources on drug/alcohol counseling and/or education. Doesn't apply when alleged violation of Conduct Regulation 4 is currently at issue in pending case or investigation."
+    },
+    
+    "responsible_action_protocol": {
+      "purpose": "Encourage students to make responsible decisions in life-threatening situations from alcohol/drug abuse and seek medical attention for someone in danger from intoxication",
+      "applies_to": "Students who seek assistance or medical treatment for another student experiencing or believed to be experiencing alcohol or drug related overdose. Also applies to students experiencing overdose and seeking assistance on own behalf or are subject of such request.",
+      "organizational_application": "If organization representative hosting event calls for medical assistance, this act might mitigate potential conduct consequences against organization",
+      "scope": "Applies only to Code of Conduct, does not prohibit law enforcement from enforcing Georgia laws",
+      "requirements": "Students considered for protocol must meet with Office of Student Conduct member who may refer to substance abuse specialist in John Fontaine Jr. Center for assessment, counseling, possible referral for treatment",
+      "consequences": "Even without disciplinary action: parental notification if under 21, file maintained for prior record if subsequent violations occur. Subsequent incidents handled through regular conduct process with prior records (including Responsible Action Protocol involvement) considered for sanctioning.",
+      "completion_requirement": "Students referred to John Fontaine Jr. Center who fail to meet and complete recommendations in entirety may be subject to further action"
+    },
+    
+    "interim_measures": {
+      "authority": "Director for Student Conduct, Title IX Coordinator, or designee may issue at any point after University becomes aware of allegation",
+      "purpose": "Protect alleged victim and/or University community",
+      "possible_measures": [
+        "Change of housing assignment",
+        "Issuance of 'no contact' directive",
+        "Restrictions or bars to entering certain institution property",
+        "Changes to academic or employment arrangements, schedules, or supervision",
+        "Interim suspension",
+        "Other measures designed to promote safety and well-being"
+      ],
+      
+      "interim_suspension": {
+        "when_imposed": "Only where necessary to maintain safety, limited to situations where student or organization poses serious and immediate danger or threat to persons or property",
+        "determination_factors": "Existence of significant risk to health/safety of campus community; nature, duration, and severity of risk; probability of potential injury; whether less restrictive means can significantly mitigate risk",
+        "student_effects": "Denied access to campus (including classes, residential buildings, campus transit) and all other University activities or privileges. Permitted on campus for scheduled meetings with Director for Student Conduct/Title IX Coordinator and other approved meetings.",
+        "organization_effects": "All organization activities expected to stop. Members not suspended from University unless individual suspensions imposed.",
+        
+        "notification_process": {
+          "initial_hearing_opportunity": "Director for Student Conduct, Title IX Coordinator, or designee must make all reasonable efforts to give student/organization opportunity to be heard on whether presence poses serious and immediate danger before imposing interim suspension",
+          "written_notification": "Immediately notify student/organization in writing via hand delivery, certified mail (return receipt requested), or email with delivery receipt confirmation",
+          "notification_contents": [
+            "University conduct regulation(s) alleged to be violated",
+            "Description of incident circumstances as reported",
+            "Explanation of conduct process",
+            "Explanation of restrictions while on interim suspension",
+            "Notification that appeal may be made to Vice President for Student Affairs or designee",
+            "Contact information for Director for Student Conduct, Title IX Coordinator or designee, and Vice President for Student Affairs",
+            "Clarification that if no appeal made, interim suspension and conduct charges resolved through conduct process (informally or formally)"
+          ]
+        },
+        
+        "appeal_process": {
+          "how_to_appeal": "Submit written appeal to Vice President for Student Affairs or designee. Must contain information challenging/disputing interim suspension based on procedural error, overly harsh based on allegations, or similar claims. May be accompanied by evidence deemed relevant.",
+          "hearing_timeline": "Within 3 business days after receipt of appeal",
+          "effect_pending_appeal": "Interim suspension remains in effect until appeal submitted AND decision made",
+          "possible_outcomes": [
+            "Overturn interim suspension: Student/organization immediately reinstated, conduct charges handled through normal process",
+            "Uphold interim suspension: Restrictions remain in place pending resolution, conduct process proceeds"
+          ]
+        },
+        
+        "resolution_after_appeal_or_no_appeal": "Interim suspension and conduct charges resolved through conduct process (informally or formally). If criteria for informal resolution met, action resolved upon completion of resolution agreement. If not met, referred to formal resolution (investigation and hearing). Given serious nature, formal resolutions take place as soon as possible and within reasonable and practical time."
+      }
+    },
+    
+    "initiating_conduct_process": {
+      "notification": "When report filed and not dismissed after initial review, student/organization receives written notification (includes email to UGA mail, official University communication) including: date of report, alleged conduct regulation violations, request to make appointment, contact information for administrative officer, information about bringing advisor and/or family members, support resources available, electronic link to Code of Conduct (physical copies available upon request). Copy also provided to victim where applicable.",
+      
+      "student_responsibility": "Arrange requested meeting within parameters stated in notification",
+      
+      "meeting_purpose": "Ensure student/organization sufficiently familiar with Code of Conduct (including regulations and process) to accurately prepare and present response to allegations",
+      
+      "meeting_advisements": [
+        "Right to decline to make statements or answer questions (no inference to responsibility will be drawn from silence)",
+        "Alleged violations and any written report submitted",
+        "Procedures for resolving conduct charges including options for and conditions of informal or formal resolution",
+        "Advisement to consult with Director for Student Conduct, Title IX Coordinator, or designee concerning any question or interpretation of procedure"
+      ],
+      
+      "advisor_rights": "Throughout conduct process, student or organization (and victim where applicable) has right to have Advisor of own choosing to provide advice and counsel during meetings and proceedings. Advisor may not participate directly during interviews or hearings but may be present and advise in any manner including providing questions, suggestions, and guidance on responses."
+    },
+    
+    "resolution_methods": {
+      "general_principles": "Resolutions neither establish nor are based upon precedent. Matters of local, state or federal law are independent of conduct process.",
+      
+      "informal_resolution": {
+        "criteria": "Must meet all four: (1) administrative officer and student/organization agree informal resolution is reasonable option; (2) student/organization accepts responsibility for violations; (3) student/organization agrees with sanctions; (4) if applicable, alleged victim agrees with sanctions and may propose reasonable sanctions in accordance with Code",
+        "student_right": "Student/organization always has right to refuse informal process and proceed with formal hearing",
+        "cases_not_meeting_criteria": "Referred to formal resolution (investigation and hearing)",
+        "decision": "Student/organization receives written copy of decision completed by administrative officer. Upon review, student signs decision indicating agreement with method of resolution."
+      },
+      
+      "formal_resolution": {
+        "triggers": "If student/organization disputes violation occurred, rejects informal resolution, or doesn't agree with sanctions",
+        
+        "investigation_process": [
+          {
+            "step": 1,
+            "action": "Written 'Notice of Investigation' delivered including: specific conduct regulations alleged violated, notice case scheduled for investigation, identity of investigators assigned, range of sanctions that may result"
+          },
+          {
+            "step": 2,
+            "action": "Student/organization given 3 business days to respond in writing. May admit or deny allegations and set forth defense with facts, witnesses, and documents. Non-response considered general denial."
+          },
+          {
+            "step": 3,
+            "action": "Investigation consists of interviews of student/organization, alleged victim (where applicable) and witnesses, collection/review of documents or other information. Investigator retains written notes and/or obtains written or recorded statements from each interview. Keeps record of proffered witnesses not interviewed with brief written explanation why not interviewed."
+          },
+          {
+            "step": 4,
+            "action": "If investigator determines insufficient evidence to support charge or warrant further consideration of sanctions, complaint dismissed. If student/organization admits responsibility, investigation may conclude and proceed to hearing for sanctions determination or may be resolved through informal resolution if appropriate. Victim (if applicable) may appeal dismissal decision to Vice President for Student Affairs or designee within 2 business days of notification. VP or designee upholds dismissal or determines charge/complaint must be resolved through conduct process. Decision is final."
+          },
+          {
+            "step": 5,
+            "action": "Investigation summarized in initial investigation report and provided to student/organization and alleged victim (where applicable) in person or via email. Summary clearly indicates any resulting charges (or determination of no charges), facts and evidence in support, witness statements, and possible sanctions. Charge is not finding of responsibility but indicates sufficient evidence to warrant further consideration and adjudication."
+          },
+          {
+            "step": 6,
+            "action": "Student/organization charged with violations has opportunity to respond in writing. Written response to charges due 3 business days following date of initial investigation report. Should outline any additional information student/organization feels should be included. Non-response interpreted as denial of charges."
+          },
+          {
+            "step": 7,
+            "action": "Investigator conducts further investigation consistent with earlier procedures and updates investigative report as warranted by student/organization response."
+          },
+          {
+            "step": 8,
+            "action": "Once investigation complete, final investigative report provided to judicial body for adjudicating charges. Copy also provided to student/organization and alleged victim (where applicable)."
+          },
+          {
+            "step": 9,
+            "action": "Written 'Notice of Hearing' delivered to student/organization and alleged victim (where applicable) including: specific conduct regulations charged, alleged factual circumstances supporting charges, date/time/place of hearing, list of potential witnesses and information that may be presented, notice that University Advocate (only in non-sexual misconduct cases) has right to gather and present additional evidence/witnesses and will notify student/organization of such by deadline stated in Notice."
+          },
+          {
+            "step": 10,
+            "action": "Notice of Hearing must be received at least 5 business days prior to hearing date. Student/organization may waive minimum notice requirements with Director for Student Conduct or designee consent, must be in writing."
+          },
+          {
+            "step": 11,
+            "action": "Student deemed to have received notice when personally given copy or, for organization, when any officer personally given copy. If not possible to deliver in person, sent by certified mail (return receipt requested) to permanent address of record and considered delivered on date indicated on signed return receipt or after 15 business days have passed from mailing date."
+          },
+          {
+            "step": 12,
+            "action": "Student/organization assigned Advisor from University Judiciary except in sexual misconduct cases. May elect to waive right to University Judiciary Advisor to be assisted by Advisor of own choosing (including Advisor chosen at process outset). Must notify Office of Student Conduct in writing prior to hearing to waive. Regardless of Advisor chosen, student/organization responsible for presenting own case."
+          },
+          {
+            "step": 13,
+            "action": "Two or more students/organizations scheduled for joint hearing if alleged to have taken part in same incident, act, event, or series of related acts. Conduct regulations and/or factual circumstances need not be identical for joint hearing participation."
+          },
+          {
+            "step": 14,
+            "action": "Student/organization required to participate in joint hearing may file request for separate hearing citing specific reasons joint hearing would unfairly prejudice case. Must submit in writing to Director for Student Conduct or designee within 2 business days after receipt of Notice of Hearing. Director decides and notifies student/organization."
+          },
+          {
+            "step": 15,
+            "action": "Student/organization subject to 2+ unrelated reported incidents of alleged misconduct entitled to separate investigation and hearing for each incident. May be charged with multiple violations for single incident. Unrelated incidents investigated and heard separately unless student/organization consents to aggregation."
+          },
+          {
+            "step": 16,
+            "action": "Student/organization presumed not to have violated conduct regulation until violation proven. Standard of proof: preponderance of the evidence."
+          },
+          {
+            "step": 17,
+            "action": "Formal civil rules of evidence do not apply to formal resolution process, including during investigatory and hearing phase."
+          }
+        ],
+        
+        "hearing_delays": {
+          "request_by_parties": "Student/organization, University Advocate, or alleged victim (where applicable) may request delay. Must be in writing, submitted to Director for Student Conduct no later than 1 business day prior to hearing. Must include reasons for delay and proposed length. Delay not guaranteed. If reason is need for more time to prepare AND adequate notice was given per Code, delay not granted. If reasons show necessity and delay granted, all parties notified no less than 1 business day prior to hearing. New hearing date notification provided at least 5 business days prior to new hearing.",
+          "request_by_office": "If Office of Student Conduct needs to delay, all parties notified no less than 1 business day prior to hearing. New hearing date notification provided at least 5 business days prior."
+        },
+        
+        "failure_to_attend": {
+          "student_organization": "If fails to attend scheduled hearing, Hearing Panel may hear case at its discretion. Decisions based on evidence presented and statements made at time of hearing.",
+          "university_advocate": "If fails to attend scheduled hearing, Hearing Panel may hear case at its discretion. Decisions based on evidence presented and statements made at time of hearing."
+        },
+        
+        "hearing_attendance": "Allowed in hearing room: Hearing Panel, University Judiciary members, student/organization going through formal hearing, victim (where applicable), one Advisor per party, approved University officials. Additionally, upon request, student and victim (where applicable) allowed to have up to 2 family members attend as observers (must notify Office of Student Conduct in writing prior to hearing). If family member is witness, must wait outside until called for presentation, then may remain as observer after excused. Witnesses invited at designated times per order of hearing. All formal hearings closed to public unless student/organization requests open hearing and all requirements satisfied.",
+        
+        "truthfulness": "Expected that all persons making statements or answering questions at hearing do so truthfully",
+        
+        "witnesses": {
+          "exclusion": "May not be present in hearing room until called for presentation",
+          "advisement": "Each witness advised by Hearing Panel to refrain from discussing with any other witness what transpired during their presentation. Failure to respect request may result in witnesses being charged with conduct regulation violation.",
+          "availability": "Expected to remain available in event they are recalled or until excused by Hearing Panel, but not restricted to particular room and not supervised",
+          "remote_testimony": "If student participating in hearing or witness unavailable and unable to attend due to extenuating circumstances, Hearing Panel (or Hearing Officer for sexual misconduct) has discretion to allow testimony from separate location. Assesses valid basis for unavailability and determines manner of testimony won't unfairly disadvantage any party. If reasonably believed party or witness not physically present has presented tainted testimony, Hearing Panel will disregard or discount testimony.",
+          "sexual_misconduct_separation": "Upon request or if deemed appropriate by Hearing Officer in sexual misconduct case, party may be allowed to participate from separate location. Measures must ensure no party unfairly disadvantaged by separation."
+        },
+        
+        "written_questions": "Regardless of whether student/organization or victim (where applicable) attends hearing, Hearing Panel has discretion to allow submission of written questions to Hearing Panel (or Hearing Officer for sexual misconduct) for consideration. Hearing Panel or Hearing Officer asks questions as written, limiting only if unrelated to determining veracity of charge. Must err on side of asking all submitted questions and document reason for not asking any particular questions.",
+        
+        "hearing_timing": {
+          "announcements": "Hearing Panel (or Hearing Officer for sexual misconduct) may announce recess times for meals and conclude/continuation time at beginning of hearing",
+          "time_limit": "No hearing shall last beyond 10:00 PM or reasonable time thereafter",
+          "resume_scheduling": "Hearing Panel (or Hearing Officer for sexual misconduct) sets date/time for resumption while all parties present"
+        },
+        
+        "recesses": "Any individual may request recess. Should be kept short and to minimum. If excessive in number or length, person asking may be asked to provide reason. Hearing Panel may approve or deny request.",
+        
+        "recording": "All hearings recorded. Copy may be requested at student/organization expense. Original considered official record. Recesses and deliberations not recorded."
+      }
+    }
+  }
+}

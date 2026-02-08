@@ -1,0 +1,334 @@
+{
+  "document_id": "uga_code_of_conduct_sanctions_appeals",
+  "title": "The University of Georgia Code of Conduct - Sanctions and Appeals",
+  "category": "Student Conduct Policy - Sanctions and Appeals",
+  "continuation_of": "uga_code_of_conduct_procedures",
+  
+  "hearing_orders": {
+    "non_sexual_misconduct_hearing_order": [
+      "A. Presiding Justice begins hearing",
+      "B. Parties introduced, charges read. Presiding Justice confirms student given notice and understands charges",
+      "C. Presiding Justice explains order of hearing",
+      "D. University Advocate and student/organization asked to present information truthfully",
+      "E. Presiding Justice reviews each side's witness and evidence list for changes or order. Hearing Panel considers addition of witnesses/evidence not previously submitted according to procedure and reason for late additions. Decision to allow additions at Hearing Panel's discretion",
+      "F. University Advocate provides information regarding alleged violation and pending charges (opening statement summarizing allegations and introducing witness/evidence information)",
+      "G. University Advocate presents evidence and/or witnesses, including investigative report",
+      "H. Information/witnesses presented in order indicated on witness and evidence list",
+      "I. After each piece of evidence presented by University Advocate, student/organization may comment or ask questions at time it's presented",
+      "J. Hearing Panel may then ask University Advocate questions regarding evidence. If student/organization commented on evidence, Hearing Panel may also ask student/organization questions regarding comments",
+      "K. University Advocate calls witnesses. Each witness, after being asked to present information truthfully, may make statement and/or respond to Advocate questions",
+      "L. Student/organization given opportunity to question each witness",
+      "M. Hearing Panel may also ask questions of each witness. When questioning concluded, Presiding Justice asks if anyone wants to recall witness later. If not, witness excused",
+      "N. After University Advocate and all other witnesses sharing information regarding alleged violation have made statements/answered questions, student/organization asked to make opening statement (summary of witnesses and evidence to be presented)",
+      "O. Student/organization presents evidence and/or witnesses",
+      "P. Evidence/witnesses presented in order indicated on witness and evidence list",
+      "Q. After each piece of evidence presented by student/organization, University Advocate may comment or ask questions at time it's presented",
+      "R. Hearing Panel may then ask questions regarding student/organization's evidence. If Advocate commented on evidence, Hearing Panel may also ask Advocate questions regarding comments",
+      "S. Student/organization calls witnesses (including themselves if listed). Each witness may make statement and/or respond to student/organization questions",
+      "T. University Advocate has opportunity to question all witnesses presented by student",
+      "U. Hearing Panel may also ask questions of each witness. When questioning concluded, Presiding Justice asks if anyone wants to recall witness later. If not, witness excused",
+      "V. Presiding Justice again asks each side if they have additional witnesses or information to add. Hearing Panel considers additions not previously submitted according to procedure and reason for late additions. Decision to allow additions at Hearing Panel's discretion",
+      "W. After all witnesses and evidence presented for first time, witnesses may be recalled by University Advocate, student/organization, or Hearing Panel",
+      "X. Presiding Justice calls for recess after all evidence and witnesses presented to allow University Advocate and student/organization to prepare closing statements",
+      "Y. University Advocate makes closing statement. No new evidence allowed; opportunity to summarize key points already made",
+      "Z. Student/organization makes closing statement. No new evidence allowed; opportunity to summarize key points already made"
+    ],
+    
+    "sexual_misconduct_hearing_order": [
+      "A. Hearing Officer begins hearing",
+      "B. Parties introduced, charges read",
+      "C. Hearing Officer reminds all participants they are required to answer all questions truthfully and to best of their knowledge and ability",
+      "D. Hearing Officer asks accused student whether they admit or deny each charge",
+      "E. Hearing Officer presents undisputed facts as summarized in investigative report",
+      "F. Alleged victim (if applicable) provided opportunity to present opening statement to Hearing Panel",
+      "G. Accused student provided opportunity to present opening statement to Hearing Panel",
+      "H. If witness requested to participate by either party, Hearing Officer, or Hearing Panel prior to hearing, Hearing Officer asks witness questions previously submitted by parties",
+      "I. Following questioning and responses by witness, Hearing Officer asks parties and Hearing Panel whether there are any additional questions for that witness",
+      "J. Hearing Officer reviews any additional questions submitted and asks questions as written if appropriate",
+      "K. When questioning concluded, Hearing Officer asks if anyone wants to recall witness later. If not, witness excused",
+      "L. Hearing Officer continues to call witnesses in order they were submitted unless circumstances necessitate otherwise",
+      "M. Hearing Officer asks alleged victim (if participating) questions previously submitted by parties",
+      "N. Following questioning and responses by alleged victim, Hearing Officer asks parties and Hearing Panel whether there are any additional questions for victim",
+      "O. Hearing Officer reviews any additional questions submitted and asks questions as written if appropriate",
+      "P. Hearing Officer asks accused student questions previously submitted by parties",
+      "Q. Following questioning and responses by accused student, Hearing Officer asks parties and Hearing Panel whether there are any additional questions for accused student",
+      "R. Hearing Officer reviews any additional questions submitted and asks questions as written if appropriate",
+      "S. Once all witnesses called and questions asked of alleged victim (if applicable) and accused student, Hearing Officer asks parties and Hearing Panel whether there are any additional questions",
+      "T. Any additional questions reviewed by Hearing Officer and asked as written if appropriate",
+      "U. Hearing Officer calls for recess after all evidence and witnesses presented to allow alleged victim (if applicable) and accused student opportunity to prepare closing statements",
+      "V. Victim (if applicable) provided opportunity to present closing statement. No new evidence allowed; opportunity to summarize key points already made",
+      "W. Accused student provided opportunity to present closing statement. No new evidence allowed; opportunity to summarize key points already made"
+    ]
+  },
+  
+  "decisions_for_formal_resolution": {
+    "deliberation": "At conclusion of hearing, Presiding Justice or Administrative Hearing Officer calls for recess so Hearing Panel can deliberate. All deliberation sessions are closed and not recorded.",
+    
+    "determination": "After deliberation and by majority vote, Hearing Panel determines for each charge whether preponderance of evidence presented indicates violation occurred.",
+    
+    "no_violation": "If no violation occurred, Hearing Panel indicates student/organization found not in violation of charges",
+    
+    "violation_found": {
+      "sanctions_consideration": "If violation(s) found, deliberations move to discussion concerning appropriate sanctions",
+      "prior_record_access": "If Hearing Panel determined student/organization in violation, they then have access to prior record information",
+      "prior_record_consideration": "Prior record considered when determining sanctions",
+      "substantial_evidence_requirement": "Decision to issue sanction of suspension or expulsion must be supported by substantial evidence at hearing"
+    },
+    
+    "written_decision": "Decision (including whether violation occurred and any sanctions) recorded on written Formal Hearing Decision Form and includes summary of evidence in support of sanctions",
+    
+    "delivery": "Copy of decision sent via email to student/organization and alleged victim (where applicable). If delivery confirmation cannot be obtained, Formal Hearing Decision Form sent by certified mail. Where certified mail required, notice considered delivered on date indicated on signed return receipt or after 15 business days have passed from mailing date."
+  },
+  
+  "sanctions": {
+    "determination_factors": "Findings of fact, particular circumstances, and prior record of student or organization are factors considered by administrative officer or Hearing Panel when determining appropriate sanctions",
+    
+    "individual_sanctions": {
+      "note": "List neither exhaustive nor in order of severity and may be enlarged upon or modified to meet particular circumstances",
+      
+      "sanctions": [
+        {
+          "name": "Expulsion",
+          "description": "Permanent severance of student's relationship with University"
+        },
+        {
+          "name": "Suspension",
+          "description": "Temporary severance of student's relationship with University for specific period of time. Period of time and any requirements that must be satisfied prior to eligibility for readmission or registration specified in decision of judicial body."
+        },
+        {
+          "name": "Probation",
+          "description": "Notice that further finding of responsibility for violation of any conduct regulation(s) as specified in decision may result in suspension or expulsion from University. Period of probation specified in decision of judicial body."
+        },
+        {
+          "name": "Restitution",
+          "description": "Reimbursement for loss caused by student's actions"
+        },
+        {
+          "name": "Community Service",
+          "description": "Assignment to work specific number of hours at community service site approved by Office of Student Conduct or Title IX Coordinator. Community Service locations exist on and off campus."
+        },
+        {
+          "name": "Restrictions",
+          "description": "Terms of suspension or probation restricting privileges during pendency. May include: barring from University property, no-contact directives, identification card privileges and/or parking privileges."
+        },
+        {
+          "name": "Housing Restrictions",
+          "description": "Loss or restriction of privilege to live in University-owned residences. Include: expulsion (permanent separation) from University housing; suspension (time-specific separation) from University housing; University housing probation (notice further responsibility could result in housing suspension or expulsion); and/or University housing relocation."
+        },
+        {
+          "name": "Other Educational Sanctions",
+          "description": "Projects or assignments designed to educate student in connection with effect of behavior. Include but not limited to: mentor program, follow-up meetings/consultations, and/or alcohol education (e.g. BASICS, DUI School)."
+        }
+      ]
+    },
+    
+    "alcohol_drug_violations": {
+      "division_statement": "Division of Student Affairs promotes community of student learning, success, and well being. Abuse and illegal use of alcohol or other drugs jeopardize this community by placing health and safety at risk and undermining academic mission. Expect all students to act responsibly and in accordance with law and Code of Conduct.",
+      
+      "philosophy": "In recognition of concerns from alcohol or other drug use, University supports program of alcohol and other drug education in conjunction with other appropriate sanctions. All students found in violation of Alcohol and Other Drug Related Misconduct (Conduct Regulation 4) receive sanctions as outlined below.",
+      
+      "first_violation_sanctions": {
+        "possession_only": {
+          "violation": "First violation for possession (not consumption) of alcohol, or facilitating possession (not consumption) of alcohol by others",
+          "sanctions": "Alcohol and Other Drug (AOD) education program and probation for 6 months from date of resolution"
+        },
+        "consumption_use_distribution": {
+          "violation": "First violation for consumption, use, or distribution of alcohol, facilitating use of alcohol by others, or disruptive/disorderly conduct caused by influence of alcohol",
+          "sanctions": "Alcohol and Other Drug (AOD) education program and probation for 12 months from date of resolution"
+        },
+        "illegal_drugs": {
+          "violation": "First violation for illegal use, possession or distribution of illegal drugs/controlled substances",
+          "sanctions": "Alcohol and Other Drug (AOD) education program and probation for 12 months from date of resolution"
+        },
+        "drug_sale": {
+          "violation": "First violation for sale of illegal drugs or controlled substances",
+          "sanctions": "Suspension from institution"
+        }
+      },
+      
+      "subsequent_violations": {
+        "general": {
+          "violation": "Subsequent violations while on probation",
+          "sanctions": "Will likely include at least ONE of: Alcohol and Other Drug (AOD) education program, additional probation, community service hours, suspension from institution",
+          "note": "Additional sanctions may be determined by level of violation (Level I or II), circumstances of case, and student's prior record including conditions of probation from any prior record"
+        },
+        "motor_vehicle_subsequent": {
+          "scenario_1": {
+            "violation": "Any subsequent violation while on probation for prior alcohol/drug violation involving operation of motor vehicle after consumption of alcohol and/or use of drugs",
+            "sanctions": "Suspension from institution"
+          },
+          "scenario_2": {
+            "violation": "Any second violation (regardless of probation status) involving operation of motor vehicle after consuming alcohol and/or using drugs when prior violation also involved operation of motor vehicle after consuming alcohol and/or using drugs",
+            "sanctions": "Suspension from institution"
+          }
+        },
+        "after_suspension": {
+          "violation": "Any alcohol or drug related violation after suspension",
+          "sanctions": "Will likely include at least ONE of: Suspension from institution, probation, appropriate AOD program, expulsion from institution",
+          "note": "Additional sanctions may be determined by level of violation (Level I or II), circumstances of case, and student's prior record including conditions of probation from any prior record"
+        }
+      },
+      
+      "multiple_unresolved_violations": {
+        "scenario": "Cases where students referred to Office of Student Conduct for additional alcohol/drug related violation occurring before resolution of any prior alcohol/drug related violation or pending case",
+        "sanctions": "Determined by administrative officer or Hearing Panel but should be no less than those outlined under subsequent violation sanction based on type of violation"
+      },
+      
+      "additional_sanctions_note": "Findings of fact, particular circumstances, and prior record of student are factors considered when determining other appropriate sanctions that may be imposed"
+    },
+    
+    "suspension_ramifications": {
+      "warning": "Students who are suspended from University for any length of time should be aware this action may have impact on following:",
+      "impacts": [
+        "Tuition, Residence Hall costs and fees (suspension does not forgive financial obligations)",
+        "Student financial aid including HOPE Scholarship",
+        "Athletic participation and eligibility",
+        "Health insurance (contact personal health care provider)",
+        "University housing",
+        "Meal plan",
+        "Use of University resources and access to University facilities",
+        "Immigration status for international students",
+        "Status and benefits of veterans and dependents of veterans",
+        "Internships, assistantships, and study abroad",
+        "Class withdrawal"
+      ],
+      "note": "This is not an exhaustive list"
+    },
+    
+    "organization_sanctions": {
+      "note": "List neither exhaustive nor in order of severity and may be enlarged upon or modified to meet particular circumstances",
+      
+      "sanctions": [
+        {
+          "name": "Recommendation for Charter Revocation",
+          "description": "Official request to national office that local chapter's charter be revoked"
+        },
+        {
+          "name": "Revocation of University Registration",
+          "description": "Permanent severance of organization's relationship with University"
+        },
+        {
+          "name": "Suspension of University Registration",
+          "description": "Temporary severance of organization's relationship with University for specific period of time. Period of time and any requirements which must be satisfied prior to re-registration specified in decision of administrative officer or Hearing Panel."
+        },
+        {
+          "name": "Probation",
+          "description": "Notice that further finding of responsibility for violation of any conduct regulations as specified in decision will likely result in suspension or revocation of University Registration. Period of probation specified in decision of Hearing Panel or informal resolution agreement."
+        },
+        {
+          "name": "Restitution",
+          "description": "Reimbursement for loss caused by organization's actions"
+        },
+        {
+          "name": "Community Service",
+          "description": "Assignment to work specific number of hours at community service site approved by judicial body and/or Office of Student Conduct. Community Service locations exist on and off campus."
+        },
+        {
+          "name": "Restrictions",
+          "description": "Restriction of some or all of organization's activities or privileges, including but not limited to social privileges and recruitment privileges"
+        },
+        {
+          "name": "Other Educational Sanctions",
+          "description": "Projects or assignments designed to educate organization in connection with effect of its members' actions. Include but not limited to: alcohol awareness programs and/or risk management programs."
+        }
+      ]
+    }
+  },
+  
+  "appeals": {
+    "who_can_appeal": "Student or organization (and in sexual misconduct cases, alleged victim) may appeal decision from formal conduct hearing",
+    "appeal_information": "Included with decision issued to student or organization",
+    "appeal_forms": "Available in Office of Student Conduct and at https://conduct.uga.edu/uploads/docs/Appeal_Form-1-3.pdf",
+    "timeline": "All appeals must be in writing and submitted to Vice President for Student Affairs within 5 University business days of receipt of decision",
+    "purpose": "Provide opportunity to bring forward questions regarding substantive or procedural errors during process. Not intended to grant new hearing at higher level. Dissatisfaction with decision is not grounds by itself for appeal.",
+    "nature": "All levels of appeal involve written appeals only. Students/organizations neither meet with nor make oral presentations to appellant officer",
+    "scope": "Appeal consists of review of record only, except in case of availability of new information not known or knowable to student/organization during time of hearing",
+    
+    "grounds": [
+      "To consider new information sufficient to alter decision or other relevant facts not brought out in original hearing because such information was not known or knowable to person appealing during time of hearing",
+      "To allege procedural error within hearing process that may have substantially impacted fairness of hearing, including but not limited to whether any hearing questions were improperly excluded or whether decision was tainted by bias",
+      "To allege that finding was inconsistent with weight of information"
+    ],
+    
+    "submission": {
+      "to": "Vice President for Student Affairs or designee for review",
+      "materials_provided_to_vp": [
+        "Recording of hearing",
+        "All documents and evidence presented at hearing",
+        "Written notice of hearing",
+        "Hearing Panel's decision",
+        "Any other documents in record of hearing or otherwise relevant to student's grounds for appeal"
+      ]
+    },
+    
+    "vp_determination": {
+      "review_method": "Determines method of reviewing materials",
+      "timeline": "Within reasonable time period",
+      "possible_determinations": [
+        "Affirm original decision",
+        "Affirm original finding(s) but issue new sanction(s) of lesser severity",
+        "Remand case back to Hearing Panel to correct procedural or factual defect",
+        "Reverse or dismiss case if there was procedural or factual defect that cannot be remedied by remand"
+      ],
+      "notification": "VP or designee notifies student/organization (and alleged victim if applicable) in writing of decision. Case materials including copy of decision returned to Office of Student Conduct.",
+      "finality": "Decision of VP or designee considered final and all imposed sanctions take effect after VP or designee issues decision, unless sanction includes suspension, expulsion, or organization revocation"
+    },
+    
+    "further_review_for_severe_sanctions": {
+      "eligible_sanctions": [
+        "Suspension from University (individual student)",
+        "Expulsion from University (individual student)",
+        "Charter Suspension/Revocation (organization)",
+        "Revocation of University Registration (organization)"
+      ],
+      "appeal_to": "President of University",
+      "timeline": "Within 5 business days of receiving decision of Vice President for Student Affairs or designee",
+      "requirements": "Must be based solely on one or more of three grounds set forth under 'Grounds for Appeal' and must involve one of four sanctions listed above",
+      
+      "presidential_review": {
+        "possible_actions": [
+          "Affirm original decision",
+          "Affirm original finding(s) but issue new sanction(s) of lesser severity",
+          "Remand case back to Hearing Panel to correct procedural or factual defect",
+          "Reverse or dismiss case if there was procedural or factual defect that cannot be remedied by remand"
+        ],
+        "notification": "President's decision issued in writing to student/organization (and alleged victim if applicable) within reasonable time period",
+        "finality": "This is final appeal at institution and, if applicable, all imposed sanctions take effect after President issues decision"
+      }
+    },
+    
+    "board_of_regents_review": {
+      "availability": "Following President's decision, student or organization may apply to Board of Regents' Office of Legal Affairs for further review pursuant to Board of Regents Policy Manual 8.6",
+      "timeline": "Within 20 calendar days of date of President's decision",
+      "submission": "Application for review submitted in writing to Legal Affairs",
+      "discretion": "Review not considered matter of right but within sound discretion of Legal Affairs",
+      "committee_composition": "If granted: Vice Chancellor for Legal Affairs or designee, Vice Chancellor for Academic Affairs or designee, Vice Chancellor for Human Resources or designee, and any other person(s) deemed appropriate by Committee",
+      "guidelines": "Legal Affairs may issue guidelines governing process for review",
+      "finality": "Decision of Committee shall be final and binding for all purposes",
+      "clarification": "Nothing within Policy construed to extend to any party substantive or procedural rights not required by federal or state law. Not part of due process rights afforded to students or employees of University System; those rights fully afforded upon President's decision."
+    },
+    
+    "recusal_challenge_for_bias": {
+      "who_can_challenge": "Any party",
+      "grounds": "Personal bias",
+      "method": "Submit written statement to Vice President for Student Affairs or designee setting forth basis for challenge",
+      "timing": "Within reasonable time after individual knows or reasonably should have known of existence of bias",
+      "determination": "Vice President for Student Affairs determines whether to sustain or deny challenge, and if sustained, replacement to be appointed"
+    }
+  },
+  
+  "parental_notification": {
+    "ferpa_authority": "Family Educational Rights and Privacy Act (FERPA) gives colleges/universities option to notify parents or guardians about specific types of information from student's conduct record",
+    "when_notified": "Office of Student Conduct notifies parents or guardians first time and every subsequent time student under age 21 found to have violated Code policies on use or possession of alcohol or other drugs (except in certain circumstances as determined by Director for Student Conduct or designee)",
+    "responsible_action_protocol": "Parental Notification also occurs when Responsible Action Protocol has been applied to student under age 21"
+  },
+  
+  "records": {
+    "confidentiality": "Student may authorize release of disciplinary record to any party by making written request",
+    "destruction": "All records of cases in Office of Student Conduct maintained in location designated by Office until such time as they are destroyed"
+  },
+  
+  "adoption_and_amendments": {
+    "note": "Code of Conduct may be amended as needed by Office of Student Conduct with approval of appropriate University officials"
+  }
+}

@@ -66,6 +66,8 @@ export function RecycleChecker() {
       const fd = new FormData();
       fd.append("image", file);
       const res = await fetch("/api/recycle", { method: "POST", body: fd });
+      if (res.status === 429) throw new Error("Too many checks! Please wait a moment and try again.");
+      if (res.status === 413) throw new Error("Image too large. Try taking a photo at lower resolution.");
       if (!res.ok) throw new Error(`Server error: ${res.status}`);
       const json = await res.json();
       setResult(json);

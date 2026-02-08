@@ -1,4 +1,11 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { rateLimit } from '@/lib/rate-limit';
+
+function getClientIP(req: NextRequest): string {
+  return req.headers.get('x-forwarded-for')?.split(',')[0]?.trim()
+    || req.headers.get('x-real-ip')
+    || 'unknown';
+}
 
 // ── Step 1: Use OpenRouter vision model to identify objects in the image ──
 async function identifyObjects(imageBase64: string, mimeType: string): Promise<string> {
@@ -131,9 +138,24 @@ Always mention UGA bins are color coded: blue = recycling, green = compost, blac
 
 export async function POST(req: NextRequest) {
   try {
+    // ── Rate limit: 10 image checks per minute per IP ──
+    const ip = getClientIP(req);
+    const { allowed, retryAfterMs } = rateLimit(`recycle:${ip}`, 10, 60_000);
+    if (!allowed) {
+      return NextResponse.json(
+        { error: 'Too many requests. Please wait a moment.' },
+        { status: 429, headers: { 'Retry-After': String(Math.ceil(retryAfterMs / 1000)) } },
+      );
+    }
+
     const formData = await req.formData();
     const file = formData.get('image') as File | null;
     if (!file) return NextResponse.json({ error: 'No image provided' }, { status: 400 });
+
+    // Reject files over 10MB even after client compression
+    if (file.size > 10 * 1024 * 1024) {
+      return NextResponse.json({ error: 'Image too large (max 10 MB)' }, { status: 413 });
+    }
 
     const arrayBuffer = await file.arrayBuffer();
     const base64 = Buffer.from(arrayBuffer).toString('base64');

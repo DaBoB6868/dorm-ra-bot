@@ -1,5 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { generateRAGResponse, generateStreamingRAGResponse } from '@/lib/rag-service';
+import { rateLimit } from '@/lib/rate-limit';
+
+const MAX_MESSAGE_LENGTH = 2000;
+const MAX_HISTORY_LENGTH = 30;
 
 interface ChatMessage {
   role: 'user' | 'assistant';
@@ -13,23 +17,42 @@ interface ChatRequest {
   userLocation?: string;
 }
 
+function getClientIP(req: NextRequest): string {
+  return req.headers.get('x-forwarded-for')?.split(',')[0]?.trim()
+    || req.headers.get('x-real-ip')
+    || 'unknown';
+}
+
 export async function POST(request: NextRequest) {
   try {
+    // ── Rate limit: 25 requests per minute per IP ──
+    const ip = getClientIP(request);
+    const { allowed, retryAfterMs } = rateLimit(ip, 25, 60_000);
+    if (!allowed) {
+      return NextResponse.json(
+        { error: 'Too many requests. Please wait a moment and try again.' },
+        { status: 429, headers: { 'Retry-After': String(Math.ceil(retryAfterMs / 1000)) } },
+      );
+    }
+
     const body = (await request.json()) as ChatRequest;
     const { message, conversationHistory = [], stream = false, userLocation } = body;
 
-    if (!message || message.trim().length === 0) {
-      return NextResponse.json(
-        { error: 'Message cannot be empty' },
-        { status: 400 }
-      );
+    // ── Input validation ──
+    if (!message || typeof message !== 'string' || message.trim().length === 0) {
+      return NextResponse.json({ error: 'Message cannot be empty' }, { status: 400 });
     }
+    if (message.length > MAX_MESSAGE_LENGTH) {
+      return NextResponse.json({ error: `Message too long (max ${MAX_MESSAGE_LENGTH} chars)` }, { status: 400 });
+    }
+    // Truncate history to prevent context stuffing
+    const safeHistory = conversationHistory.slice(-MAX_HISTORY_LENGTH);
 
     if (stream) {
       // Implement streaming response
       const responseStream = await generateStreamingRAGResponse(
         message,
-        conversationHistory,
+        safeHistory,
         userLocation,
       );
 
@@ -63,7 +86,7 @@ export async function POST(request: NextRequest) {
       // Non-streaming response
       const { response, sources } = await generateRAGResponse(
         message,
-        conversationHistory,
+        safeHistory,
         userLocation,
       );
 

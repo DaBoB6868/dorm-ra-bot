@@ -1,5 +1,6 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { ErrorBoundary } from "@/components/ErrorBoundary";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -13,8 +14,23 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "RA Assistant - Dorm Support",
-  description: "Ask questions about campus resources and residential life policies",
+  title: "RA Assistant - UGA Dorm Support",
+  description: "Ask questions about UGA campus resources, dorm policies, and residential life",
+  keywords: ["UGA", "dorm", "RA", "resident assistant", "housing", "Georgia"],
+  openGraph: {
+    title: "RA Assistant - UGA Dorm Support",
+    description: "Your AI-powered UGA dorm assistant",
+    type: "website",
+    url: "https://ra-bot.tech",
+  },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+  viewportFit: "cover",
 };
 
 export default function RootLayout({
@@ -27,7 +43,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <ErrorBoundary>
+          {children}
+        </ErrorBoundary>
       </body>
     </html>
   );

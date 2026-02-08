@@ -18,6 +18,7 @@ export function ChatComponent() {
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
+  const formRef = useRef<HTMLFormElement>(null);
   const [showSources, setShowSources] = useState<string | null>(null);
   const [showScheduleModal, setShowScheduleModal] = useState(false);
   const [userLocation, setUserLocation] = useState<string>('');
@@ -65,6 +66,10 @@ export function ChatComponent() {
           userLocation: userLocation || undefined,
         }),
       });
+
+      if (response.status === 429) {
+        throw new Error('You\'re sending messages too fast! Please wait a moment and try again.');
+      }
 
       if (!response.ok) {
         let errorDetail = '';
@@ -159,9 +164,7 @@ export function ChatComponent() {
                   key={idx}
                   onClick={() => {
                     setInput(question);
-                    setTimeout(() => {
-                      document.querySelector('form')?.dispatchEvent(new Event('submit', { bubbles: true }));
-                    }, 0);
+                    setTimeout(() => formRef.current?.requestSubmit(), 0);
                   }}
                   className="p-3 sm:p-4 border-2 border-gray-300 rounded-xl text-left hover:border-red-700 hover:bg-red-50 active:bg-red-100 active:scale-[0.98] transition-all group"
                 >
@@ -248,7 +251,7 @@ export function ChatComponent() {
 
       {/* Input Area */}
       <div className="border-t-2 border-gray-200 bg-white p-2 sm:p-6">
-        <form onSubmit={handleSendMessage} className="flex space-x-2 sm:space-x-3">
+        <form ref={formRef} onSubmit={handleSendMessage} className="flex space-x-2 sm:space-x-3">
           <input
             type="text"
             value={input}

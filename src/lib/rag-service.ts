@@ -12,15 +12,48 @@ const chatModel = new ChatOpenAI({
   },
 });
 
-// ── Load community guide JSON ──
-let communityGuide: Record<string, unknown> | null = null;
+// ══════════════════════════════════════════════════════════════
+// Load ALL JSON knowledge bases once, keyed by their document_id
+// ══════════════════════════════════════════════════════════════
+const JSONS_DIR = path.join(process.cwd(), 'backend', 'jsons');
 
-function loadCommunityGuide(): Record<string, unknown> {
-  if (communityGuide) return communityGuide;
-  const filePath = path.join(process.cwd(), 'backend', 'jsons', 'community_guide.json');
-  const raw = fs.readFileSync(filePath, 'utf-8');
-  communityGuide = JSON.parse(raw);
-  return communityGuide!;
+interface PolicyDoc {
+  id: string;        // filename (without .json)
+  title: string;
+  data: Record<string, unknown>;
+}
+
+let policyDocs: PolicyDoc[] | null = null;
+
+function loadAllPolicies(): PolicyDoc[] {
+  if (policyDocs) return policyDocs;
+  policyDocs = [];
+
+  if (!fs.existsSync(JSONS_DIR)) return policyDocs;
+
+  const files = fs.readdirSync(JSONS_DIR).filter((f) => f.endsWith('.json'));
+  for (const file of files) {
+    try {
+      const raw = fs.readFileSync(path.join(JSONS_DIR, file), 'utf-8');
+      const data = JSON.parse(raw);
+      policyDocs.push({
+        id: file.replace('.json', ''),
+        title: data.title || file,
+        data,
+      });
+    } catch (err) {
+      console.error(`Failed to load ${file}:`, err);
+    }
+  }
+  console.log(`📚 Loaded ${policyDocs.length} policy documents: ${policyDocs.map((d) => d.id).join(', ')}`);
+  return policyDocs;
+}
+
+// ── Community guide (still gets special keyword routing) ──
+function getCommunityGuide(): Record<string, unknown> {
+  const docs = loadAllPolicies();
+  const cg = docs.find((d) => d.id === 'community_guide');
+  return cg?.data ?? {};
 }
 
 // Flatten JSON into readable text sections the LLM can consume
@@ -50,8 +83,69 @@ function flattenJson(obj: unknown, prefix = ''): string {
 
 // Extract sections relevant to the user's query by keyword matching
 function getRelevantSections(query: string): string {
-  const guide = loadCommunityGuide();
+  const guide = getCommunityGuide();
   const queryLower = query.toLowerCase();
+
+  // ── Which additional policy documents should we include? ──
+  // Maps keywords → document IDs (filenames without .json)
+  const policyKeywordMap: Record<string, string[]> = {
+    'academic honesty': ['academic_honesty_policy'],
+    'cheating': ['academic_honesty_policy'],
+    'plagiarism': ['academic_honesty_policy'],
+    'honor code': ['academic_honesty_policy'],
+    'academic integrity': ['academic_honesty_policy'],
+    'academic dishonesty': ['academic_honesty_policy'],
+    'code of conduct': ['code_of_conduct_part1', 'code_of_conduct_part2', 'code_of_conduct_part3'],
+    'student conduct': ['code_of_conduct_part1', 'code_of_conduct_part2', 'code_of_conduct_part3'],
+    'disciplin': ['code_of_conduct_part1', 'code_of_conduct_part2', 'code_of_conduct_part3'],
+    'sanction': ['code_of_conduct_part1', 'code_of_conduct_part2', 'code_of_conduct_part3'],
+    'judiciary': ['code_of_conduct_part1', 'code_of_conduct_part2', 'code_of_conduct_part3'],
+    'hearing': ['code_of_conduct_part1', 'code_of_conduct_part2', 'code_of_conduct_part3'],
+    'violation': ['code_of_conduct_part1', 'code_of_conduct_part2', 'code_of_conduct_part3'],
+    'computer use': ['computer_use_policy'],
+    'acceptable use': ['computer_use_policy'],
+    'network': ['computer_use_policy'],
+    'hacking': ['computer_use_policy'],
+    'copyright': ['computer_use_policy'],
+    'download': ['computer_use_policy'],
+    'piracy': ['computer_use_policy'],
+    'minor': ['minors_policy'],
+    'child': ['minors_policy'],
+    'youth program': ['minors_policy'],
+    'camp': ['minors_policy'],
+    'discrimination': ['ndah_policy'],
+    'harassment': ['ndah_policy'],
+    'title ix': ['ndah_policy'],
+    'sexual misconduct': ['ndah_policy'],
+    'equal opportunity': ['ndah_policy'],
+    'bias': ['ndah_policy'],
+    'retaliation': ['ndah_policy'],
+    'protected class': ['ndah_policy'],
+    'reporting': ['ndah_policy'],
+  };
+
+  // Determine which extra policy docs to pull in
+  const matchedDocIds = new Set<string>();
+  for (const [keyword, docIds] of Object.entries(policyKeywordMap)) {
+    if (queryLower.includes(keyword)) {
+      docIds.forEach((id) => matchedDocIds.add(id));
+    }
+  }
+
+  // Flatten matched policy docs into context text (cap each at ~3000 chars)
+  const MAX_PER_DOC = 3000;
+  const allDocs = loadAllPolicies();
+  const policyContextParts: string[] = [];
+  for (const docId of matchedDocIds) {
+    const doc = allDocs.find((d) => d.id === docId);
+    if (doc) {
+      let text = `[${doc.title}]\n${flattenJson(doc.data, '')}`;
+      if (text.length > MAX_PER_DOC) text = text.slice(0, MAX_PER_DOC) + '\n…(truncated)';
+      policyContextParts.push(text);
+    }
+  }
+
+  // ── Community guide keyword routing (unchanged) ──
 
   // Map common question keywords to JSON top-level keys
   const keywordMap: Record<string, string[]> = {
@@ -175,12 +269,13 @@ function getRelevantSections(query: string): string {
   }
 
   // Also always include phone numbers for the student's building if we can find it
-  return sections.join('\n\n');
+  const allParts = [...policyContextParts, ...sections].filter(Boolean);
+  return allParts.join('\n\n');
 }
 
 // Look up building-specific phone numbers from the community guide
 function getBuildingPhoneInfo(userLocation: string): string {
-  const guide = loadCommunityGuide();
+  const guide = getCommunityGuide();
   const offices = (guide as any)?.important_phone_numbers?.community_offices;
   if (!Array.isArray(offices) || !userLocation) return '';
 
@@ -218,7 +313,15 @@ export async function generateRAGResponse(
     const systemPrompt = `You are a friendly and knowledgeable UGA (University of Georgia) Dorm RA (Resident Assistant) chatbot. You help UGA students with questions about UGA dorm policies, UGA Housing community guidelines, campus resources, and residential life.
 ${locationContext}
 
-IMPORTANT: Use the UGA Community Guide data provided below to answer questions accurately. Quote specific policies, numbers, rules, and details from the guide. Do NOT make up information — if the guide doesn't cover something, say so honestly and suggest contacting UGA Housing at 706-542-1421 or housing@uga.edu.
+IMPORTANT: Use the UGA policy data provided below to answer questions accurately. The data may come from:
+- UGA Housing Community Guide
+- UGA Academic Honesty Policy
+- UGA Code of Conduct
+- UGA Computer Use Policy
+- UGA Non-Discrimination & Anti-Harassment Policy
+- UGA Programs Serving Minors Policy
+
+Quote specific policies, numbers, rules, and details. Do NOT make up information — if the data doesn't cover something, say so honestly and suggest contacting UGA Housing at 706-542-1421 or housing@uga.edu.
 
 Be friendly, supportive, and professional. Keep responses concise and helpful. Go Dawgs!`;
 
@@ -239,16 +342,26 @@ Be friendly, supportive, and professional. Keep responses concise and helpful. G
     const contextBlock = [relevantInfo, buildingInfo].filter(Boolean).join('\n\n');
     messages.push(
       new HumanMessage(
-        `Question: "${userQuery}"\n\nUGA Community Guide Information:\n${contextBlock || 'No specific section matched. Use your general knowledge of UGA Housing policies.'}`
+        `Question: "${userQuery}"\n\nUGA Policy Information:\n${contextBlock || 'No specific section matched. Use your general knowledge of UGA Housing policies.'}`
       )
     );
 
     const result = await chatModel.invoke(messages);
     const response = result.content.toString();
 
+    // Build dynamic sources list
+    const sources: string[] = ['UGA Community Guide 2025-2026'];
+    const allDocs = loadAllPolicies();
+    // Check which extra docs were referenced in context
+    for (const doc of allDocs) {
+      if (doc.id !== 'community_guide' && contextBlock.includes(doc.title)) {
+        sources.push(doc.title);
+      }
+    }
+
     return {
       response,
-      sources: ['UGA Community Guide 2025-2026'],
+      sources,
     };
   } catch (error) {
     console.error('Error generating RAG response:', error);
@@ -268,7 +381,7 @@ export async function generateStreamingRAGResponse(
     ? `\nThe student lives in ${userLocation}. Tailor answers to their dorm when possible.`
     : `\nThe student has NOT told you their dorm. If the question is dorm-specific, ask which dorm they live in first.`;
 
-  const systemPrompt = `You are a friendly UGA Dorm RA chatbot. Use the UGA Community Guide data below to answer accurately. Do NOT make up info.
+  const systemPrompt = `You are a friendly UGA Dorm RA chatbot. Use the UGA policy data below to answer accurately. The data may come from the Community Guide, Academic Honesty Policy, Code of Conduct, Computer Use Policy, Non-Discrimination Policy, or Minors Policy. Do NOT make up info.
 ${locationContext}
 Be concise and helpful. Go Dawgs!`;
 
@@ -287,7 +400,7 @@ Be concise and helpful. Go Dawgs!`;
   const contextBlock = [relevantInfo, buildingInfo].filter(Boolean).join('\n\n');
   messages.push(
     new HumanMessage(
-      `Question: "${userQuery}"\n\nUGA Community Guide Information:\n${contextBlock || 'No specific match found.'}`
+      `Question: "${userQuery}"\n\nUGA Policy Information:\n${contextBlock || 'No specific match found.'}`
     )
   );
 

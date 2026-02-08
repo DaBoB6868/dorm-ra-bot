@@ -1,0 +1,180 @@
+{
+  "document_id": "uga_academic_honesty_policy",
+  "title": "A Culture of Honesty - The University of Georgia's Academic Honesty Policy",
+  "category": "Academic Policy",
+  "website": "honesty.uga.edu",
+  "last_updated": "2022",
+  "summary": "Comprehensive policy defining academic honesty requirements, prohibited conduct, and procedures for resolving alleged violations",
+  "honor_code": "I will be academically honest in all of my academic work and will not tolerate academic dishonesty of others.",
+  "definition": "Academic honesty is defined as completing all academic work without cheating, lying, stealing, or receiving assistance from any other person or using any source of information not appropriately authorized or attributed.",
+  
+  "required_conduct": [
+    {
+      "group": "University Community Members",
+      "responsibilities": [
+        "Report alleged violations to the Office of Academic Honesty",
+        "Participate in discussions with students believed to have violated the policy",
+        "Truthfully answer questions from Academic Honesty Panel"
+      ]
+    },
+    {
+      "group": "Instructors",
+      "responsibilities": [
+        "Report alleged violations within 15 days of discovery",
+        "Take reasonable steps to inform students of academic honesty expectations",
+        "Foster a climate of academic honesty",
+        "Use exclusive procedure outlined in this policy"
+      ]
+    },
+    {
+      "group": "Students",
+      "responsibilities": [
+        "Know and follow the policy (lack of knowledge is not an acceptable defense)",
+        "Avoid accidental plagiarism",
+        "Avoid assisting other students without authorization"
+      ]
+    }
+  ],
+  
+  "prohibited_conduct": {
+    "general_rule": "No student may complete, attempt, or help another engage in academic dishonesty on academic work. Any dishonest act can be a violation, whether intended or not.",
+    
+    "categories": [
+      {
+        "type": "Plagiarism",
+        "description": "Using another's work as your own without correct citations",
+        "examples": [
+          "Directly quoting without quotation marks",
+          "Paraphrasing without attribution",
+          "Presenting someone else's idea/theory as your own without attribution",
+          "Using statistics, images, or data without recognizing who compiled them",
+          "Turning in work that another wrote as your own",
+          "Self-Plagiarism: Submitting an assignment already submitted for credit unless authorized"
+        ]
+      },
+      {
+        "type": "Unauthorized Assistance",
+        "description": "Giving or receiving help for assignments without prior approval",
+        "default_rule": "Any help (books, notes, calculators, technology, internet resources, conversations) is considered unauthorized unless the instructor explicitly allows it",
+        "examples": [
+          "Copying or allowing others to copy answers",
+          "Sending/receiving/posting exam information before, during, or after the exam",
+          "Completing someone else's assignment or allowing them to complete yours",
+          "Collaborating on individual assignments",
+          "Submitting group work that doesn't represent all members' work",
+          "Using electronic devices without permission during exams"
+        ]
+      },
+      {
+        "type": "Lying/Tampering",
+        "description": "Giving false information related to academic work",
+        "examples": [
+          "Giving false reasons for failing to complete assignments",
+          "Falsifying laboratory/experimental work or data results",
+          "Altering work after submission and requesting credit",
+          "Altering grade, lab, or attendance records",
+          "Signing in for another student or providing attendance verification for absent students",
+          "Damaging equipment to prevent evaluation",
+          "Using someone else's password without permission",
+          "Impersonating another person",
+          "Giving false information in academic honesty proceedings"
+        ]
+      },
+      {
+        "type": "Theft",
+        "description": "Stealing information related to academic work",
+        "examples": [
+          "Past exams",
+          "Grade records",
+          "Grading forms",
+          "Books, papers",
+          "Computer equipment and data",
+          "Laboratory equipment and data"
+        ]
+      }
+    ]
+  },
+  
+  "resolution_process": {
+    "action_prior_to_finding": {
+      "course_withdrawal": "Requests not approved until determination is made. If violation found, requires instructor permission.",
+      "instructor_obligations": "Must let student complete all required assignments and grade all other work except assignments involved in alleged dishonesty",
+      "student_obligations": "Should continue attending class and turning in all other assignments",
+      "discussion_restrictions": "Student and instructor should not discuss alleged violation without a facilitator present"
+    },
+    
+    "facilitated_discussion": {
+      "participants": "Instructor(s), student(s), and Facilitator only",
+      "recording": "May not be recorded",
+      "purpose": "Educational, fair, and focused discussion of what may have occurred",
+      "outcomes": [
+        "Agreement that violation occurred with agreed-upon consequences",
+        "No agreement - proceeds to Continued Discussion"
+      ],
+      "consequences_if_violation_acknowledged": {
+        "eligibility_for_remediation": "Enrolled undergraduates with no prior violations who acknowledge violation in Facilitated Discussion",
+        "withdrawal_rights": "May lose right to withdraw from course at instructor's discretion",
+        "right_to_rescind": "Student can withdraw from agreement within 5 days"
+      }
+    },
+    
+    "continued_discussion": {
+      "participants": "Academic Honesty Panel (3 students, 2 faculty), instructor(s), student(s), Facilitator",
+      "panel_composition_special_cases": "Cases involving graduate/pharmacy/veterinary students must have at least 2 student panelists and 1 faculty panelist from associated college",
+      "advisor_allowed": "One advisor per party, cannot address Panel",
+      "recording": "Audio recorded",
+      "standard_of_proof": "More likely than not (preponderance of evidence)",
+      "notice_delivery": "Deemed delivered 5 days after date of notice",
+      "failure_to_attend": "Panel may proceed in absence of student or instructor",
+      
+      "minimum_consequences_if_violation_found": [
+        "Lowest possible grade for assignment based on course grading scale",
+        "Plus at least one of: Final course grade of F, Transcript notation, Suspension, Dismissal, or Expulsion"
+      ],
+      
+      "transcript_notation": "Reads 'Academic Honesty Violation as Determined by the Office of the Vice President for Instruction.' Remains until student no longer enrolled and 2 years after Panel decision. Can petition for removal if no new violations."
+    },
+    
+    "multiple_violations_review_board": {
+      "trigger": "Student violates policy more than once",
+      "composition": "2 faculty members, 1 student from certified panelist pool",
+      "purpose": "Assign additional consequences for multiple violations",
+      "minimum_consequences_second_violation": [
+        "Permanent dishonesty transcript notation",
+        "Plus one of: Expulsion, Dismissal, or Suspension"
+      ]
+    }
+  },
+  
+  "appeals": {
+    "who_can_appeal": "Students only (instructors cannot appeal)",
+    "appeal_to": "President of the university or designee",
+    "timeline": "Within 5 days of delivery of decision",
+    "grounds": [
+      "Instructor did not demonstrate 'more likely than not' that violation occurred",
+      "Consequences imposed are unreasonably harsh",
+      "Student was denied a right in the process that affected the decision",
+      "New evidence found since Continued Discussion or MVRB meeting"
+    ]
+  },
+  
+  "key_definitions": {
+    "dismissal": "Cannot enroll for minimum of 3 consecutive semesters after term of violation. Readmission not automatic - must appeal to Petitions Subcommittee.",
+    "expulsion": "Permanent severance from University. If issued after graduation for pre-graduation misconduct, results in recommendation to revoke degree.",
+    "suspension": "Defined term of at least one semester where student cannot enroll. May return when suspension ends if enrollment requirements met.",
+    "subsequent_violation": "Any additional violation after being found in violation by Facilitated Discussion or Continued Discussion",
+    "remediation_program": "Available only to enrolled undergraduates with no prior violations who acknowledge violation in Facilitated Discussion. Completion results in record non-disclosure except in case of subsequent violation."
+  },
+  
+  "special_provisions": {
+    "law_school": "University of Georgia School of Law has separate policy. Law student violations of law school academic work are not subject to this policy.",
+    "relationship_to_non_academic_misconduct": "Academic honesty policy takes precedence if same act violates both policies",
+    "criminal_proceedings": "May proceed simultaneously with, before, or after civil/criminal proceedings",
+    "mandatory_annual_report": "Office of Academic Honesty submits written report to University Council each fall term"
+  },
+  
+  "records": {
+    "privacy": "Not open to public. Available to others only with written student request or per FERPA policy",
+    "retention": "Per Board of Regents Records Retention Policy"
+  }
+}

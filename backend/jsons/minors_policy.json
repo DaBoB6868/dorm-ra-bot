@@ -1,0 +1,220 @@
+{
+  "document_id": "uga_programs_serving_minors_policy",
+  "title": "University of Georgia Policy for Programs and Activities Serving Minors",
+  "category": "Safety and Compliance Policy",
+  "version": "1.3",
+  "last_updated": "2024-10-07",
+  "website": "programsforminors.uga.edu",
+  "contact_email": "programsforminors@uga.edu",
+  "contact_phone": "706-542-7255",
+  
+  "summary": "Policy recognizing the special duty of care when working with minors and setting forth operational requirements to enhance protection of minors in University programs and activities",
+  
+  "key_definitions": {
+    "mandatory_reporter": "Any person required by Georgia law (O.C.G.A. §19-7-5) to report suspected child abuse. Includes faculty/teachers, administrators, counselors, social workers, psychologists, law enforcement, and others who provide care, treatment, education, training, supervision, coaching, counseling, recreational programs, or shelter to minors.",
+    "minor": "Any person under 18 years of age (O.C.G.A. §39-1-1)",
+    "program_activity": "Any academic, admissions, athletic, educational, research, service, leadership, or recreational program serving one or more minors, including camps, clinics, conferences, workshops, tutoring, mentoring, group lessons, seminars, competitions, internships, experiential learning, research activities, pre-enrollment visits, after-school programs, or enrichment opportunities",
+    "program_activity_administrator": "Individual with primary and direct operational responsibility for overall content and execution of a program/activity; serves as primary point of contact",
+    "program_activity_staff": "Individuals (paid, volunteer, or for academic credit) who have care, custody, control, and/or direct contact with minors. Includes administrators, faculty, staff, students, volunteers, and third parties operating programs/activities",
+    "third_party": "Individual, organization, or entity external to the University to which the University allows facility use to operate a program/activity",
+    "sponsoring_unit": "Any department or unit of the University that offers a program/activity",
+    "university_facility": "Building, structure, classroom, laboratory, outdoor area, grounds, or athletic venue owned, leased, or controlled by the University, or used in connection with any program/activity"
+  },
+  
+  "applicability": {
+    "applies_to": [
+      "Programs/activities offered by University departments/units at University facilities or other locations",
+      "Programs/activities offered by registered student organizations at University facilities or other locations",
+      "Programs/activities offered by third parties utilizing University facilities"
+    ],
+    "does_not_apply_to": [
+      "Minors enrolled in undergraduate or graduate coursework",
+      "Events where minors are supervised by parent/guardian",
+      "Events open to general public where parents/guardians provide supervision",
+      "Minor employees",
+      "UGA employees/students hosting family members, friends, or guests"
+    ],
+    "relationship_to_other_policies": "Supplements, does not replace, existing safety and security measures, policies, or codes of conduct"
+  },
+  
+  "requirements": {
+    "review_and_approval": {
+      "timeline": "Must be registered at least 60 days before program start date (normally)",
+      "approval_required_from": "Sponsoring Unit's Dean, Director, Vice President, or Department Head",
+      "third_party_requirement": "Must certify compliance with this policy to receive approval for facility use",
+      "annual_registration": "Programs/activities must be registered annually",
+      
+      "considerations": [
+        "Alignment with University mission",
+        "Appropriate subject matter and fully planned activity itinerary",
+        "Appropriate staffing and supervision ratios (avoid one-on-one contact)",
+        "Program/Activity Staff Code of Conduct and guidelines",
+        "Appropriate training for staff",
+        "Minor Code of Conduct, forms, waivers, and supplemental guidelines",
+        "Program orientation and information for minors and parents",
+        "For laboratory work: Follow UGA Policy on Minors in Research Laboratories, Clinics, and Animal Facilities",
+        "Transportation arrangements",
+        "Housing arrangements (special consideration for overnight programs)",
+        "Contracts for Auxiliary Services and Food Services",
+        "Safety and security planning (first aid, emergency response, notification plans, injury/illness reporting, inclement weather)",
+        "Response protocols for misconduct accusations",
+        "Insurance",
+        "Government licensing or exemptions",
+        "Record retention policies"
+      ]
+    },
+    
+    "background_checks": {
+      "requirement": "All program/activity staff with direct contact with minors must undergo criminal background check (including sex offender registry check)",
+      "compliance_standard": "Must meet HRAP (Human Resources Administrative Practice Manual) requirements",
+      "timing": "Must have current background check clearance prior to working with minors",
+      "coordination": "Program administrators coordinate with unit HR office or University HR",
+      "third_party_requirement": "Must certify all staff have undergone background checks meeting minimum HRAP requirements",
+      "self_reporting": "Staff must self-report any arrest, charge, or criminal conviction occurring after background check date",
+      "additional_screening": "Depending on program nature, may include in-person interviews and/or reference checks"
+    },
+    
+    "training": {
+      "frequency": "At minimum, completed every two years",
+      "documentation": "Training documentation and certifications maintained by Program/Activity Administrator",
+      
+      "required_for_all_staff_and_approving_officials": [
+        "Mandatory Reporting obligations, including child abuse awareness and prevention",
+        "University's Non-Discrimination and Anti-Harassment Policy",
+        "Board of Regents Sexual Misconduct Policy",
+        "Code of Conduct for Program/Activity Staff"
+      ],
+      
+      "program_specific_training": [
+        "Code of Conduct for minor participants",
+        "Reporting requirements, processes, and contacts during program/activity",
+        "Disability accommodations and evaluation of special requests",
+        "Safety and security protocols",
+        "First aid guidelines and medication management",
+        "Activities, risks, and responsibilities as applicable"
+      ]
+    },
+    
+    "records_retention": {
+      "minor_records": "Retain for 3 years after minor reaches age 18",
+      "staff_records": "Retain for 5 years",
+      "compliance": "Per Board of Regents policies on record retention"
+    }
+  },
+  
+  "conduct_requirements": {
+    "code_of_conduct": "All minor participants and program/activity staff must agree to abide by applicable Code of Conduct and supplemental program guidelines",
+    
+    "required_forms_for_minor_participants": [
+      "Participation agreement form",
+      "Authorization to administer medication",
+      "Pick-up authorization",
+      "Medical information and authorization",
+      "Release of claims/waiver of liability",
+      "Media/photo/video release",
+      "Minor participant's Code of Conduct"
+    ]
+  },
+  
+  "third_party_facility_use": {
+    "requirement": "Must execute a Facilities Use Agreement",
+    "compliance": "Must comply with this policy including UGA Sponsoring Unit approval, background check certification, and proper staff training",
+    "contact": "Office of Real Estate in Office of Finance and Administration for approved Facility Use Agreement"
+  },
+  
+  "reporting": {
+    "injury_reporting": {
+      "purpose": "Maintain safe environment for all students, faculty, staff, and visitors",
+      "method": "Online reporting form through Finance and Administration",
+      "timing": "As early as possible after injury occurs"
+    },
+    
+    "child_abuse_mandatory_reporting": {
+      "who_must_report": "All program/activity staff (including volunteers) and mandatory reporters with reasonable cause to believe suspected child abuse has occurred",
+      "timing": "Immediately - no later than 24 hours after first having reasonable cause to suspect abuse",
+      "do_not_investigate": "Do not attempt to investigate or gather additional information before reporting",
+      
+      "must_report_to_all_three": [
+        {
+          "entity": "UGA Police Department",
+          "contact": "706-542-2200 or 911 (emergency)"
+        },
+        {
+          "entity": "Program/Activity Administrator, Supervisor, or other responsible University Official",
+          "contact": "Per program"
+        },
+        {
+          "entity": "Georgia Division of Family and Children Services",
+          "contact": "1-855-GACHILD"
+        }
+      ],
+      
+      "clarification": "Reporting is not making an accusation; it's reporting facts for trained professionals to evaluate and investigate",
+      "more_info": "https://legal.uga.edu/policies/child_abuse_reporting/"
+    }
+  },
+  
+  "accountability": {
+    "site_visits": {
+      "conductor": "Director of Compliance",
+      "purpose": "Ensure compliance with policy and encourage best practices",
+      "frequency": "Random",
+      "outcome": "Feedback provided on areas of recommended improvement"
+    },
+    
+    "violations_and_sanctions": [
+      "Suspension of University funding",
+      "Non-renewal or termination of program/activity",
+      "Suspension, dismissal, or termination of University employment or program/activity staff status",
+      "Removal or barring from University facilities"
+    ],
+    
+    "university_funding": "Programs/activities not approved and registered per this policy are not eligible for payment, repayment, or reimbursement by University Business & Accounting Services"
+  },
+  
+  "policy_administration": {
+    "responsible_senior_administrator": "Vice President for Public Service and Outreach",
+    "responsible_administrator": "Director, Georgia Center for Continuing Education & Hotel",
+    "policy_owner": "Director of Compliance, Programs and Activities Serving Minors",
+    
+    "director_of_compliance_responsibilities": [
+      "Enhance compliance by Program Administrators and Approving Officials",
+      "Create additional training and engagement opportunities",
+      "Institute record retention systems for documenting compliance",
+      "Improve online registration and approval process",
+      "Assess departmental/program compliance",
+      "Ensure University engages in best practices when dealing with minors"
+    ],
+    
+    "oversight_committee": {
+      "size": "4-6 administrators",
+      "selected_from": "Academic Affairs, Athletics, University Human Resources, Public Service and Outreach, Student Affairs, and 4-H",
+      
+      "powers": [
+        "Recommend changes to this policy",
+        "Recommend appropriate actions for Program/Activity Administrators, Departments, and Units",
+        "Initiate enforcement actions against an individual or program/activity",
+        "Any other action reasonably required in furtherance of this policy"
+      ]
+    }
+  },
+  
+  "resources": {
+    "forms_and_resources": "https://programsforminors.uga.edu/documents",
+    "items_available": [
+      "Sample Forms",
+      "Program/Activity Checklists",
+      "Additional resources"
+    ]
+  },
+  
+  "policy_history": {
+    "adopted": "2017-04-26",
+    "amendments": [
+      "2021-02-10",
+      "2024-10-07"
+    ]
+  },
+  
+  "compliance_foundation": "Adopted in accordance with Board of Regents Policy 6.9, Programs Serving Minors"
+}

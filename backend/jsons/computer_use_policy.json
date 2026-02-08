@@ -1,0 +1,122 @@
+{
+  "document_id": "uga_computer_use_policy",
+  "title": "University of Georgia Acceptable Use Policy",
+  "category": "IT Policy",
+  "last_updated": "2012-01-12",
+  "summary": "Policy detailing acceptable and prohibited uses of University computers and network resources",
+  "key_sections": [
+    {
+      "section": "Authorization",
+      "rule_number": 1,
+      "description": "Authorization is required to use University computers or the network",
+      "details": "No one shall use any University computer or network facility without proper authorization. No one shall assist in, encourage, or conceal from authorities any unauthorized use."
+    },
+    {
+      "section": "Security",
+      "rule_number": 2,
+      "description": "Do not compromise security or interfere with others' usage",
+      "details": "No one shall knowingly endanger the security of any University computer or network facility, nor willfully interfere with others' authorized computer usage."
+    },
+    {
+      "section": "Unauthorized Communications",
+      "rule_number": 3,
+      "description": "Do not use the network for unauthorized communications",
+      "details": "No one shall use the University's communication facilities to attempt unauthorized use, nor to interfere with others' legitimate use, of any computer or network facility anywhere."
+    },
+    {
+      "section": "Technical Standards",
+      "rule_number": 4,
+      "description": "Computers must meet technical and security standards",
+      "details": "No one shall connect any computer to any of the University's networks unless it meets technical and security standards set by the University administration."
+    },
+    {
+      "section": "Resource Sharing",
+      "rule_number": 5,
+      "description": "Share computer resources and prioritize important work",
+      "details": "All users shall share computing resources in accordance with policies set for the computers involved, giving priority to more important work."
+    },
+    {
+      "section": "University Business Only",
+      "rule_number": 6,
+      "description": "Do not use University computers for non-University business",
+      "details": "No one without specific authorization shall use any University computer or network facility for non-University business."
+    },
+    {
+      "section": "Password Security",
+      "rule_number": 7,
+      "description": "Never give out your password or request another person's password",
+      "details": "No one shall give any password for any University computer or network facility to any unauthorized person, nor obtain any other person's password by any unauthorized means. Only system administrators are authorized to issue passwords."
+    },
+    {
+      "section": "Identity Verification",
+      "rule_number": 8,
+      "description": "Do not misrepresent your identity",
+      "details": "No one shall misrepresent his or her identity or relationship to the University when obtaining or using University computer or network privileges."
+    },
+    {
+      "section": "File Privacy",
+      "rule_number": 9,
+      "description": "Do not read, alter, or delete another person's files or email",
+      "details": "No one without specific authorization shall read, alter, or delete any other person's computer files or electronic mail, regardless of whether the operating system permits these acts."
+    },
+    {
+      "section": "Copyright Compliance",
+      "rule_number": 10,
+      "description": "Do not violate copyrights or usage agreements",
+      "details": "No one shall copy, install, or use any software or data files in violation of applicable copyrights or license agreements, including downloading/distribution of music, movies, or other electronic media."
+    },
+    {
+      "section": "Virus Prevention",
+      "rule_number": 11,
+      "description": "Do not create or spread viruses",
+      "details": "No one shall create, install, or knowingly distribute a computer virus, Trojan horse, or other destructive program on any University computer or network facility."
+    },
+    {
+      "section": "System Configuration",
+      "rule_number": 12,
+      "description": "Do not reconfigure University computers without permission",
+      "details": "No one without proper authorization shall modify or reconfigure the software or hardware of any University computer or network facility."
+    },
+    {
+      "section": "Data Protection",
+      "rule_number": 13,
+      "description": "All sensitive information must be adequately protected",
+      "details": "Users shall not place confidential information in computers without protecting it appropriately. The University cannot guarantee privacy unless special arrangements are made."
+    },
+    {
+      "section": "Message Responsibility",
+      "rule_number": 14,
+      "description": "Users are responsible for messages they send",
+      "details": "Users shall take full responsibility for messages transmitted through University computers and network facilities. No one shall transmit fraudulent, defamatory, harassing, obscene, threatening, or prohibited messages."
+    },
+    {
+      "section": "Website Advertising",
+      "rule_number": 15,
+      "description": "Advertising on University websites is not allowed",
+      "details": "Those publishing web pages on University computers shall take full responsibility for content, obey all laws, and shall not publish commercial advertisements without authorization. References/links to commercial sites are permitted, but paid advertisements are not."
+    },
+    {
+      "section": "Public Forums",
+      "rule_number": 16,
+      "description": "Follow policies for listservs and public forums",
+      "details": "Users shall comply with regulations and policies of newsgroups, mailing lists, and other public forums."
+    },
+    {
+      "section": "Administrator Responsibilities",
+      "rule_number": 17,
+      "description": "System admins should be fair and respect privacy",
+      "details": "System administrators shall perform duties fairly, respect user privacy as far as possible, and refer all disciplinary matters to appropriate authorities."
+    },
+    {
+      "section": "Email Spam",
+      "rule_number": 18,
+      "description": "Do not use email to spam others",
+      "details": "No one without authorization shall distribute the same or similar email to multiple recipients without evidence they wish to receive it, nor distribute chain letters. The University reserves the right to discard incoming spam and block communications from sites involved in extensive spamming."
+    }
+  ],
+  "enforcement": {
+    "acknowledgment_required": true,
+    "signature_required": true,
+    "violation_consequences": "Violations may result in disciplinary action under University policies"
+  }
+}

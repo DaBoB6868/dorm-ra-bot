@@ -1,0 +1,252 @@
+{
+  "document_id": "uga_code_of_conduct",
+  "title": "The University of Georgia Code of Conduct",
+  "category": "Student Conduct Policy",
+  "office": "Division of Student Affairs, Office of Student Conduct",
+  "last_updated": "2018-09-07",
+  
+  "summary": "Comprehensive conduct regulations for UGA students and organizations, including procedures for investigating violations, rights and responsibilities, and possible sanctions",
+  
+  "purpose": "The University has adopted conduct regulations for individuals and organizations and established a conduct process to facilitate the desired environment and educational goals and to protect rights and privileges of students",
+  
+  "office_mission": "The Office of Student Conduct seeks to enhance the learning environment for members of the University of Georgia community by inspiring students to engage meaningfully, grow intellectually, and build character through: educating about rights/responsibilities/expectations; providing fair and educational process; creating opportunities for student learning and development; offering outreach services",
+  
+  "university_judiciary_mission": "We, the University of Georgia Judiciary, seek to foster respect within the University community through adherence to the Code of Conduct and by utilizing proactive education and a fundamentally fair conduct process",
+  
+  "pillars_of_the_arch": {
+    "wisdom": "Challenges us to apply lessons received inside and outside the classroom to our everyday lives. Wisdom transcends knowledge, embracing curiosity, discovery, and expression throughout our community.",
+    "justice": "Leads us to be fair in our dealings, accountable for our actions, responsible for ourselves, and empathetic for others. Justice requires honesty and celebrates diversity, establishing credibility and integrity for our community and ourselves.",
+    "moderation": "Compels us to act with civility, bolstering our faith in others and the faith others have in us. Moderation accentuates our self-respect, promotes responsible citizenship, and enhances pride in our university."
+  },
+  
+  "student_rights_and_responsibilities": {
+    "dual_membership": "Students are members of both the academic community and larger society, retaining rights/guarantees/protections and responsibilities of all citizens",
+    "criminal_prosecution": "Student not immune to prosecution by law enforcement regardless of whether University initiates conduct proceedings; conduct case may proceed in absence of criminal prosecution",
+    "higher_standards": "Standards for University students and organizations are higher than those of communities not engaged solely in scholarly pursuits",
+    "expectation": "Students and organizations expected to act with integrity and respect for others and campus environment",
+    "authority_acknowledgment": "Students acknowledge university's authority to take action to address behavior incongruent with regulations, wherever that behavior may occur"
+  },
+  
+  "key_definitions": {
+    "student": "All persons registered at University pursuing undergraduate, graduate, or professional studies; individuals admitted who attended orientation or cleared to register; individuals not registered but eligible to register without applying for readmission. Individual who registers for semester then withdraws is considered student for that semester.",
+    
+    "organization": "Any number of students who complied with University registration requirements or any number who act as organization as determined by Office of Student Conduct. Organizations represented by president or designated active member.",
+    
+    "member_of_university_community": "Any student, faculty member, University official, or other person employed by University, as well as contractors, vendors, visitors, and guests. Status determined by Director for Student Conduct or Title IX Coordinator as applicable.",
+    
+    "university_official": "Any person assigned administrative, professional or staff responsibilities for University and affiliated campuses",
+    
+    "faculty_member": "Any person hired by University and affiliated campuses to conduct classroom activities",
+    
+    "university_premises": "All land, buildings, facilities, and other property possessed, owned, used, or controlled by University including adjacent streets and sidewalks",
+    
+    "hazing": "Any intentional, negligent or reckless action, activity or situation that causes another pain, embarrassment, ridicule or harassment, regardless of willingness to participate. Includes but not limited to: forcing drinking alcohol/consuming substances, forcing food consumption, calisthenics, treeings, paddling, line-ups, theft, road trips, scavenger hunts, causing fewer than 6 continuous hours sleep per night, disrupting academic pursuits, requiring nudity, personal servitude for members, physical abuse/injury, forcing violation of policies or laws.",
+    
+    "hearing_panel": "Group of individuals who hear cases of alleged student misconduct within formal hearing process. Typically 2 Justices from University Judiciary and 1 University faculty/staff member. For sexual misconduct allegations: 3 University faculty/staff members.",
+    
+    "advisor": "Individual who assists student or organization during conduct process. Any individual the student/organization chooses. University Judiciary members available to serve as Advisors.",
+    
+    "preponderance_of_the_evidence": "Evidence that would lead reasonable person to conclude it is more likely than not that the act in question did occur",
+    
+    "prior_record": "All information related to any conduct regulation violation(s) that occurred and were resolved prior to incident in question",
+    
+    "business_day": "Any day on which Office of Student Conduct is open to general public"
+  },
+  
+  "sexual_misconduct_definitions": {
+    "policy_reference": "Student Sexual Misconduct Policy outlined in Board of Regents Policy Manual 4.1.7",
+    
+    "dating_violence": "Violence committed by person who is or has been in social relationship of romantic or intimate nature with alleged victim. Includes sexual or physical abuse or threat thereof. Does not include acts under domestic violence definition.",
+    
+    "domestic_violence": "Violence committed by current/former spouse or intimate partner; person with whom victim shares a child; person cohabitating/has cohabitated with victim as spouse/intimate partner; or person similarly situated to spouse",
+    
+    "nonconsensual_sexual_contact": "Any physical contact with another person of sexual nature without consent. Includes touching (or penetrating) intimate parts (genitalia, groin, breasts, buttocks); touching person with one's own intimate parts; forcing person to touch own or another's intimate parts.",
+    
+    "sexual_exploitation": "Taking non-consensual or abusive sexual advantage of another for one's own advantage/benefit or benefit/advantage of anyone other than the one being exploited",
+    
+    "sexual_harassment": "Unwelcome verbal, nonverbal, or physical conduct based on sex or gender stereotypes that is implicitly/explicitly a term or condition of employment or status in course/program/activity; is basis for employment or educational decisions; or is sufficiently severe, persistent, or pervasive to interfere with work or educational performance creating intimidating, hostile, or offensive environment, or interfering with/limiting ability to participate in or benefit from institutional program or activity",
+    
+    "stalking": "Engaging in course of conduct directed at specific person that would cause reasonable person to fear for safety or suffer substantial emotional distress. Course of conduct means 2+ acts including following, monitoring, observing, surveilling, threatening, or communicating to/about person or interfering with property."
+  },
+  
+  "alcohol_and_drug_definitions": {
+    "university_alcohol_other_drug_policies": "All policies set forth by University related to alcohol and drugs, including Code of Conduct, University Housing Community Guides, Study Abroad Guidelines, and social event policies",
+    
+    "consumption_or_use_of_alcohol": "Act of drinking, ingesting, and/or any other method of introducing any amount of alcoholic beverage into one's body",
+    
+    "distribution": "Sharing of alcohol or illegal drugs/controlled substances with or giving them to others",
+    
+    "facilitating_possession_use": "Act of allowing others to possess, consume, or use alcohol or illegal drugs/controlled substances in one's residence or automobile",
+    
+    "possession": "Holding (no matter duration) alcohol or illegal drugs/controlled substances in hand or having them in clothing, purse/book bag, automobile, residence, or other personal belonging",
+    
+    "sale_of_drugs": "Exchange of illegal drugs/controlled substances for money or other forms of compensation",
+    
+    "use_of_drugs": "Act of ingesting, inhaling, drinking, eating, and/or any other method of introducing illegal drug/controlled substance into one's body",
+    
+    "level_i_violation": "Possession, use, distribution, or facilitating possession/use of alcohol",
+    
+    "level_ii_violation": "Includes but not limited to: operation of motor vehicle after alcohol consumption and/or drug use; acts of violence, destruction, or disorderly conduct while using alcohol or drugs; intoxication level requiring medical treatment or resulting in medical personnel being called even if treatment refused; any drug related violation. Level II violations considered more egregious than Level I."
+  },
+  
+  "university_authority": {
+    "scope": "Conduct regulations apply to conduct on University premises and conduct while attending/participating in University-related activity wherever activity takes place. Additionally, any behavior on or off University premises is subject to action under this Code.",
+    
+    "expectation": "Students and organizations expected to abide by conduct regulations both on and off campus and acknowledge university's authority to take action wherever behavior may occur",
+    
+    "relationship_to_legal_proceedings": "Proceedings under this Code may be instituted against students charged with violation of municipal, state or federal law when alleged conduct is also Code violation. Proceedings may be carried out prior to, simultaneously with or following civil or criminal proceedings. Timing decisions made by Director for Student Conduct, Title IX Coordinator, or designee based on evidence status and other relevant case factors."
+  },
+  
+  "conduct_regulations": {
+    "note": "The following actions are prohibited and constitute Code violation",
+    
+    "special_jurisdictions": {
+      "academic_dishonesty": "Office of the Vice President for Instruction handles all cases",
+      "sexual_misconduct": "Equal Opportunity Office processes and investigates per Student Sexual Misconduct Policy and this Code",
+      "discrimination_harassment": "University's Equal Opportunity Office administers and enforces NDAH Policy"
+    },
+    
+    "organizational_responsibility": "To determine if organization responsible, all circumstances considered including: (a) whether misconduct committed by one or more members; (b) whether officers had prior knowledge; (c) whether organization funds used; (d) whether misconduct occurred from organization-sponsored function; (e) whether members lied about incident",
+    
+    "regulations": [
+      {
+        "number": 1,
+        "title": "Academic Dishonesty",
+        "description": "Knowingly performing, attempting to perform, or assisting another in performing any act of academic dishonesty",
+        "honor_code": "I will be academically honest in all of my academic work and will not tolerate academic dishonesty of others",
+        "reference": "A Culture of Honesty policy manual available at http://uga.edu/honesty/",
+        "jurisdiction": "Office of the Vice President for Instruction"
+      },
+      {
+        "number": 2,
+        "title": "Other Acts of Dishonesty",
+        "violations": [
+          "Furnishing false information to any University official, office, or other law enforcement officer",
+          "Forgery, alteration, or misuse of any document, record, or instrument of identification, or possession of false identification or identification belonging to another with dishonest intent",
+          "Causing, condoning, or encouraging completion of any University record, document, or form dishonestly, including omitting material facts",
+          "Offering or causing to be offered any bribe or favor to University official, office, or law enforcement officer to influence decision",
+          "Tampering with election of any University recognized organization",
+          "Casting or attempting to cast more than one ballot in any election or referendum on campus"
+        ]
+      },
+      {
+        "number": 3,
+        "title": "Disorderly Conduct",
+        "note": "University fully supports marketplace of ideas and enforces regulations in accordance with freedoms of speech and expression protected by US and Georgia Constitutions",
+        "violations": [
+          "Intentional or reckless disruption or obstruction of teaching, research, administration or other University activities, including public service functions, or other authorized non-University activities on University property (except constitutionally protected freedom of speech and expression)",
+          "Conduct that intentionally or recklessly causes or provokes disturbance disrupting academic pursuits or infringing upon rights, privacy, or privileges of another",
+          "Conduct that threatens or endangers health or safety of another, including physical violence, abuse, intimidation, and/or coercion; or violation of legal protective order",
+          "Sexual Misconduct, including but not limited to dating violence, domestic violence, nonconsensual sexual contact, sexual exploitation, sexual harassment, and stalking, or any other conduct prohibited by Student Sexual Misconduct Policy (https://eoo.uga.edu/policies/student-sexual-misconduct-policy)",
+          "Violation of published University policies, rules, or regulations",
+          "Failure to comply with directions of any University official, office or law enforcement officer acting in performance of duties and/or failure to identify oneself when requested",
+          "Participation in campus demonstration that violates University's Policy on Freedom of Expression, intentionally or recklessly disrupts normal operations or infringes on rights of other community members",
+          "Intentional or reckless obstruction unreasonably interfering with freedom of movement of individual or group",
+          "Entering athletic contest, dance, social or other event without proper credentials (ticket, identification, invitation)",
+          "Circulation of any advertising media that violates University's Policy on Freedom of Expression, intentionally or recklessly disrupts normal operations or infringes on rights of other community members",
+          "Harassment and discrimination against any person as prohibited by University's Non-Discrimination and Anti-Harassment (NDAH) Policy (https://eoo.uga.edu/policies/non-discrimination-anti-harassment-policy)"
+        ]
+      },
+      {
+        "number": 4,
+        "title": "Alcohol & Other Drug Related Misconduct",
+        "violations": [
+          "Use or possession of alcoholic beverages except as permitted by law and University Alcohol and Other Drug Policies",
+          "Providing, distributing, selling, or facilitating use or possession of alcoholic beverages except as permitted by law and University Alcohol and Other Drug Policies",
+          "Disruptive or disorderly conduct caused by influence of alcohol and/or other drugs",
+          "Use or possession of narcotic or other controlled substances except as permitted by law and University Alcohol and Other Drug Policies",
+          "Providing, distributing, selling, or facilitating use or possession of narcotic or other controlled substances except as permitted by law and University Alcohol and Other Drug Policies"
+        ]
+      },
+      {
+        "number": 5,
+        "title": "Theft, Damage & Disregard for Property",
+        "violations": [
+          "Taking, attempting to take, or keeping in one's possession any property or item (including tangible possession, information, or account) without proper authorization",
+          "Malicious or unwarranted damage or destruction, or attempted damage or destruction, of any property or item (including tangible possession, information, or account)",
+          "Selling or attempting to sell a textbook unless seller is owner or has owner's permission",
+          "Taking, attempting to take, or keeping items belonging to library or placed in library for display"
+        ]
+      },
+      {
+        "number": 6,
+        "title": "Fire Safety & Sanitation",
+        "violations": [
+          "Misusing, damaging or tampering with fire safety equipment",
+          "Setting or causing to be set any unauthorized fire",
+          "Possessing or using fireworks, explosives or other incendiary devices without authorization",
+          "Making or causing to be made a false fire alarm",
+          "Intentionally or recklessly obstructing a fire exit in any University building",
+          "Failure to exit a University building when fire alarm sounds",
+          "Failure to maintain organization's facilities and/or surrounding property creating potential danger to health or safety of occupants or other individuals"
+        ]
+      },
+      {
+        "number": 7,
+        "title": "Weapons",
+        "violations": [
+          "Possessing firearms, explosives, other weapons, or dangerous chemicals on University property unless permitted by law (http://www.policies.uga.edu/FA/nodes/view/1263/Weapons-Prohibited-on-Campus)"
+        ]
+      },
+      {
+        "number": 8,
+        "title": "Unauthorized Entry or Use",
+        "violations": [
+          "Unauthorized entry or attempted entry into any property (including building, office, other facility, automobile, backpack, or account)",
+          "Making or attempting to make unauthorized use of any building, office, other facility, information, or accounts",
+          "Unauthorized possession, use, or duplication of keys or other methods of controlled access (cards, codes)"
+        ]
+      },
+      {
+        "number": 9,
+        "title": "Student Housing",
+        "violations": [
+          "Unauthorized entry, attempted entry, or remaining in restricted areas (including roofs) of any University-owned student residence",
+          "Failure to comply with policies established in residence halls for protection of privacy, rights, privileges, health or safety of community (https://housing.uga.edu/site/resources)"
+        ]
+      },
+      {
+        "number": 10,
+        "title": "Computer Use",
+        "violations": [
+          "Failure to comply with University computer use policies (https://eits.uga.edu/access_and_security/infosec/pols_regs/policies/aup/)"
+        ]
+      },
+      {
+        "number": 11,
+        "title": "Gambling",
+        "violations": [
+          "Conducting, organizing, or participating in any activity involving games of chance or gambling except as permitted by law and University policy"
+        ]
+      },
+      {
+        "number": 12,
+        "title": "Hazing",
+        "violations": [
+          "Participating in, condoning, encouraging, requiring, or allowing opportunity for hazing"
+        ]
+      },
+      {
+        "number": 13,
+        "title": "Interference with Orderly Operation of Conduct Process",
+        "violations": [
+          "Unreasonably delaying conduct process by failing to schedule or appear for meeting as requested by administrative officer",
+          "Intentionally providing false, distorted, or misrepresented information to administrative officer or Hearing Panel or knowingly initiating false complaint",
+          "Disrupting orderly operation of conduct proceeding",
+          "Attempting to discourage individual's proper participation in, or use of, conduct process",
+          "Harassing, intimidating, and/or retaliating against administrative officer, Panel Member, reporting party, or any other individual associated with any report, investigation, informal or formal resolution, or appellate proceeding",
+          "Failure to comply with sanctions imposed under Code of Conduct"
+        ]
+      },
+      {
+        "number": 14,
+        "title": "Shared Responsibility for Violations",
+        "violations": [
+          "Acting in concert to violate University conduct regulations",
+          "Knowingly condoning, encouraging, or requiring behavior that violates University conduct regulations",
+          "Allowing, condoning, permitting or providing opportunity for guest to violate University conduct regulations"
+        ]
+      }
+    ]
+  }
+}

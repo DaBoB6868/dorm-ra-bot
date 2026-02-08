@@ -1,0 +1,667 @@
+{
+  "document_id": "uga_ndah_policy",
+  "title": "Non-Discrimination and Anti-Harassment Policy",
+  "category": "Equal Opportunity and Compliance Policy",
+  "last_updated": "2025-03-13",
+  "contact": {
+    "office": "Equal Opportunity Office",
+    "location": "278 Brooks Hall",
+    "phone": "706-542-7912",
+    "email": "ugaeoo@uga.edu",
+    "website": "http://eoo.uga.edu"
+  },
+  
+  "summary": "University policy prohibiting harassment and discrimination based on protected status, establishing procedures for reporting and investigating complaints, and defining rights and responsibilities of all parties",
+  
+  "commitment": "The University of Georgia is committed to maintaining a fair and respectful environment for living, work, and study. The University prohibits harassment of or discrimination against any person based on protected status by any member of the University Community.",
+  
+  "protected_categories": [
+    "Age",
+    "Color",
+    "Disability",
+    "Genetic information",
+    "National origin",
+    "Race",
+    "Religion",
+    "Sex",
+    "Veteran status"
+  ],
+  
+  "related_policies": {
+    "usg_non_discrimination_anti_harassment": "https://www.usg.edu/policymanual/section6/C2654",
+    "usg_sexual_misconduct_policy": "http://www.usg.edu/policymanual/section6/C2655",
+    "usg_prohibit_discrimination_harassment": "https://www.usg.edu/hr/manual/prohibit_discrimination_harassment",
+    "note": "This Policy incorporates by reference applicable sections of USG policies. All discrimination and harassment allegations (except Sexual Misconduct against student respondents) covered by this Policy together with USG policies."
+  },
+  
+  "university_community_members": [
+    "University faculty, staff, administrators, employees, and independent contractors",
+    "University students",
+    "Volunteers and participants in any University program or activity",
+    "Guests and visitors to campus or any property owned/leased by the University or University-affiliated organizations"
+  ],
+  
+  "key_definitions": {
+    "sexual_misconduct": {
+      "description": "Umbrella term for wide range of prohibited sexual conduct including sexual harassment. Can occur regardless of relationship, position, or respective sex. Same-sex harassment violates this policy, as does harassment by student of employee or subordinate of supervisor.",
+      
+      "sexual_harassment_non_student": "Unwelcome verbal, nonverbal, or physical conduct based on sex (including gender stereotypes) that may be: (1) implicitly/explicitly a term or condition of employment or status in course/program/activity; (2) basis for employment or educational decisions; (3) sufficiently severe, persistent, or pervasive to interfere with work/educational performance creating intimidating, hostile, or offensive environment; or (4) determined by reasonable person to be so severe, pervasive, and objectively offensive that it effectively denies equal access to University education program or activity in violation of Title IX",
+      
+      "sexual_harassment_student_on_student": "Unwelcome verbal, nonverbal, or physical conduct based on sex (including gender stereotypes), determined by reasonable person to be so severe, pervasive, and objectively offensive that it effectively denies equal access to participate in or benefit from institutional education program or activity",
+      
+      "examples": [
+        "Nonconsensual touching of another's body, including unwanted hugging or shoulder rubbing",
+        "Sexual remarks, jokes, anecdotes, inquiries, or physical gestures",
+        "Requests or propositions of a sexual nature",
+        "Gender/sex-based comments about physique, clothing, or sexual/romantic activity or preferences",
+        "Inappropriate use, display, or non-consensual sharing of sexual images, text, or objects"
+      ],
+      
+      "additional_prohibited_conduct": {
+        "dating_violence": "Violence by person who is or has been in romantic/intimate social relationship with alleged victim. Includes sexual or physical abuse or threat thereof. Determined based on: length of relationship, type of relationship, frequency of interaction. Does not include acts under domestic violence definition.",
+        
+        "domestic_violence": "Violence by current/former spouse or intimate partner; person with whom victim shares a child; person cohabitating/has cohabitated with victim as spouse/intimate partner; or person similarly situated to spouse",
+        
+        "nonconsensual_sexual_contact": "Any physical contact with another person of sexual nature without consent. Includes touching of intimate parts (genitalia, groin, breasts, buttocks); touching person with one's own intimate parts; forcing person to touch own or another's intimate parts. Includes 'Fondling' as defined by Clery Act.",
+        
+        "nonconsensual_sexual_penetration": "Any penetration of vagina, anus, or mouth by penis, object, tongue, finger, or other body part; or contact between mouth and genitals/anus of another. Includes 'Rape, Incest, and Statutory Rape' as defined by Clery Act.",
+        
+        "sexual_assault": "Term used in Clery Act to refer to offense classified as forcible or nonforcible sex offense under FBI uniform crime reporting system",
+        
+        "stalking": "Engaging in course of conduct directed at specific person that would cause reasonable person to fear for safety or suffer substantial emotional distress. Course of conduct means 2+ acts including following, monitoring, observing, surveilling, threatening, or communicating to/about person or interfering with property. Pertains to conduct with sexual intent in dating relationship or attempts at establishing sexual/dating relationship or conduct after relationship has ended.",
+        
+        "sexual_exploitation": "Taking non-consensual or abusive sexual advantage of another for one's own advantage/benefit or benefit of anyone other than the one being exploited. Examples: invasion of sexual privacy, prostituting another, non-consensual photos/video/audio of sexual activity, non-consensual distribution of sexual media, intentional observation of nonconsenting partially undressed/naked/sexually active individuals, knowingly transmitting STD/HIV, inappropriate exposure, sexually-based bullying"
+      },
+      
+      "consent": "Words or actions showing knowing and voluntary willingness to engage in mutually agreed-upon sexual activity. Cannot be gained by force, intimidation, coercion, ignoring objections, or taking advantage of incapacitation. Minors under 16 cannot legally consent under Georgia law. Consent is absent when activity exceeds scope of previous consent. Past consent does not imply present/future consent. Silence or absence of resistance does not imply consent. Can be withdrawn at any time.",
+      
+      "incapacitation": "Physical and/or mental inability to make informed, rational judgments. Can result from mental disability, sleep, unconsciousness, involuntary physical restraint, status as minor under 16, or intentional/unintentional taking of alcohol/drugs. Judged from perspective of objectively reasonable person."
+    },
+    
+    "discriminatory_harassment": "Unwelcome verbal or physical conduct based on protected categories when sufficiently severe, persistent, or pervasive to: (1) unreasonably interfere with work or educational performance; (2) create intimidating, hostile, or offensive working or learning environment; or (3) unreasonably interfere with or limit ability to participate in or benefit from institutional program or activity",
+    
+    "discrimination": "Decision-making based on age, color, disability, genetic information, national origin, race, religion, sex, or veteran status. Examples: hiring/termination/promotion/salary decisions based on protected categories; assigning grades or academic decisions based on protected categories; refusing acceptance/admission to person with disability without considering accommodations"
+  },
+  
+  "key_roles": {
+    "eoo_director": {
+      "title": "Director of Equal Opportunity Office",
+      "serves_as": [
+        "Non-Discrimination/Anti-Harassment Officer (NDAH Officer)",
+        "Title VI Coordinator",
+        "Title IX Coordinator",
+        "ADA/Section 504 Coordinator (Disability Coordinator)"
+      ],
+      "responsibilities": [
+        "Provide education and training about prohibited discrimination and harassment",
+        "Receive and investigate reports and complaints",
+        "Administer this policy"
+      ],
+      "note": "EOO employees do not serve as advocates or representatives for parties or witnesses"
+    }
+  },
+  
+  "rights_and_responsibilities": {
+    "prohibition_against_retaliation": {
+      "protection": "Anyone who has made a report/complaint, provided information, assisted, participated, or refused to participate in NDAH Process shall not be subjected to retaliation",
+      "action": "Anyone believing they experienced retaliation should immediately contact EOO Director or designee",
+      "consequence": "Any person found to have engaged in retaliation shall be subject to disciplinary action"
+    },
+    
+    "confidentiality": {
+      "principle": "University strongly supports individual's interest in confidentiality, particularly in instances involving sexual misconduct",
+      "request_consideration": "When complainant/alleged victim requests identity be withheld or allegation not investigated, EOO Director/Title IX Coordinator will consider if request can be honored while complying with laws, regulations, policies and providing safe, nondiscriminatory environment",
+      "limitations": "Honoring request may limit University's ability to respond fully and discipline respondent",
+      "notification": "Complainant/alleged victim informed of any decision to act contrary to request before disclosures made and before investigation begins",
+      
+      "confidential_resources": {
+        "privileged_resource_employees": {
+          "description": "Individuals to whom complainant/victim may talk in confidence as provided by law. Disclosure does not automatically trigger investigation against wishes. Exceptions exist for suspected abuse of minors or imminent threat of serious harm.",
+          "employees": [
+            "University Health Center CAPS (Counseling and Psychiatric Services)",
+            "University Health Center Medical Clinicians",
+            "UGA Psychology Clinic",
+            "UGA Center for Counseling and Personal Evaluation",
+            "Love and Money Center",
+            "UGA Family Violence Clinic",
+            "Veterans Legal Clinic",
+            "Wilbanks Child Endangerment and Sexual Exploitation Clinic",
+            "UGA First Amendment Clinic"
+          ],
+          "note": "Must comply with anonymous reporting for Clery Act and mandatory reporting under Georgia law. Clery anonymous reporting doesn't apply to pastoral/professional counselors acting as counselors."
+        },
+        
+        "support_resource_employees": {
+          "description": "Designated to talk with complainant/respondent in confidence. Must only report that incident occurred with date, time, location, respondent name (if known) without revealing information identifying alleged victim. Minimal reporting required for Title IX and Clery Act compliance. May be required to fully disclose to ensure campus safety.",
+          "employees": [
+            "University Health Center RSVP (Relationship and Sexual Violence Prevention)",
+            "University Ombudspersons",
+            "Student Care and Outreach"
+          ]
+        }
+      }
+    },
+    
+    "reporting": {
+      "responsible_employees": {
+        "definition": "Any administrator, supervisor, faculty member, or person in position of authority who is not Privileged or Support Resource Employee",
+        "obligation": "Must fully report information or complaint to EOO promptly",
+        "student_employees": "Teaching assistants, residential assistants, student managers, orientation leaders in supervisory/advisory/managerial roles must also promptly report",
+        "failure_consequence": "Failure to promptly report may constitute separate violation and provide basis for discipline"
+      },
+      
+      "encouraged_reporting": "Any person who feels discriminated against or harassed should promptly report to EOO or discuss with confidential resources. Any community member who observes discrimination/harassment should report to EOO.",
+      
+      "confidentiality_request": "If complainant wants to maintain confidentiality when reporting to Responsible Employee, employee must relay request when reporting to EOO. Request will be considered but cannot be guaranteed.",
+      
+      "timeliness": "Complaints should be reported as soon as possible after incident(s) for most effective investigation",
+      
+      "methods": "In person, in writing (via complaint form, email, or otherwise), or over phone. Under some circumstances (including Title IX complaints), EOO may require written complaint. Anonymous complaints accepted but may limit investigation extent.",
+      
+      "reporting_link": "https://eoo.uga.edu/Report/",
+      
+      "criminal_conduct": "Where discrimination/harassment is potentially criminal, community members encouraged to also contact UGA Police (on campus) or local law enforcement (off campus). Police not notified of sexual assault without victim's consent unless imminent threat or involves someone under 16. Mandatory reporting obligation for minors. Right to simultaneously file complaint under this Policy and with law enforcement."
+    },
+    
+    "false_accusations": {
+      "prohibition": "Individuals prohibited from knowingly making false statements or submitting false information to University official",
+      "consequence": "Any person found to have knowingly submitted false complaints, accusations, or statements (including during hearing) subject to disciplinary action up to suspension, expulsion, or termination",
+      "adjudication": "Students adjudicated under UGA Code of Conduct; employees under this Policy"
+    },
+    
+    "conflicts_of_interest": {
+      "definition": "Financial interest, relationship, or other circumstance that would lead reasonable person to doubt objectivity of EOO representative",
+      "process": "If actual/apparent conflict asserted, complaint submitted/referred to Office of Legal Affairs to resolve. If no conflict found, EOO conducts inquiry. If conflict found, Office of Legal Affairs (consulting President) appoints independent individual with appropriate experience/training."
+    },
+    
+    "academic_freedom_and_expression": {
+      "commitment": "University committed to protecting freedom of expression and full academic freedom of inquiry, teaching, service, and research",
+      "limitation": "Policy not intended to infringe rights guaranteed by US Constitution including First Amendment free speech or Fourteenth Amendment due process, but academic freedom and expression will not excuse behavior violating law or this policy"
+    },
+    
+    "records": {
+      "open_records_act": "Subject to Georgia Open Records Act (O.C.G.A. §50-18-70, et seq.)",
+      "privacy_laws": "Maintained subject to privacy requirements under state and federal law, including FERPA and USG record retention policy",
+      "accommodations_privacy": "University will take reasonable steps to maintain privacy of accommodations/protective measures except to extent necessary to provide them",
+      "internal_sharing": "Information shared internally on need-to-know basis",
+      "investigative_file_access": "Complainant(s) and respondent(s) allowed to review directly related information at same time they receive draft investigative report. Privileged material not voluntarily released in writing not included or considered.",
+      "clery_compliance": "Public release for crime logs/timely warnings won't release names or information that could identify victim"
+    },
+    
+    "advisor_or_support_person": {
+      "right": "Any party may use advisor (including attorney) of their choosing at their expense",
+      "restriction": "May not select advisor who is party or witness to investigation",
+      "presence": "Advisor may be present during meetings/proceedings in which advisee is eligible to be present",
+      "role": "May advise advisee including providing questions, suggestions, advice on proceedings, guidance on responses, but shall not participate directly except for cross-examination in formal Title IX hearing",
+      "cross_examination_requirement": "If party doesn't have advisor for Title IX formal hearing, University will provide one solely for cross-examination",
+      "communication": "All communication between University and party, not advisor. Advisor may be copied on communications with party's permission and when University provides right to inspect/review investigation information."
+    },
+    
+    "presumption_of_not_responsible": "Individuals presumed not responsible for alleged conduct until determination made at conclusion of investigative and/or hearing process",
+    
+    "amnesty_for_students": {
+      "principle": "Individuals encouraged to come forward and report notwithstanding consumption of alcohol or drugs",
+      "protection": "Information about student's own drug/alcohol consumption during investigation not used against student in disciplinary proceeding or voluntarily reported to law enforcement",
+      "requirements": "Students may be required to meet with staff about incident and participate in appropriate educational programs",
+      "clarification": "Required educational program participation not considered a sanction",
+      "limitation": "Doesn't prevent reporting required by law (including Clery Act)"
+    }
+  },
+  
+  "investigation_and_resolution": {
+    "overview": "Procedure to investigate complaints/reports, end discrimination/harassment found, remedy effects, and prevent recurrence. May recommend informal resolution if appropriate and permitted under law. Can be carried out prior to, simultaneously with, or following civil/criminal proceedings.",
+    
+    "witness_cooperation": "University employees identified as witnesses required to fully cooperate. Willfully disregarding, delaying, or thwarting investigation or making false statements may result in violation finding and disciplinary action. Accused persons not required to make statement or respond, but silence considered general denial and investigation may proceed.",
+    
+    "eoo_role": "NDAH Officer/Title IX Coordinator or designee explains they are not advocate or representative for either party. Advocacy, counseling, and support resources identified at end of policy.",
+    
+    "information_sharing": "Information obtained during complaint process shared with other participants or witnesses only to extent necessary for thorough, fair, impartial investigation",
+    
+    "standard_of_review": "Preponderance of the evidence standard (i.e., 'more likely than not'). Information supporting alleged violation must be more convincing than information in opposition.",
+    
+    "interim_protective_measures": {
+      "authority": "EOO Director/NDAH Officer/Title IX Coordinator or designee may impose before final resolution if failure would constitute threat to safety/well-being of complainant or community or to ensure equal access to education programs/activities",
+      "respondent_opportunity": "Where practicable, provide respondent initial opportunity to respond to allegations and imposition of interim measures before instituted",
+      "not_indicative": "Imposing interim measures doesn't indicate violation occurred. Designed to protect complainant and community, not harm respondent. Should minimize burden on both parties where feasible.",
+      
+      "possible_measures": [
+        "Change of University housing assignment",
+        "Issuance of mutual 'no contact' directive",
+        "Restrictions or bars to entering certain University property",
+        "Changes to academic or employment arrangements, schedules, or supervision",
+        "Interim suspension",
+        "Withholding graduation or degree conferral",
+        "Other measures designed to promote safety and well-being"
+      ],
+      
+      "interim_suspension": {
+        "standard": "Only where necessary to maintain safety and limited to situations where respondent poses serious and immediate danger or threat to persons or property",
+        "assessment_factors": "Existence of significant risk to health/safety; nature, duration, and severity of risk; probability of potential injury; whether less restrictive means can mitigate risk",
+        "effect": "Terms take effect immediately",
+        "hearing_right": "When requested by respondent, hearing with EOO Director/NDAH Officer/Title IX Coordinator within 3 business days to determine if suspension should continue. Complainant informed of request and provided opportunity to participate."
+      }
+    },
+    
+    "initiating_investigation": {
+      "preliminary_inquiry": "Upon receiving report, EOO engages in preliminary inquiry to: assess nature of report; provide outreach to complainant; offer supportive measures; determine applicable policy; determine if parties within jurisdiction; determine if report implicates safety threat; determine available/appropriate resolution",
+      
+      "report_vs_complaint": "Making report different from filing complaint. When EOO receives report, it offers supportive measures to complainant and explains process for filing complaint.",
+      
+      "preliminary_inquiry_outcomes": [
+        {
+          "option": "Dismissal with no further action",
+          "description": "No complaint filed and no supportive measures received. May involve referral to another unit for policy review."
+        },
+        {
+          "option": "Supportive measures only",
+          "description": "Complainant receives supportive measures only and elects not to file complaint"
+        },
+        {
+          "option": "Other Resolution",
+          "description": "Educational conversations or coaching which are considered non-disciplinary actions"
+        },
+        {
+          "option": "Informal Process",
+          "description": "Informal Resolution requested in complaint filed by Complainant or recommended by EOO to parties"
+        },
+        {
+          "option": "Formal Process",
+          "description": "Investigation requested in complaint filed by Complainant or investigation initiated by complaint signed by Title IX Coordinator"
+        }
+      ]
+    },
+    
+    "dismissal_of_report_or_complaint": {
+      "grounds": [
+        "Report doesn't allege concern/violation within EOO's subject matter jurisdiction",
+        "Report, if true/accurate, wouldn't reach preponderance standard to be policy violation",
+        "Report within jurisdiction but evidence known/potentially available significantly short of preponderance standard",
+        "Respondent no longer enrolled/employed by University",
+        "Specific circumstances (including complainant's unwillingness/inability to participate) prevent EOO from gathering sufficient evidence"
+      ],
+      "consequences": "Investigation or informal resolution ceases. Matter may be referred to other resolution processes or appropriate follow-up (educational conversation, informal coaching). EOO reserves right to document, require remedial measures, and reopen if additional information supports further investigation.",
+      "appeal_right": "Parties may appeal dismissal by notifying EOO Director/Title IX Coordinator in writing within 5 business days. Other party notified of appeal. Appeal reviewed by EOO Director/Title IX Coordinator. Outcome notification within 5 business days. Can uphold or reverse dismissal. If reversed, investigative or informal resolution resumes. Appeal outcome is final."
+    },
+    
+    "informal_process": {
+      "description": "Opportunity to bring resolution through awareness, education, and/or facilitated discussion",
+      "appropriateness": "If parties and EOO Director/NDAH Officer/Title IX Coordinator or designee agree it's appropriate",
+      "not_available": "When student alleges Sexual Misconduct against employee",
+      "fact_finding": "May occur to extent necessary to resolve conflict and protect parties and community",
+      "terms": "Must stop prohibited behavior, restore/preserve environment free from prohibited conduct, and prevent reoccurrence",
+      "exit_option": "Either party can end informal process and request formal process anytime before agreement",
+      "failed_informal_process": "Not a factor in formal resolution process",
+      
+      "possible_resolutions": [
+        "Training",
+        "Changes to work or academic arrangements",
+        "Housing reassignment",
+        "Informal discussion with person whose conduct could rise to violation level",
+        "Advisory discussion with respondent's supervisor, professor, or advisor",
+        "'No contact' directive to one or more parties",
+        "Sanctions as defined by this Policy or Code of Conduct"
+      ],
+      
+      "finality": "Informal resolution represents final disposition and is not appealable"
+    },
+    
+    "formal_process": {
+      "applicability": "All complaints not resolved through informal process or to which informal process doesn't apply or deemed inappropriate",
+      
+      "investigator_responsibilities": [
+        "Inform parties of right to be interviewed and provide evidence",
+        "Inform parties of right to advisor",
+        "Inform parties of right to determine participation level including right to remain silent",
+        "Obtain information, evidence, and witness identities from parties",
+        "Attempt to obtain information from identified witnesses",
+        "Ask relevant questions submitted by parties to any witness or party",
+        "Ask additional questions deemed relevant",
+        "Collect and maintain appropriate documentation",
+        "Disclose information on need-to-know basis consistent with state/federal law",
+        "Keep supervisors/administrators/faculty informed and seek input when implementing resolution or discipline",
+        "Provide complainant, alleged victim, and respondent opportunity to review evidence and respond"
+      ],
+      
+      "respondent_silence": "If respondent remains silent without verbal/written response, absence considered general denial. Investigation proceeds and violation may be found if supported by preponderance of evidence.",
+      
+      "hearing_process": "Interviews and information exchange through investigator, including opportunity to respond to evidence and provide questions for other party or witness, constitute hearing process for all discrimination/discriminatory harassment complaints other than Title IX Sexual Misconduct adjudicated under USG Policy to Prohibit Discrimination & Harassment, USG Standards for Institutional Student Conduct Investigation and Disciplinary Proceedings, and UGA Sexual Misconduct Policy.",
+      
+      "investigation_report": {
+        "draft_report": "Prepared at completion and shared with parties. Parties have opportunity to review investigation materials upon receipt.",
+        "response_period": "Parties have at least 10 business days to review file and submit written response",
+        "investigator_action": "May continue investigation, modify report as appropriate, or finalize without further action based on responses",
+        "consolidation": "Investigator may consolidate multiple allegations from same facts/circumstances or similar allegations against common party if known during investigation. Parties may request or object to consolidation but investigator has final determination authority.",
+        "pattern_consideration": "May consider pattern of behavior if evidence known during investigation or prior investigation of similar conduct available",
+        "final_report": "Provided to judicial body for adjudicating charges. Copy also provided to student/organization and alleged victim (where applicable)."
+      },
+      
+      "resolution": {
+        "timeline": "Should be concluded within 120 business days of complaint receipt including exhaustion of appeal rights. EOO Director/NDAH Officer/Title IX Coordinator or designee advises parties if delayed and provides additional estimated time.",
+        
+        "written_decision": "EOO Director/NDAH Officer/Title IX Coordinator or designee notifies complainant and respondent in writing of investigation results. Disclosed only to parties and University officials as appropriate for remedial actions, discipline, sanctions, and appeal preparation.",
+        
+        "effectiveness_determination": "EOO determines whether remedial action is effective. Complainants encouraged to report reoccurrences of violating conduct and any retaliation.",
+        
+        "remedial_measures_without_violation": "May be imposed even in absence of violation if conduct found that may, if not addressed, rise to violation level.",
+        
+        "unprofessional_conduct": "Any unprofessional conduct or inappropriate behavior not covered by Policy referred to respective department or Human Resources"
+      },
+      
+      "remedies": {
+        "description": "Where discrimination/harassment violation determined, University takes timely action to remedy effects",
+        "possible_remedies": [
+          "Extensions of time to redo/complete academic work without academic or financial penalty",
+          "Changes to academic or employment arrangements, schedules, or supervision minimizing burden on complainant/victim",
+          "Provision of or referral to medical, counseling, and academic support services",
+          "Change of University housing assignment",
+          "Training/re-training on Policy and relevant topics for individuals or groups implicated",
+          "'Mutual no contact' directive",
+          "Other measures designed to repair negative impact"
+        ]
+      },
+      
+      "sanctions": {
+        "determination_factors": "Level of discipline and type/scope depends on severity and nature of discrimination/harassment, weight of evidence, and need to maintain safe and respectful environment. Also considers history of past discriminatory/harassing/retaliatory conduct, respondent's willingness to accept responsibility, and previous institutional response to similar conduct.",
+        
+        "available_sanctions": [
+          "Mandatory training or counseling",
+          "'No Contact' directive",
+          "Restriction or bar to entering certain University property or attending University events",
+          "Housing reassignment",
+          "Community service",
+          "Written warning",
+          "Transcript notation",
+          "Delayed degree conferral or revocation of degree",
+          "Probation",
+          "Suspension",
+          "Expulsion or termination"
+        ]
+      },
+      
+      "right_to_appeal": {
+        "who_can_appeal": "All parties",
+        "appeal_to": "University President pursuant to this Policy",
+        "timeline": "Within 10 business days after receipt of written decision notification. Must include all supporting materials at same time.",
+        
+        "grounds": [
+          "Material failure to comply with applicable procedures in NDAH Policy or to conduct reasonably thorough investigation",
+          "Partiality, bias, or conflict of interest by EOO Director/NDAH Officer/Title IX Coordinator or designee",
+          "Findings, if not overturned/modified, would result in substantial injustice to party including substantially inadequate or excessive sanction",
+          "New evidence not reasonably available to be presented during investigation"
+        ],
+        
+        "process": "President's office notifies non-appealing party (if participated in investigation) and provides opportunity to respond in writing unless opted not to participate. President or designee may receive additional information if believed to aid appeal.",
+        
+        "president_may": [
+          "Affirm original finding and sanction",
+          "Affirm original finding but issue new sanction of greater or lesser severity",
+          "Remand case back to Equal Opportunity Office to correct procedural or factual defect",
+          "Reverse or dismiss case if procedural or factual defect cannot be remedied by remand"
+        ],
+        
+        "timing": "Decision made within reasonable time. NDAH Officer/Title IX Coordinator, complainant, and respondent notified in writing.",
+        
+        "implementation": "During appeal, disciplinary action, sanction, or remedial/preventative measures may be implemented and enforced. Upon appealing party's request, President may in discretion temporarily suspend imposition while appeal pending.",
+        
+        "finality": "If appeal not filed within appeal period, findings become final and not subject to review"
+      }
+    }
+  },
+  
+  "support_resources": {
+    "title_ix_coordinator": {
+      "office": "UGA Equal Opportunity Office & Title IX Coordinator",
+      "phone": "706-542-7912",
+      "email": "ugaeoo@uga.edu",
+      "website": "http://eoo.uga.edu"
+    },
+    
+    "individual_support": [
+      {
+        "name": "UGA Counseling and Psychiatric Services (CAPS)",
+        "phone": "706-542-2273",
+        "website": "https://caps.uga.edu/"
+      },
+      {
+        "name": "UGA Office of Relationship and Sexual Violence Prevention (RSVP)",
+        "description": "Crisis support, information, advocacy, education, outreach",
+        "phone": "706-542-7233 or 706-542-8690",
+        "website": "https://healthpromotion.uga.edu/rsvp/"
+      },
+      {
+        "name": "Process Support Services",
+        "description": "For students accused of violating USG Board of Regents' Student Sexual Misconduct Policy",
+        "phone": "706-542-0753",
+        "website": "https://healthcenter.uga.edu/processsupport/"
+      },
+      {
+        "name": "UGA Center for Counseling and Personal Evaluation",
+        "phone": "706-542-8508",
+        "website": "https://coe.uga.edu/directory/counseling-and-personal-evaluation"
+      },
+      {
+        "name": "UGA Psychology Clinic",
+        "phone": "706-542-1173",
+        "website": "https://psychology.uga.edu/clinic-information"
+      },
+      {
+        "name": "Love and Money Center",
+        "description": "Individual, couple, and family therapy",
+        "phone": "706-542-4486",
+        "website": "https://www.fcs.uga.edu/loveandmoneycenter"
+      },
+      {
+        "name": "UGA Family Justice Clinic",
+        "phone": "706-542-6272",
+        "website": "http://law.uga.edu/family-justice-clinic"
+      },
+      {
+        "name": "The Cottage Sexual Assault Centers and Children's Advocacy Center",
+        "description": "Interventions, referrals, support, resources for sexual assault and child abuse survivors",
+        "phone": "706-546-1133",
+        "crisis_line": "877-363-1912 (24-hour)",
+        "website": "http://www.northgeorgiacottage.org/"
+      },
+      {
+        "name": "Project Safe",
+        "description": "24-hour confidential domestic violence services",
+        "phone": "706-543-3331",
+        "text": "706-765-8019",
+        "website": "http://www.project-safe.org/"
+      },
+      {
+        "name": "Employee Assistance Program (EAP)",
+        "description": "Help in work or personal life",
+        "phone": "844-243-4440",
+        "website": "https://benefits.usg.edu/"
+      }
+    ],
+    
+    "health_and_medical": [
+      {
+        "name": "University of Georgia's Health Center",
+        "phone": "706-542-1162",
+        "website": "https://healthcenter.uga.edu/"
+      },
+      {
+        "name": "Gynecology Clinic",
+        "phone": "706-542-8691",
+        "website": "https://healthcenter.uga.edu/services/gynecologyclinic/"
+      },
+      {
+        "name": "UGA Primary Care Clinics and Urgent Care",
+        "phone": "706-542-1162",
+        "website": "https://healthcenter.uga.edu/services/medical-clinics/"
+      },
+      {
+        "name": "UGA John Fontaine, Jr. Center for Alcohol Awareness and Education",
+        "phone": "706-542-1162",
+        "website": "https://healthcenter.uga.edu/aod/"
+      },
+      {
+        "name": "UGA Health Promotion Department",
+        "phone": "706-542-8690",
+        "website": "https://healthpromotion.uga.edu/"
+      },
+      {
+        "name": "UGA Collegiate Recovery Community",
+        "phone": "706-542-0285",
+        "website": "https://healthpromotion.uga.edu/crc/"
+      },
+      {
+        "name": "St. Mary's Hospital",
+        "phone": "706-389-3000",
+        "website": "http://www.stmarysathens.org/"
+      },
+      {
+        "name": "Piedmont Athens Regional Medical Center",
+        "phone": "706-475-7000",
+        "website": "https://www.piedmont.org/locations/piedmont-athens/piedmont-athens-home"
+      },
+      {
+        "name": "Athens-Clarke County Health Department",
+        "phone": "706-389-6921",
+        "website": "http://publichealthathens.com/wp/clinics/health-departments/clarke-county/"
+      }
+    ],
+    
+    "law_enforcement": [
+      {
+        "name": "University of Georgia Police Department",
+        "phone": "911 or 706-542-2200",
+        "website": "http://www.police.uga.edu/"
+      },
+      {
+        "name": "Athens-Clarke County Police Department",
+        "phone": "911 or 706-613-3330",
+        "website": "http://www.athensclarkecounty.com/200/Police"
+      },
+      {
+        "name": "UGA Office of Student Conduct",
+        "phone": "706-542-1131",
+        "website": "http://www.conduct.uga.edu/"
+      }
+    ],
+    
+    "academic_support": [
+      {
+        "name": "Office of the Vice President for Student Affairs",
+        "phone": "706-542-3564",
+        "website": "https://studentaffairs.uga.edu/vp/"
+      },
+      {
+        "name": "Office of Dean of Students, including Student Care and Outreach",
+        "phone": "706-542-7774",
+        "email": "sco@uga.edu",
+        "website": "http://dos.uga.edu/",
+        "website_sco": "https://sco.uga.edu/"
+      },
+      {
+        "name": "Division of Academic Enhancement",
+        "phone": "706-542-5436",
+        "website": "http://tutor.uga.edu/"
+      },
+      {
+        "name": "UGA Regents' Center for Learning Disorders",
+        "phone": "706-542-4589",
+        "website": "http://www.rcld.uga.edu/"
+      },
+      {
+        "name": "UGA Accessibility and Testing",
+        "phone": "706-542-8719 / 706-542-8778 (tty)",
+        "email": "accessibility@uga.edu",
+        "website": "https://accessibility.uga.edu"
+      },
+      {
+        "name": "UGA Human Resources",
+        "phone": "706-542-2222",
+        "email": "hrweb@uga.edu",
+        "website": "http://www.hr.uga.edu/"
+      },
+      {
+        "name": "Office of Legal Affairs",
+        "phone": "706-542-0006",
+        "website": "http://legal.uga.edu/"
+      },
+      {
+        "name": "Ombudsperson Program",
+        "website": "https://ombuds.uga.edu/"
+      }
+    ],
+    
+    "housing": [
+      {
+        "name": "University Housing Department",
+        "phone": "706-542-1421",
+        "website": "https://housing.uga.edu/"
+      },
+      {
+        "name": "Residential Programs & Services",
+        "phone": "706-542-6533"
+      }
+    ],
+    
+    "cultural_support": [
+      {
+        "name": "UGA Office of Multicultural Services and Programs",
+        "phone": "706-542-5773",
+        "website": "http://msp.uga.edu/"
+      },
+      {
+        "name": "PRIDE Center",
+        "phone": "706-542-4077",
+        "website": "https://pride.uga.edu/"
+      },
+      {
+        "name": "Student Veterans Resource Center",
+        "phone": "706-542-9629",
+        "website": "https://svrc.uga.edu/"
+      },
+      {
+        "name": "UGA International Student Life",
+        "phone": "706-542-5867",
+        "website": "http://isl.uga.edu/"
+      },
+      {
+        "name": "Office of Global Engagement",
+        "phone": "706-542-2900",
+        "website": "https://globalengagement.uga.edu/"
+      },
+      {
+        "name": "UGA Office of Inclusive Excellence",
+        "phone": "706-583-8195",
+        "email": "inclusiveexcellence@uga.edu",
+        "website": "https://oie.uga.edu"
+      },
+      {
+        "name": "UGA Women's Resources",
+        "website": "http://women.uga.edu/"
+      }
+    ]
+  },
+  
+  "policy_history": {
+    "adopted": "2011-09-15",
+    "amendments": [
+      "2012-11-28",
+      "2014-05-06",
+      "2014-09-24",
+      "2015-11-09",
+      "2016-08-25",
+      "2016-10-04",
+      "2017-02-20",
+      "2017-03-15",
+      "2017-08-17",
+      "2017-10-25",
+      "2018-02-08",
+      "2018-04-27",
+      "2018-07-31",
+      "2020-10-27",
+      "2021-03-15",
+      "2021-11-01",
+      "2022-03-11",
+      "2023-05-24",
+      "2025-03-13"
+    ]
+  }
+}
