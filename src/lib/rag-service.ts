@@ -359,7 +359,12 @@ export async function generateRAGResponse(
   userLocation?: string,
 ): Promise<{ response: string; sources: string[] }> {
   try {
+    // 1. JSON keyword routing – structured, reliable for known topics
+    const jsonContext = getRelevantSections(userQuery);
+
+    // 2. PDF vector search – covers everything the JSON doesn't
     const { context: pdfContext, sources: pdfSources } = await getPdfContext(userQuery);
+
     const buildingInfo = userLocation ? getBuildingPhoneInfo(userLocation) : '';
 
     // Build the system prompt
@@ -390,7 +395,7 @@ export async function generateRAGResponse(
       );
     }
 
-    const contextBlock = [pdfContext, buildingInfo].filter(Boolean).join('\n\n');
+    const contextBlock = [jsonContext, pdfContext, buildingInfo].filter(Boolean).join('\n\n');
     messages.push(
       new HumanMessage(
         `Question: "${userQuery}"\n\nUGA Policy Information:\n${contextBlock || 'No matching policy section found for this question.'}`
@@ -400,7 +405,10 @@ export async function generateRAGResponse(
     const result = await chatModel.invoke(messages);
     const response = result.content.toString();
 
-    const sources: string[] = pdfSources;
+    const sources: string[] = [
+      ...(jsonContext ? ['UGA Community Guide (JSON)'] : []),
+      ...pdfSources,
+    ];
 
     return {
       response,
@@ -417,6 +425,10 @@ export async function generateStreamingRAGResponse(
   conversationHistory: Message[] = [],
   userLocation?: string,
 ) {
+  // 1. JSON keyword routing – structured, reliable
+  const jsonContext = getRelevantSections(userQuery);
+
+  // 2. PDF vector search – fills gaps
   const { context: pdfContext } = await getPdfContext(userQuery);
   const buildingInfo = userLocation ? getBuildingPhoneInfo(userLocation) : '';
 
@@ -440,7 +452,7 @@ Be concise and helpful. Go Dawgs!`;
     );
   }
 
-  const contextBlock = [pdfContext, buildingInfo].filter(Boolean).join('\n\n');
+  const contextBlock = [jsonContext, pdfContext, buildingInfo].filter(Boolean).join('\n\n');
   messages.push(
     new HumanMessage(
       `Question: "${userQuery}"\n\nUGA Policy Information:\n${contextBlock || 'No matching policy section found for this question.'}`
