@@ -11,7 +11,7 @@
   "dependencies": {
     "@google-cloud/vision": "^5.3.4",
     "@google/generative-ai": "^0.24.1",
-    "@langchain/core": "^1.1.19",
+    "@langchain/core": "1.1.19",
     "@langchain/openai": "^1.2.5",
     "@langchain/textsplitters": "^1.0.1",
     "axios": "^1.13.4",
