@@ -164,33 +164,32 @@ export default function UGAEventsPanel() {
             <ExternalLink className="w-3 h-3" /> Full Map
           </a>
         </div>
-          {/* Category Filters */}
-          {categories.length > 1 && (
-            <div className="px-3 py-2 border-b border-gray-100 bg-white">
-              <div className="flex flex-wrap gap-2">
-                {categories.map((category) => {
-                  const isActive = category === activeCategory;
-                  return (
-                    <button
-                      key={category}
-                      onClick={() => setActiveCategory(category)}
-                      className={`text-[11px] px-2.5 py-1 rounded-full border transition-colors ${
-                        isActive
-                          ? 'bg-red-600 text-white border-red-600'
-                          : 'bg-white text-gray-600 border-gray-200 hover:border-red-300 hover:text-red-600'
-                      }`}
-                    >
-                      {category}
-                    </button>
-                  );
-                })}
-              </div>
-            </div>
-          )}
-
       )}
 
-            {loading && events.length === 0 ? (
+      {/* Category Filters */}
+      {categories.length > 1 && (
+        <div className="px-3 py-2 border-b border-gray-100 bg-white">
+          <div className="flex flex-wrap gap-2">
+            {categories.map((category) => {
+              const isActive = category === activeCategory;
+              return (
+                <button
+                  key={category}
+                  onClick={() => setActiveCategory(category)}
+                  className={`text-[11px] px-2.5 py-1 rounded-full border transition-colors ${
+                    isActive
+                      ? 'bg-red-600 text-white border-red-600'
+                      : 'bg-white text-gray-600 border-gray-200 hover:border-red-300 hover:text-red-600'
+                  }`}
+                >
+                  {category}
+                </button>
+              );
+            })}
+          </div>
+        </div>
+      )}
+
       <div className="flex-1 overflow-y-auto">
         {loading && events.length === 0 ? (
           <div className="flex items-center justify-center py-8">
