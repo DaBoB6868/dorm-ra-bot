@@ -9,6 +9,10 @@ const BACKEND_PDFS_PATH = path.join(process.cwd(), 'backend', 'pdfs');
 
 export async function initializeDocuments(): Promise<void> {
   try {
+    if (vectorStore.getAllDocuments().length > 0) {
+      console.log('📚 Vector store already initialized. Skipping PDF load.');
+      return;
+    }
     // Check if backend/pdfs folder exists
     if (!fs.existsSync(BACKEND_PDFS_PATH)) {
       console.log('📁 No backend/pdfs folder found. Skipping initialization.');
@@ -35,7 +39,12 @@ export async function initializeDocuments(): Promise<void> {
 
         // Read file as buffer
         const fileBuffer = fs.readFileSync(filePath);
-        const file = new File([fileBuffer], pdfFile, { type: 'application/pdf' });
+        const file = typeof File !== 'undefined'
+          ? new File([fileBuffer], pdfFile, { type: 'application/pdf' })
+          : ({
+              name: pdfFile,
+              arrayBuffer: async () => fileBuffer,
+            } as unknown as File);
 
         // Extract text from PDF
         const text = await extractTextFromPDF(file);

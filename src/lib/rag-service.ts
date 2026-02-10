@@ -2,6 +2,8 @@ import { ChatOpenAI } from '@langchain/openai';
 import { HumanMessage, AIMessage, SystemMessage } from '@langchain/core/messages';
 import fs from 'fs';
 import path from 'path';
+import { vectorStore } from './vector-store';
+import { initializeDocuments } from './initialize-documents';
 
 const chatModel = new ChatOpenAI({
   openAIApiKey: process.env.OPENAI_API_KEY,
@@ -24,6 +26,7 @@ interface PolicyDoc {
 }
 
 let policyDocs: PolicyDoc[] | null = null;
+let pdfInitPromise: Promise<void> | null = null;
 
 function loadAllPolicies(): PolicyDoc[] {
   if (policyDocs) return policyDocs;
@@ -54,6 +57,43 @@ function getCommunityGuide(): Record<string, unknown> {
   const docs = loadAllPolicies();
   const cg = docs.find((d) => d.id === 'community_guide');
   return cg?.data ?? {};
+}
+
+async function ensurePdfInitialized(): Promise<void> {
+  if (vectorStore.getAllDocuments().length > 0) return;
+  if (!pdfInitPromise) {
+    pdfInitPromise = initializeDocuments();
+  }
+  await pdfInitPromise;
+}
+
+async function getPdfContext(query: string): Promise<{ context: string; sources: string[] }> {
+  await ensurePdfInitialized();
+
+  const results = await vectorStore.searchWithScores(query, 6);
+  const filtered = results.filter((item) => item.score >= 0.12);
+  if (filtered.length === 0) {
+    return { context: '', sources: [] };
+  }
+
+  const context = filtered
+    .map((item) => {
+      const page = item.doc.metadata.pageNumber ? ` p. ${item.doc.metadata.pageNumber}` : '';
+      return `[${item.doc.metadata.source}${page}]
+${item.doc.content}`;
+    })
+    .join('\n\n');
+
+  const sources = Array.from(
+    new Set(
+      filtered.map((item) => {
+        const page = item.doc.metadata.pageNumber ? ` p. ${item.doc.metadata.pageNumber}` : '';
+        return `${item.doc.metadata.source}${page}`;
+      })
+    )
+  );
+
+  return { context, sources };
 }
 
 // Flatten JSON into readable text sections the LLM can consume
@@ -303,8 +343,7 @@ export async function generateRAGResponse(
   userLocation?: string,
 ): Promise<{ response: string; sources: string[] }> {
   try {
-    // Get relevant sections from the community guide JSON
-    const relevantInfo = getRelevantSections(userQuery);
+    const { context: pdfContext, sources: pdfSources } = await getPdfContext(userQuery);
     const buildingInfo = userLocation ? getBuildingPhoneInfo(userLocation) : '';
 
     // Build the system prompt
@@ -315,13 +354,7 @@ export async function generateRAGResponse(
     const systemPrompt = `You are AURA (AI-powered University Resident Assistant), a friendly and knowledgeable UGA (University of Georgia) dorm assistant. You help UGA students with questions about UGA dorm policies, UGA Housing community guidelines, campus resources, and residential life.
   ${locationContext}
 
-  IMPORTANT: Use ONLY the UGA policy data provided below to answer questions accurately. The data may come from:
-  - UGA Housing Community Guide
-  - UGA Academic Honesty Policy
-  - UGA Code of Conduct
-  - UGA Computer Use Policy
-  - UGA Non-Discrimination & Anti-Harassment Policy
-  - UGA Programs Serving Minors Policy
+  IMPORTANT: Use ONLY the UGA policy excerpts provided below to answer questions accurately.
 
   Quote specific policies, numbers, rules, and details. Do NOT make up information or infer beyond the provided data. If the data doesn't cover something, say you couldn't find it in the policies and suggest contacting UGA Housing at 706-542-1421 or housing@uga.edu.
 
@@ -340,7 +373,7 @@ export async function generateRAGResponse(
       );
     }
 
-    const contextBlock = [relevantInfo, buildingInfo].filter(Boolean).join('\n\n');
+    const contextBlock = [pdfContext, buildingInfo].filter(Boolean).join('\n\n');
     messages.push(
       new HumanMessage(
         `Question: "${userQuery}"\n\nUGA Policy Information:\n${contextBlock || 'No matching policy section found for this question.'}`
@@ -350,15 +383,7 @@ export async function generateRAGResponse(
     const result = await chatModel.invoke(messages);
     const response = result.content.toString();
 
-    // Build dynamic sources list
-    const sources: string[] = ['UGA Community Guide 2025-2026'];
-    const allDocs = loadAllPolicies();
-    // Check which extra docs were referenced in context
-    for (const doc of allDocs) {
-      if (doc.id !== 'community_guide' && contextBlock.includes(doc.title)) {
-        sources.push(doc.title);
-      }
-    }
+    const sources: string[] = pdfSources;
 
     return {
       response,
@@ -375,14 +400,14 @@ export async function generateStreamingRAGResponse(
   conversationHistory: Message[] = [],
   userLocation?: string,
 ) {
-  const relevantInfo = getRelevantSections(userQuery);
+  const { context: pdfContext } = await getPdfContext(userQuery);
   const buildingInfo = userLocation ? getBuildingPhoneInfo(userLocation) : '';
 
   const locationContext = userLocation
     ? `\nThe student lives in ${userLocation}. Tailor answers to their dorm when possible.`
     : `\nThe student has NOT told you their dorm. If the question is dorm-specific, ask which dorm they live in first.`;
 
-  const systemPrompt = `You are AURA (AI-powered University Resident Assistant), a friendly UGA dorm assistant. Use ONLY the UGA policy data below to answer accurately. The data may come from the Community Guide, Academic Honesty Policy, Code of Conduct, Computer Use Policy, Non-Discrimination Policy, or Minors Policy. Do NOT make up info or infer beyond the provided data.
+  const systemPrompt = `You are AURA (AI-powered University Resident Assistant), a friendly UGA dorm assistant. Use ONLY the UGA policy excerpts below to answer accurately. Do NOT make up info or infer beyond the provided data.
 ${locationContext}
 Be concise and helpful. Go Dawgs!`;
 
@@ -398,7 +423,7 @@ Be concise and helpful. Go Dawgs!`;
     );
   }
 
-  const contextBlock = [relevantInfo, buildingInfo].filter(Boolean).join('\n\n');
+  const contextBlock = [pdfContext, buildingInfo].filter(Boolean).join('\n\n');
   messages.push(
     new HumanMessage(
       `Question: "${userQuery}"\n\nUGA Policy Information:\n${contextBlock || 'No matching policy section found for this question.'}`

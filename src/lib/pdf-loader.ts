@@ -4,20 +4,10 @@ export async function extractTextFromPDF(file: File): Promise<string> {
   // For server-side: use pdf-parse with minimal polyfills (more compatible on Node)
   if (typeof window === 'undefined') {
     try {
-      // Provide minimal polyfills for DOM classes that pdf-parse/pdfjs may reference
-      if (typeof (globalThis as any).DOMMatrix === 'undefined') {
-        (globalThis as any).DOMMatrix = class DOMMatrix {};
-      }
-      if (typeof (globalThis as any).ImageData === 'undefined') {
-        (globalThis as any).ImageData = class ImageData { constructor() {} };
-      }
-      if (typeof (globalThis as any).Path2D === 'undefined') {
-        (globalThis as any).Path2D = class Path2D {};
-      }
-
-      const pdfParse = require('pdf-parse');
-      const data = await pdfParse(Buffer.from(buffer));
-      return data.text;
+      const { PDFParse } = require('pdf-parse');
+      const parser = new PDFParse({ data: Buffer.from(buffer) });
+      const data = await parser.getText();
+      return data.text || '';
     } catch (error) {
       console.error('Error parsing PDF on server (pdf-parse):', error);
       throw error;
@@ -56,22 +46,12 @@ export async function extractPDFMetadata(file: File): Promise<{
   // For server-side
   if (typeof window === 'undefined') {
     try {
-      // Ensure minimal DOM polyfills
-      if (typeof (globalThis as any).DOMMatrix === 'undefined') {
-        (globalThis as any).DOMMatrix = class DOMMatrix {};
-      }
-      if (typeof (globalThis as any).ImageData === 'undefined') {
-        (globalThis as any).ImageData = class ImageData { constructor() {} };
-      }
-      if (typeof (globalThis as any).Path2D === 'undefined') {
-        (globalThis as any).Path2D = class Path2D {};
-      }
-
-      const pdfParse = require('pdf-parse');
-      const data = await pdfParse(Buffer.from(buffer));
+      const { PDFParse } = require('pdf-parse');
+      const parser = new PDFParse({ data: Buffer.from(buffer) });
+      const data = await parser.getInfo();
       return {
         filename: file.name,
-        pageCount: data.numpages,
+        pageCount: data.total,
         uploadDate: new Date(),
       };
     } catch (error) {
