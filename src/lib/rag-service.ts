@@ -421,6 +421,192 @@ function getBuildingPhoneInfo(userLocation: string): string {
   return getBuildingCommunityInfo(userLocation);
 }
 
+// ══════════════════════════════════════════════════════════════
+// Walking directions lookup
+// ══════════════════════════════════════════════════════════════
+const WALKING_DIR_PATH = path.join(process.cwd(), 'backend', 'data', 'walking-directions.json');
+let walkingData: Record<string, unknown> | null = null;
+
+function loadWalkingDirections(): Record<string, unknown> {
+  if (walkingData) return walkingData;
+  try {
+    if (fs.existsSync(WALKING_DIR_PATH)) {
+      walkingData = JSON.parse(fs.readFileSync(WALKING_DIR_PATH, 'utf-8'));
+      console.log('🗺️  Loaded walking directions data');
+    }
+  } catch (err) {
+    console.error('Failed to load walking directions:', err);
+  }
+  return walkingData ?? {};
+}
+
+function isDirectionsQuery(query: string): boolean {
+  const dirKeywords = [
+    'how do i get to', 'how to get to', 'walk to', 'walking to',
+    'directions to', 'direction to', 'where is', 'where\'s',
+    'how far', 'how long to walk', 'how to find', 'how do i find',
+    'take me to', 'navigate to', 'get to the', 'way to',
+    'walk from', 'walking from', 'route to', 'path to',
+    'closest', 'nearest', 'how close',
+  ];
+  const q = query.toLowerCase();
+  return dirKeywords.some((kw) => q.includes(kw));
+}
+
+function getWalkingDirections(query: string, userLocation: string): string {
+  if (!userLocation) return '';
+  const data = loadWalkingDirections();
+  const communityDirs = data.communityDirections as Record<string, any> | undefined;
+  const destinations = data.campusDestinations as Record<string, any> | undefined;
+  const busInfo = data.ugaBusInfo as Record<string, any> | undefined;
+  const safetyTips = data.safetyTips as Record<string, any> | undefined;
+  if (!communityDirs) return '';
+
+  // Step 1: Resolve user's building to a community
+  const loc = userLocation.toLowerCase().trim();
+  const lookup = (buildingMappings as any).buildingLookup as Record<string, string>;
+  let communityName = lookup[loc];
+  if (!communityName) {
+    const key = Object.keys(lookup).find((k) => loc.includes(k) || k.includes(loc));
+    if (key) communityName = lookup[key];
+  }
+  if (!communityName) return '';
+
+  const community = communityDirs[communityName];
+  if (!community) return '';
+
+  const queryLower = query.toLowerCase();
+  const directions = community.directions as Record<string, any>;
+
+  // Step 2: Find requested destination in the query
+  const destNames = Object.keys(directions);
+  let matchedDest: string | null = null;
+  let bestLen = 0;
+
+  // Also check aliases from campusDestinations
+  for (const dest of destNames) {
+    const destLower = dest.toLowerCase();
+    // Check main name
+    if (queryLower.includes(destLower) && destLower.length > bestLen) {
+      matchedDest = dest;
+      bestLen = destLower.length;
+    }
+    // Check partial keywords in destination name
+    const words = destLower.split(/[\s()]+/).filter((w) => w.length > 3);
+    for (const word of words) {
+      if (queryLower.includes(word) && !['hall', 'the', 'street'].includes(word)) {
+        if (!matchedDest || destLower.length > bestLen) {
+          matchedDest = dest;
+          bestLen = destLower.length;
+        }
+      }
+    }
+  }
+
+  // Also try common aliases
+  const aliasMap: Record<string, string> = {
+    'rec center': 'Ramsey Student Center', 'rec': 'Ramsey Student Center', 'gym': 'Ramsey Student Center',
+    'ramsey': 'Ramsey Student Center', 'workout': 'Ramsey Student Center', 'fitness': 'Ramsey Student Center',
+    'mlc': 'Miller Learning Center (MLC)', 'miller': 'Miller Learning Center (MLC)',
+    'tate': 'Tate Student Center', 'student center': 'Tate Student Center',
+    'chick-fil-a': 'Tate Student Center', 'chick fil a': 'Tate Student Center', 'cfa': 'Tate Student Center',
+    'panda express': 'Tate Student Center', 'starbucks': 'Tate Student Center',
+    'bookstore': 'UGA Bookstore', 'book store': 'UGA Bookstore',
+    'stadium': 'Sanford Stadium', 'sanford': 'Sanford Stadium', 'football': 'Sanford Stadium',
+    'arch': 'The Arch', 'the arch': 'The Arch',
+    'library': 'Main Library', 'main library': 'Main Library',
+    'science library': 'Science Library',
+    'bolton': 'Bolton Dining Commons', 'snelling': 'Snelling Dining Commons',
+    'niche': 'The Niche', 'the niche': 'The Niche',
+    'o-house': 'Oglethorpe Dining Commons', 'o house': 'Oglethorpe Dining Commons',
+    'village summit': 'Village Summit Dining',
+    'health center': 'University Health Center', 'health': 'University Health Center',
+    'doctor': 'University Health Center', 'clinic': 'University Health Center',
+    'stegeman': 'Stegeman Coliseum', 'basketball': 'Stegeman Coliseum', 'gymnastics': 'Stegeman Coliseum',
+    'coliseum': 'Stegeman Coliseum',
+    'five points': 'Five Points',
+    'downtown': 'Downtown Athens (Broad Street)', 'broad street': 'Downtown Athens (Broad Street)',
+    'bars': 'Downtown Athens (Broad Street)', 'restaurants downtown': 'Downtown Athens (Broad Street)',
+    'terry': 'Terry College of Business', 'business school': 'Terry College of Business',
+    'grady': 'Grady College of Journalism', 'journalism': 'Grady College of Journalism',
+    'park hall': 'Park Hall', 'aderhold': 'Aderhold Hall',
+    'chemistry': 'Chemistry Building', 'chem': 'Chemistry Building',
+    'pharmacy': 'Pharmacy Building',
+    'engineering': 'Engineering Complex', 'driftmier': 'Engineering Complex',
+    'founders garden': 'Founders Memorial Garden', 'garden': 'Founders Memorial Garden',
+    'museum': 'Georgia Museum of Art', 'art museum': 'Georgia Museum of Art',
+    'performing arts': 'Performing Arts Center', 'concert': 'Performing Arts Center', 'hodgson': 'Performing Arts Center',
+    'pool': 'Legion Pool', 'swimming': 'Legion Pool', 'legion': 'Legion Pool',
+    'intramural': 'Intramural Fields', 'im fields': 'Intramural Fields',
+    'bus': 'UGA Transit Hub (East Campus)', 'bus stop': 'UGA Transit Hub (East Campus)',
+    'transit': 'UGA Transit Hub (East Campus)',
+    'parking': 'East Campus Deck (Parking)', 'park my car': 'East Campus Deck (Parking)',
+    'slc': 'Student Learning Center (SLC)', 'science learning': 'Student Learning Center (SLC)',
+    'police': 'UGA Police Department',
+    'memorial hall': 'Memorial Hall',
+    'north campus': 'North Campus Quad', 'quad': 'North Campus Quad',
+    'boyd': 'Boyd GSRC', 'gsrc': 'Boyd GSRC',
+    'coverdell': 'Coverdell Center',
+  };
+
+  if (!matchedDest) {
+    for (const [alias, dest] of Object.entries(aliasMap)) {
+      if (queryLower.includes(alias) && directions[dest]) {
+        matchedDest = dest;
+        break;
+      }
+    }
+  }
+
+  // Step 3: Build response
+  const parts: string[] = [];
+
+  if (matchedDest && directions[matchedDest]) {
+    const dir = directions[matchedDest];
+    parts.push(`=== Walking Directions: ${userLocation} → ${matchedDest} ===`);
+    parts.push(`Distance: ${dir.distance}`);
+    parts.push(`Estimated walk time: ${dir.time}`);
+    parts.push(`Directions: ${dir.directions}`);
+    if (dir.landmarks?.length) parts.push(`Key landmarks: ${dir.landmarks.join(', ')}`);
+
+    // Add destination details if available
+    if (destinations && destinations[matchedDest] && !(destinations[matchedDest] as any).alias) {
+      const dest = destinations[matchedDest] as any;
+      if (dest.address) parts.push(`Address: ${dest.address}`);
+      if (dest.hours) parts.push(`Hours: ${dest.hours}`);
+      if (dest.description) parts.push(`About: ${dest.description}`);
+    }
+  } else if (isDirectionsQuery(query)) {
+    // No specific destination matched — provide all available destinations
+    parts.push(`=== Available Destinations from ${userLocation} (${communityName}) ===`);
+    parts.push('Here are places I can give you walking directions to:\n');
+    for (const [dest, info] of Object.entries(directions)) {
+      const d = info as any;
+      parts.push(`• ${dest} — ${d.distance}, ~${d.time} walk`);
+    }
+  }
+
+  // Add bus info for longer walks or general direction queries
+  if (busInfo && (isDirectionsQuery(query) || queryLower.includes('bus'))) {
+    parts.push('\n=== UGA Bus Info ===');
+    parts.push(`Website: ${busInfo.website}`);
+    parts.push(`App: ${busInfo.app}`);
+    if (busInfo.tips) {
+      parts.push('Tips: ' + (busInfo.tips as string[]).join('; '));
+    }
+  }
+
+  // Add safety tips for night walking queries
+  if (safetyTips && (queryLower.includes('night') || queryLower.includes('dark') || queryLower.includes('safe') || queryLower.includes('escort'))) {
+    parts.push('\n=== Walking Safety Tips ===');
+    parts.push((safetyTips.walkingAtNight as string[]).join('\n'));
+    parts.push(`Blue light phones: ${safetyTips.blueEmergencyPhones}`);
+    parts.push(`Safety escort: ${safetyTips.safeEscort}`);
+  }
+
+  return parts.join('\n');
+}
+
 interface Message {
   role: 'user' | 'assistant';
   content: string;
@@ -438,18 +624,24 @@ export async function generateRAGResponse(
     // 2. PDF vector search – covers everything the JSON doesn't
     const { context: pdfContext, sources: pdfSources } = await getPdfContext(userQuery);
 
+    // 3. Building community info (front desk, policies, etc.)
     const buildingInfo = userLocation ? getBuildingPhoneInfo(userLocation) : '';
+
+    // 4. Walking directions (if question is about directions/locations)
+    const walkingInfo = getWalkingDirections(userQuery, userLocation || '');
 
     // Build the system prompt
     const locationContext = userLocation
       ? `\nThe student lives in ${userLocation}. Tailor your answers to their specific dorm when the community guide has building-specific info (phone numbers, evacuation procedures, etc.).`
-      : `\nThe student has NOT specified which dorm they live in. If they ask a question that depends on their specific dorm or community (e.g. quiet hours, front desk phone, evacuation location, RA on-call number), you MUST ask them which dorm or residence hall they live in FIRST before answering. Say something like "Which dorm do you live in? That way I can give you the exact info for your building!" Do NOT guess or give a generic answer for dorm-specific questions.`;
+      : `\nThe student has NOT specified which dorm they live in. If they ask a question that depends on their specific dorm or community (e.g. quiet hours, front desk phone, evacuation location, RA on-call number, or walking directions), you MUST ask them which dorm or residence hall they live in FIRST before answering. Say something like "Which dorm do you live in? That way I can give you the exact info for your building!" Do NOT guess or give a generic answer for dorm-specific questions.`;
 
-    const systemPrompt = `You are AURA (AI-powered University Resident Assistant), a friendly and knowledgeable UGA (University of Georgia) dorm assistant. You help UGA students with questions about UGA dorm policies, UGA Housing community guidelines, campus resources, and residential life.
+    const systemPrompt = `You are AURA (AI-powered University Resident Assistant), a friendly and knowledgeable UGA (University of Georgia) dorm assistant. You help UGA students with questions about UGA dorm policies, UGA Housing community guidelines, campus resources, walking directions, and residential life.
   ${locationContext}
 
-  IMPORTANT: Use ONLY the UGA policy excerpts provided below to answer questions accurately.
+  IMPORTANT: Use ONLY the UGA policy excerpts and data provided below to answer questions accurately.
   If a specific item is not mentioned in the excerpts, say you could not find it in the policies. Do NOT assume it is allowed or prohibited.
+
+  For WALKING DIRECTIONS: When direction data is provided, give the student clear step-by-step walking directions. Include the distance, estimated time, and key landmarks. If the walk is long (15+ minutes), mention the UGA bus as an option. Be encouraging and friendly about it.
 
   Quote specific policies, numbers, rules, and details. Do NOT make up information or infer beyond the provided data. If the data doesn't cover something, say you couldn't find it in the policies and suggest contacting UGA Housing at 706-542-1421 or housing@uga.edu.
 
@@ -468,7 +660,7 @@ export async function generateRAGResponse(
       );
     }
 
-    const contextBlock = [jsonContext, pdfContext, buildingInfo].filter(Boolean).join('\n\n');
+    const contextBlock = [jsonContext, pdfContext, buildingInfo, walkingInfo].filter(Boolean).join('\n\n');
     messages.push(
       new HumanMessage(
         `Question: "${userQuery}"\n\nUGA Policy Information:\n${contextBlock || 'No matching policy section found for this question.'}`
@@ -481,6 +673,7 @@ export async function generateRAGResponse(
     const sources: string[] = [
       ...(jsonContext ? ['UGA Community Guide (JSON)'] : []),
       ...pdfSources,
+      ...(walkingInfo ? ['Walking Directions Data'] : []),
     ];
 
     return {
@@ -505,11 +698,15 @@ export async function generateStreamingRAGResponse(
   const { context: pdfContext } = await getPdfContext(userQuery);
   const buildingInfo = userLocation ? getBuildingPhoneInfo(userLocation) : '';
 
+  // 3. Walking directions
+  const walkingInfo = getWalkingDirections(userQuery, userLocation || '');
+
   const locationContext = userLocation
     ? `\nThe student lives in ${userLocation}. Tailor answers to their dorm when possible.`
-    : `\nThe student has NOT told you their dorm. If the question is dorm-specific, ask which dorm they live in first.`;
+    : `\nThe student has NOT told you their dorm. If the question is dorm-specific (including walking directions), ask which dorm they live in first.`;
 
-  const systemPrompt = `You are AURA (AI-powered University Resident Assistant), a friendly UGA dorm assistant. Use ONLY the UGA policy excerpts below to answer accurately. Do NOT make up info or infer beyond the provided data.
+  const systemPrompt = `You are AURA (AI-powered University Resident Assistant), a friendly UGA dorm assistant. Use ONLY the UGA policy excerpts and data below to answer accurately. Do NOT make up info or infer beyond the provided data.
+For WALKING DIRECTIONS: Give clear step-by-step directions with distance, time, and landmarks. Mention the UGA bus for long walks.
 ${locationContext}
 Be concise and helpful. Go Dawgs!`;
 
@@ -525,7 +722,7 @@ Be concise and helpful. Go Dawgs!`;
     );
   }
 
-  const contextBlock = [jsonContext, pdfContext, buildingInfo].filter(Boolean).join('\n\n');
+  const contextBlock = [jsonContext, pdfContext, buildingInfo, walkingInfo].filter(Boolean).join('\n\n');
   messages.push(
     new HumanMessage(
       `Question: "${userQuery}"\n\nUGA Policy Information:\n${contextBlock || 'No matching policy section found for this question.'}`

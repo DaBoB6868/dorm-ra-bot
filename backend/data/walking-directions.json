@@ -1,0 +1,1825 @@
+{
+  "metadata": {
+    "description": "Walking directions from every UGA dorm community to major campus destinations",
+    "lastUpdated": "2026-02-10",
+    "note": "Times are approximate. Directions use major landmarks for easy navigation."
+  },
+
+  "campusDestinations": {
+    "Bolton Dining Commons": {
+      "address": "50 Carlton Street, Athens, GA 30602",
+      "hours": "Mon-Fri 7am-10pm, Sat-Sun 9am-10pm (varies by semester)",
+      "description": "Main dining hall on north campus, all-you-can-eat buffet style."
+    },
+    "Snelling Dining Commons": {
+      "address": "255 East Green Street, Athens, GA 30602",
+      "hours": "Mon-Fri 7am-9pm, Sat-Sun 9am-9pm (varies by semester)",
+      "description": "Central campus dining hall near Brumby and Reed."
+    },
+    "Oglethorpe Dining Commons": {
+      "address": "185 East Campus Road, Athens, GA 30602",
+      "hours": "Mon-Fri 7am-9pm (varies by semester)",
+      "description": "Dining hall inside Oglethorpe House. Also known as O-House Dining."
+    },
+    "Village Summit Dining": {
+      "address": "800 East Campus Road, Athens, GA 30602",
+      "hours": "Mon-Fri 7am-9pm, Sat-Sun 10am-9pm (varies by semester)",
+      "description": "Dining hall serving East Campus Village and nearby communities."
+    },
+    "The Niche": {
+      "address": "Snelling Dining Commons, Lower Level",
+      "hours": "Mon-Fri 11am-8pm",
+      "description": "Food court-style dining inside Snelling with rotating options."
+    },
+    "Tate Student Center": {
+      "address": "45 Baxter Street, Athens, GA 30602",
+      "description": "Main student center with Chick-fil-A, Panda Express, Einstein Bros, Starbucks, game room, UGA Bookstore, ballroom, meeting rooms, and student org offices."
+    },
+    "Miller Learning Center (MLC)": {
+      "address": "271 South Jackson Street, Athens, GA 30602",
+      "hours": "Open 24/7 during the semester",
+      "description": "Major study and classroom building. 4 floors of study space, group rooms, classrooms, Jittery Joe's coffee shop. Very popular late-night study spot."
+    },
+    "Main Library": {
+      "address": "320 South Jackson Street, Athens, GA 30602",
+      "hours": "Mon-Thu 7:30am-2am, Fri 7:30am-8pm, Sat 10am-8pm, Sun 10am-2am",
+      "description": "Ilah Dunlap Little Memorial Library. Main university library with quiet study areas, research collections, and media center."
+    },
+    "Science Library": {
+      "address": "240 D.W. Brooks Drive, Athens, GA 30602",
+      "hours": "Mon-Thu 8am-10pm, Fri 8am-6pm, Sat 12-6pm, Sun 12-10pm",
+      "description": "Library focused on STEM resources, located in the Science Learning Center on south campus."
+    },
+    "Ramsey Student Center": {
+      "address": "330 River Road, Athens, GA 30602",
+      "hours": "Mon-Fri 6am-11pm, Sat-Sun 9am-9pm",
+      "description": "Main recreation/gym facility. Pool, basketball courts, weight room, cardio, indoor track, racquetball, climbing wall, group fitness classes. Free with student ID."
+    },
+    "University Health Center": {
+      "address": "55 Carlton Street, Athens, GA 30602",
+      "hours": "Mon-Fri 8am-5pm, urgent care hours vary",
+      "description": "Student health clinic offering primary care, immunizations, counseling, pharmacy, lab services. Free/low-cost for students."
+    },
+    "Sanford Stadium": {
+      "address": "100 Sanford Drive, Athens, GA 30602",
+      "description": "Home of UGA Bulldogs football. 92,746-seat stadium, also known as 'Between the Hedges.' Tours available during off-season."
+    },
+    "Stegeman Coliseum": {
+      "address": "100 Smith Street, Athens, GA 30602",
+      "description": "Home of UGA basketball and gymnastics. Located on east campus near Ramsey Center."
+    },
+    "The Arch": {
+      "address": "Broad Street at College Avenue, Athens, GA 30601",
+      "description": "Iconic UGA landmark at the entrance to North Campus on Broad Street. Tradition says students shouldn't walk through it until graduation."
+    },
+    "UGA Bookstore": {
+      "address": "Inside Tate Student Center, 45 Baxter Street",
+      "description": "Official campus bookstore for textbooks, UGA merchandise, school supplies, and tech. Located on the first floor of Tate Student Center."
+    },
+    "Memorial Hall": {
+      "address": "225 North Jackson Street, Athens, GA 30602",
+      "description": "Historic building on North Campus. Houses student organizations and event spaces. Adjacent to the Chapel."
+    },
+    "North Campus Quad": {
+      "address": "Between Broad Street and Baldwin Street",
+      "description": "Historic green space of UGA with oak trees, Old College, the Chapel, Demosthenian Hall. Great for studying outside."
+    },
+    "Park Hall": {
+      "address": "325 South Jackson Street, Athens, GA 30602",
+      "description": "Major classroom building on North Campus. Houses English, Philosophy, and other humanities departments."
+    },
+    "Aderhold Hall": {
+      "address": "110 Carlton Street, Athens, GA 30602",
+      "description": "College of Education building. Large lecture halls and classroom spaces."
+    },
+    "Boyd Graduate Studies Research Center (GSRC)": {
+      "address": "200 D.W. Brooks Drive, Athens, GA 30602",
+      "description": "Graduate research building on south campus near the science complex."
+    },
+    "Chemistry Building": {
+      "address": "140 Cedar Street, Athens, GA 30602",
+      "description": "Main chemistry lecture and lab building on south campus."
+    },
+    "Terry College of Business": {
+      "address": "600 South Lumpkin Street, Athens, GA 30602",
+      "description": "College of Business with Amos Hall, Brooks Hall, and Correll Hall complex on south campus."
+    },
+    "Pharmacy Building": {
+      "address": "250 West Green Street, Athens, GA 30602",
+      "description": "College of Pharmacy, R.C. Wilson Pharmacy Building on south campus."
+    },
+    "Grady College of Journalism": {
+      "address": "120 Hooper Street, Athens, GA 30602",
+      "description": "Journalism and Mass Communication building on North Campus."
+    },
+    "Founders Memorial Garden": {
+      "address": "325 South Lumpkin Street, Athens, GA 30602",
+      "description": "Beautiful garden honoring the founders of the Ladies Garden Club of Athens. Great for walks and photos."
+    },
+    "Five Points": {
+      "address": "Intersection of Lumpkin/Milledge/Baxter, Athens, GA 30606",
+      "description": "Popular off-campus shopping and dining area. Restaurants, coffee shops, and stores at the Lumpkin/Milledge/Baxter intersection."
+    },
+    "Downtown Athens (Broad Street)": {
+      "address": "Broad Street / College Avenue, Athens, GA 30601",
+      "description": "Main downtown strip with restaurants, bars, live music venues, shops. Runs from The Arch to the west. Very walkable from North Campus."
+    },
+    "Performing Arts Center": {
+      "address": "230 River Road, Athens, GA 30602",
+      "description": "UGA Performing Arts Center with Hodgson Concert Hall and Ramsey Concert Hall. Major performance venue."
+    },
+    "UGA Police Department": {
+      "address": "1120 Riverbend Parkway, Athens, GA 30602",
+      "phone": "(706) 542-2200",
+      "description": "Campus police headquarters. For non-emergencies. Call 911 for emergencies."
+    },
+    "East Campus Deck (Parking)": {
+      "address": "East Campus Road, Athens, GA 30602",
+      "description": "Main parking deck for east campus. Closest deck for Brumby, Reed, ECV, Oglethorpe residents."
+    },
+    "Hull Street Deck (Parking)": {
+      "address": "Hull Street, Athens, GA 30602",
+      "description": "Parking deck near Hill Community and Creswell. Closest parking for Hill/Creswell/Myers residents."
+    },
+    "Carlton Street Deck (Parking)": {
+      "address": "Carlton Street, Athens, GA 30602",
+      "description": "Parking deck on Carlton Street near Bolton and the Health Center."
+    },
+    "Zell B. Miller Learning Center": {
+      "alias": "Miller Learning Center (MLC)",
+      "note": "Same as MLC — see Miller Learning Center entry"
+    },
+    "Student Learning Center (SLC)": {
+      "address": "101 Cedar Street, Athens, GA 30602",
+      "description": "Large classroom and lecture hall building on south campus. Houses many intro-level science courses."
+    },
+    "Tate Center Parking Deck": {
+      "address": "65 Baxter Street, Athens, GA 30602",
+      "description": "Parking deck adjacent to Tate Student Center."
+    },
+    "Georgia Museum of Art": {
+      "address": "90 Carlton Street, Athens, GA 30602",
+      "description": "Official state art museum of Georgia. Free admission. Rotating exhibits and permanent collections. Next to the Performing Arts Center."
+    },
+    "Lamar Dodd School of Art": {
+      "address": "270 River Road, Athens, GA 30602",
+      "description": "Art school with galleries and studio spaces on east campus."
+    },
+    "Coverdell Center": {
+      "address": "500 D.W. Brooks Drive, Athens, GA 30602",
+      "description": "Paul D. Coverdell Center for Biomedical and Health Sciences on south campus."
+    },
+    "Engineering Complex (Driftmier/Rhodes)": {
+      "address": "597 D.W. Brooks Drive, Athens, GA 30602",
+      "description": "College of Engineering buildings on the south end of campus."
+    },
+    "Legion Pool": {
+      "address": "390 Smith Street, Athens, GA 30602",
+      "description": "Outdoor pool open during warm months. Free for students with ID."
+    },
+    "Intramural Fields": {
+      "address": "East Campus Road, Athens, GA 30602",
+      "description": "Open fields for intramural sports and recreation between east campus dorms and Ramsey Center."
+    },
+    "UGA Transit Hub (East Campus)": {
+      "address": "East Campus Road near Rooker Hall",
+      "description": "Major UGA bus stop hub. Multiple bus routes depart here including routes to south campus, vet school, and parking lots."
+    },
+    "Chick-fil-A (Tate)": {
+      "alias": "Tate Student Center",
+      "note": "Located on 1st floor of Tate Student Center"
+    },
+    "Jittery Joe's (MLC)": {
+      "alias": "Miller Learning Center (MLC)",
+      "note": "Coffee shop on the 1st floor of the MLC"
+    }
+  },
+
+  "communityDirections": {
+    "Hill Community": {
+      "description": "Boggs, Church, Hill, Mell, Morris, Lipscomb, and Mary Lyndon Halls. Located on the west side of campus along Lumpkin Street between Baxter and Baldwin.",
+      "centralPoint": "Hill Hall on Lumpkin Street",
+      "buildings": ["Boggs Hall", "Church Hall", "Hill Hall", "Mell Hall", "Morris Hall", "Lipscomb Hall", "Mary Lyndon Hall"],
+      "directions": {
+        "Bolton Dining Commons": {
+          "distance": "0.3 miles",
+          "time": "5-7 minutes",
+          "directions": "Exit your dorm and walk south on Lumpkin Street. Turn left (east) onto Carlton Street. Bolton Dining Commons is on your right, past the parking deck. You'll see the large brown building with the Bolton sign.",
+          "landmarks": ["Lumpkin Street", "Carlton Street", "Carlton Street Deck"]
+        },
+        "Snelling Dining Commons": {
+          "distance": "0.4 miles",
+          "time": "7-9 minutes",
+          "directions": "Walk east from Hill Hall through the green space between the dorms. Cross Ag Drive and continue east on East Green Street. Snelling is the large dining facility on your left, across from the Brumby Hall area.",
+          "landmarks": ["Ag Drive", "East Green Street"]
+        },
+        "Oglethorpe Dining Commons": {
+          "distance": "0.6 miles",
+          "time": "10-12 minutes",
+          "directions": "Walk east on Baxter Street, then turn right (south) on East Campus Road. Follow East Campus Road past Brumby Hall. Oglethorpe House (and its dining hall) is on your left.",
+          "landmarks": ["Baxter Street", "East Campus Road", "Brumby Hall"]
+        },
+        "Village Summit Dining": {
+          "distance": "0.9 miles",
+          "time": "15-18 minutes",
+          "directions": "Walk east on Baxter Street to East Campus Road, then turn right (south). Continue south past Brumby, Oglethorpe, and the intramural fields. Village Summit is at the far eastern end of East Campus Road near ECV.",
+          "landmarks": ["East Campus Road", "Intramural Fields", "East Campus Village"]
+        },
+        "The Niche": {
+          "distance": "0.4 miles",
+          "time": "7-9 minutes",
+          "directions": "Same route as Snelling Dining Commons — The Niche is located in the lower level of the Snelling Dining building.",
+          "landmarks": ["Same as Snelling"]
+        },
+        "Tate Student Center": {
+          "distance": "0.2 miles",
+          "time": "3-5 minutes",
+          "directions": "Walk north on Lumpkin Street to Baxter Street. Cross Baxter and Tate Student Center is directly ahead on your right. The main entrance faces Baxter Street.",
+          "landmarks": ["Lumpkin Street", "Baxter Street"]
+        },
+        "Miller Learning Center (MLC)": {
+          "distance": "0.4 miles",
+          "time": "6-8 minutes",
+          "directions": "Walk north on Lumpkin Street, then turn right (east) on Baldwin Street. Walk one block east on Baldwin, then turn right (south) on Jackson Street. The MLC is the large modern building on your left.",
+          "landmarks": ["Lumpkin Street", "Baldwin Street", "Jackson Street"]
+        },
+        "Main Library": {
+          "distance": "0.5 miles",
+          "time": "8-10 minutes",
+          "directions": "Walk north on Lumpkin Street, turn right on Baldwin. Continue east across North Campus quad, passing the Chapel on your left. Turn right on Jackson Street and walk south. The Main Library is on your right, just past Park Hall.",
+          "landmarks": ["Baldwin Street", "North Campus Quad", "Chapel", "Park Hall"]
+        },
+        "Science Library": {
+          "distance": "0.6 miles",
+          "time": "10-12 minutes",
+          "directions": "Walk south on Lumpkin Street past Carlton, then turn left (east) on Cedar Street or Green Street. Continue east to D.W. Brooks Drive. The Science Library is in the Science Learning Center building on the right.",
+          "landmarks": ["Lumpkin Street", "Cedar Street", "D.W. Brooks Drive"]
+        },
+        "Ramsey Student Center": {
+          "distance": "0.8 miles",
+          "time": "13-16 minutes",
+          "directions": "Walk east on Baxter Street, then turn right (south) on East Campus Road. Follow East Campus Road past Brumby and Snelling. Continue south, passing Oglethorpe. Turn left on River Road. Ramsey Center is on the right — you'll see the large glass entrance.",
+          "landmarks": ["East Campus Road", "Snelling", "River Road"]
+        },
+        "University Health Center": {
+          "distance": "0.3 miles",
+          "time": "5-7 minutes",
+          "directions": "Walk south on Lumpkin Street, turn left (east) on Carlton Street. The Health Center is on your left side of Carlton, near Bolton Dining. It's the large brick building with the UHC sign.",
+          "landmarks": ["Carlton Street", "Bolton Dining"]
+        },
+        "Sanford Stadium": {
+          "distance": "0.5 miles",
+          "time": "8-10 minutes",
+          "directions": "Walk south on Lumpkin Street, then turn left (east) on Carlton or Green Street. Walk east until you reach Sanford Drive. Sanford Stadium is the massive structure — you can't miss it. The hedges and gates are visible from most approaches.",
+          "landmarks": ["Lumpkin Street", "Sanford Drive"]
+        },
+        "Stegeman Coliseum": {
+          "distance": "0.7 miles",
+          "time": "12-14 minutes",
+          "directions": "Walk east on Baxter Street, then south on East Campus Road. Follow East Campus Road past Brumby, then continue to Smith Street. Stegeman Coliseum is on the left, near Ramsey Center.",
+          "landmarks": ["East Campus Road", "Smith Street", "Ramsey Center area"]
+        },
+        "The Arch": {
+          "distance": "0.5 miles",
+          "time": "8-10 minutes",
+          "directions": "Walk north on Lumpkin Street, then turn right (east) on Broad Street. Walk east on Broad until you reach College Avenue. The Arch is on the south side of Broad Street at the entrance to North Campus. You'll see the three iron arches.",
+          "landmarks": ["Lumpkin Street", "Broad Street", "College Avenue"]
+        },
+        "UGA Bookstore": {
+          "distance": "0.2 miles",
+          "time": "3-5 minutes",
+          "directions": "Same as Tate Student Center — the UGA Bookstore is on the first floor of Tate. Enter through the Baxter Street main entrance.",
+          "landmarks": ["Same as Tate Student Center"]
+        },
+        "North Campus Quad": {
+          "distance": "0.4 miles",
+          "time": "6-8 minutes",
+          "directions": "Walk north on Lumpkin to Broad Street. Cross Broad and enter North Campus through the walkway. The quad is the large green space with old oaks, bounded by Old College, the Chapel, and Demosthenian Hall.",
+          "landmarks": ["Broad Street", "Old College", "Chapel"]
+        },
+        "Park Hall": {
+          "distance": "0.5 miles",
+          "time": "7-9 minutes",
+          "directions": "Walk north on Lumpkin, turn right on Baldwin. Walk east on Baldwin, then turn right on Jackson Street and walk south briefly. Park Hall is on your right.",
+          "landmarks": ["Baldwin Street", "Jackson Street"]
+        },
+        "Aderhold Hall": {
+          "distance": "0.3 miles",
+          "time": "4-6 minutes",
+          "directions": "Walk south on Lumpkin Street, turn left on Carlton Street. Aderhold Hall is on Carlton near the Health Center and Bolton.",
+          "landmarks": ["Carlton Street"]
+        },
+        "Terry College of Business": {
+          "distance": "0.5 miles",
+          "time": "8-10 minutes",
+          "directions": "Walk south on Lumpkin Street past Carlton, past the Five Points area. The Terry College complex (Brooks Hall, Amos Hall, Correll Hall) is on your right on South Lumpkin.",
+          "landmarks": ["South Lumpkin Street"]
+        },
+        "Chemistry Building": {
+          "distance": "0.5 miles",
+          "time": "8-10 minutes",
+          "directions": "Walk south on Lumpkin Street, turn left (east) on Cedar Street. Follow Cedar east. The Chemistry Building is on your left near the science campus area.",
+          "landmarks": ["Cedar Street", "South Campus"]
+        },
+        "Pharmacy Building": {
+          "distance": "0.4 miles",
+          "time": "7-9 minutes",
+          "directions": "Walk south on Lumpkin Street, then turn left (east) on Green Street. The Pharmacy Building is on the south campus side near the science complex.",
+          "landmarks": ["Green Street", "South Campus"]
+        },
+        "Boyd GSRC": {
+          "distance": "0.6 miles",
+          "time": "10-12 minutes",
+          "directions": "Walk south on Lumpkin Street, turn left on Cedar or Green Street. Continue east to D.W. Brooks Drive. Boyd GSRC is on D.W. Brooks Drive, south of the Chemistry Building.",
+          "landmarks": ["D.W. Brooks Drive", "Science Campus"]
+        },
+        "Grady College of Journalism": {
+          "distance": "0.4 miles",
+          "time": "6-8 minutes",
+          "directions": "Walk north on Lumpkin to Broad Street, then turn right (east) on Broad. Turn right (south) on Hooper Street. Grady College is on your right.",
+          "landmarks": ["Broad Street", "Hooper Street"]
+        },
+        "Founders Memorial Garden": {
+          "distance": "0.2 miles",
+          "time": "3-5 minutes",
+          "directions": "Walk south on Lumpkin Street. The Founders Memorial Garden is on the east side of South Lumpkin, just south of the Hill Community dorms. Look for the brick entrance and iron gate.",
+          "landmarks": ["South Lumpkin Street"]
+        },
+        "Five Points": {
+          "distance": "0.3 miles",
+          "time": "5-7 minutes",
+          "directions": "Walk north on Lumpkin Street to Baxter, then continue northwest on Lumpkin. Five Points is the intersection where Lumpkin, Milledge Avenue, and Baxter Street all converge. You'll see restaurants and shops on every corner.",
+          "landmarks": ["Lumpkin Street", "Baxter Street", "Milledge Avenue"]
+        },
+        "Downtown Athens (Broad Street)": {
+          "distance": "0.6 miles",
+          "time": "10-12 minutes",
+          "directions": "Walk north on Lumpkin Street all the way to Broad Street. Turn right (east) on Broad. You're downtown! Walk east on Broad for restaurants, bars, and shops. College Avenue is the main cross street.",
+          "landmarks": ["Lumpkin Street", "Broad Street", "College Avenue"]
+        },
+        "Performing Arts Center": {
+          "distance": "0.8 miles",
+          "time": "13-15 minutes",
+          "directions": "Walk east on Baxter to East Campus Road, then south past Brumby and Oglethorpe. Continue to River Road and turn left. The Performing Arts Center is on River Road near the Ramsey Center.",
+          "landmarks": ["East Campus Road", "River Road", "Ramsey Center"]
+        },
+        "Memorial Hall": {
+          "distance": "0.4 miles",
+          "time": "6-8 minutes",
+          "directions": "Walk north on Lumpkin to Baldwin, turn right. Continue east on Baldwin across the quad. Memorial Hall is on the north side of North Campus, near the Chapel.",
+          "landmarks": ["Baldwin Street", "North Campus", "Chapel"]
+        },
+        "Student Learning Center (SLC)": {
+          "distance": "0.5 miles",
+          "time": "8-10 minutes",
+          "directions": "Walk south on Lumpkin Street, turn left (east) on Cedar Street. The SLC is on your right on Cedar, near the Chemistry Building.",
+          "landmarks": ["Cedar Street", "Chemistry Building"]
+        },
+        "East Campus Deck (Parking)": {
+          "distance": "0.6 miles",
+          "time": "10-12 minutes",
+          "directions": "Walk east on Baxter to East Campus Road, turn right (south). East Campus Deck is on East Campus Road, past Brumby Hall.",
+          "landmarks": ["East Campus Road", "Brumby Hall"]
+        },
+        "Hull Street Deck (Parking)": {
+          "distance": "0.2 miles",
+          "time": "3-4 minutes",
+          "directions": "Walk south on Lumpkin, then turn left (east) on Hull Street. The deck is on your right.",
+          "landmarks": ["Lumpkin Street", "Hull Street"]
+        },
+        "Carlton Street Deck (Parking)": {
+          "distance": "0.3 miles",
+          "time": "5-6 minutes",
+          "directions": "Walk south on Lumpkin Street, turn left on Carlton Street. The parking deck is on the south side of Carlton.",
+          "landmarks": ["Carlton Street"]
+        },
+        "Georgia Museum of Art": {
+          "distance": "0.7 miles",
+          "time": "12-14 minutes",
+          "directions": "Walk east to East Campus Road, continue south past Brumby. Turn left on River Road. The museum is on your left near the Performing Arts Center.",
+          "landmarks": ["East Campus Road", "River Road"]
+        },
+        "Intramural Fields": {
+          "distance": "0.6 miles",
+          "time": "10-12 minutes",
+          "directions": "Walk east on Baxter to East Campus Road, then south past Brumby and Oglethorpe. The intramural fields are the open green fields on the east side of East Campus Road.",
+          "landmarks": ["East Campus Road"]
+        },
+        "Legion Pool": {
+          "distance": "0.7 miles",
+          "time": "12-14 minutes",
+          "directions": "Walk east to East Campus Road, continue south past Brumby. Turn left on Smith Street. Legion Pool is near Stegeman Coliseum on Smith Street.",
+          "landmarks": ["Smith Street", "Stegeman Coliseum"]
+        },
+        "Engineering Complex": {
+          "distance": "0.8 miles",
+          "time": "14-16 minutes",
+          "directions": "Walk south on Lumpkin Street past Terry College. Continue south to D.W. Brooks Drive and turn left (east). The Engineering buildings (Driftmier, Rhodes) are at the far south end of D.W. Brooks.",
+          "landmarks": ["D.W. Brooks Drive", "South Campus"]
+        },
+        "Coverdell Center": {
+          "distance": "0.7 miles",
+          "time": "12-14 minutes",
+          "directions": "Walk south on Lumpkin, turn left on D.W. Brooks Drive. Continue east on D.W. Brooks. Coverdell Center is on the right side, past the Boyd GSRC.",
+          "landmarks": ["D.W. Brooks Drive"]
+        },
+        "UGA Transit Hub (East Campus)": {
+          "distance": "0.8 miles",
+          "time": "13-16 minutes",
+          "directions": "Walk east on Baxter to East Campus Road, then south past Snelling and Oglethorpe. The transit hub is near Rooker Hall at the south end of East Campus Road. Look for the bus shelters.",
+          "landmarks": ["East Campus Road", "Rooker Hall"]
+        }
+      }
+    },
+
+    "Creswell Community": {
+      "description": "Creswell Hall and Russell Hall. Located on Lumpkin Street south of Hill Community, near Carlton Street.",
+      "centralPoint": "Creswell Hall on Lumpkin Street",
+      "buildings": ["Creswell Hall", "Russell Hall"],
+      "directions": {
+        "Bolton Dining Commons": {
+          "distance": "0.2 miles",
+          "time": "3-5 minutes",
+          "directions": "Exit Creswell/Russell and walk east on Carlton Street. Bolton Dining is right there on Carlton — one of the closest dining halls to your dorm!",
+          "landmarks": ["Carlton Street"]
+        },
+        "Snelling Dining Commons": {
+          "distance": "0.5 miles",
+          "time": "8-10 minutes",
+          "directions": "Walk north on Lumpkin to the Hill Community area, then cut east through the green space to East Green Street. Snelling is on East Green Street near Brumby.",
+          "landmarks": ["Lumpkin Street", "East Green Street"]
+        },
+        "Oglethorpe Dining Commons": {
+          "distance": "0.7 miles",
+          "time": "12-14 minutes",
+          "directions": "Walk north to Baxter Street, then east. Turn right on East Campus Road and follow it south past Brumby. Oglethorpe House is on your left.",
+          "landmarks": ["Baxter Street", "East Campus Road"]
+        },
+        "Village Summit Dining": {
+          "distance": "1.0 miles",
+          "time": "17-20 minutes",
+          "directions": "Walk north to Baxter, east to East Campus Road, then south all the way past Oglethorpe and the intramural fields. Village Summit is at the far end near ECV. Consider taking the UGA bus from the transit hub.",
+          "landmarks": ["East Campus Road", "ECV"]
+        },
+        "Tate Student Center": {
+          "distance": "0.3 miles",
+          "time": "5-7 minutes",
+          "directions": "Walk north on Lumpkin Street past the Hill Community dorms. Cross Baxter Street and Tate is directly ahead.",
+          "landmarks": ["Lumpkin Street", "Baxter Street"]
+        },
+        "Miller Learning Center (MLC)": {
+          "distance": "0.5 miles",
+          "time": "8-10 minutes",
+          "directions": "Walk north on Lumpkin, turn right on Baldwin Street. Walk east on Baldwin, then turn right on Jackson Street. MLC is the large modern building on your left.",
+          "landmarks": ["Baldwin Street", "Jackson Street"]
+        },
+        "Main Library": {
+          "distance": "0.6 miles",
+          "time": "10-12 minutes",
+          "directions": "Walk north on Lumpkin to Baldwin. Head east across North Campus, past the Chapel. The Main Library is on Jackson Street, south of Park Hall.",
+          "landmarks": ["North Campus", "Jackson Street"]
+        },
+        "Science Library": {
+          "distance": "0.5 miles",
+          "time": "8-10 minutes",
+          "directions": "Walk east on Carlton, then south on Sanford Drive or cut through to D.W. Brooks Drive. The Science Library is in the Science Learning Center.",
+          "landmarks": ["Carlton Street", "D.W. Brooks Drive"]
+        },
+        "Ramsey Student Center": {
+          "distance": "0.9 miles",
+          "time": "15-18 minutes",
+          "directions": "Walk east then north to East Campus Road. Head south on East Campus Road past Snelling and Oglethorpe. Turn left on River Road. Ramsey is on the right.",
+          "landmarks": ["East Campus Road", "River Road"]
+        },
+        "University Health Center": {
+          "distance": "0.1 miles",
+          "time": "2-3 minutes",
+          "directions": "Walk east on Carlton Street. The Health Center is immediately on your left — right next to Bolton Dining. You're very close!",
+          "landmarks": ["Carlton Street"]
+        },
+        "Sanford Stadium": {
+          "distance": "0.4 miles",
+          "time": "6-8 minutes",
+          "directions": "Walk east on Carlton Street, past Bolton and the Health Center. Continue east to Sanford Drive. The stadium is directly ahead.",
+          "landmarks": ["Carlton Street", "Sanford Drive"]
+        },
+        "The Arch": {
+          "distance": "0.6 miles",
+          "time": "10-12 minutes",
+          "directions": "Walk north on Lumpkin to Broad Street, then right (east) on Broad to College Avenue. The Arch is at the entrance to North Campus.",
+          "landmarks": ["Broad Street", "College Avenue"]
+        },
+        "Five Points": {
+          "distance": "0.4 miles",
+          "time": "6-8 minutes",
+          "directions": "Walk north on Lumpkin past Hill Community, past Baxter, and continue northwest. Five Points is where Lumpkin, Milledge, and Baxter converge.",
+          "landmarks": ["Lumpkin Street", "Baxter Street"]
+        },
+        "Downtown Athens (Broad Street)": {
+          "distance": "0.7 miles",
+          "time": "12-14 minutes",
+          "directions": "Walk north on Lumpkin all the way to Broad Street. Turn right on Broad and you're downtown.",
+          "landmarks": ["Lumpkin Street", "Broad Street"]
+        },
+        "Terry College of Business": {
+          "distance": "0.3 miles",
+          "time": "5-7 minutes",
+          "directions": "Walk south on Lumpkin Street. Terry College (Brooks/Amos/Correll Halls) is on South Lumpkin — very close to Creswell.",
+          "landmarks": ["South Lumpkin Street"]
+        },
+        "Founders Memorial Garden": {
+          "distance": "0.2 miles",
+          "time": "3-5 minutes",
+          "directions": "Walk north on Lumpkin just a short distance. The garden is on the east side of Lumpkin, between Creswell and Hill Community.",
+          "landmarks": ["Lumpkin Street"]
+        },
+        "Aderhold Hall": {
+          "distance": "0.1 miles",
+          "time": "2-3 minutes",
+          "directions": "Walk east on Carlton Street. Aderhold is right on Carlton, steps from your dorm.",
+          "landmarks": ["Carlton Street"]
+        },
+        "Hull Street Deck (Parking)": {
+          "distance": "0.2 miles",
+          "time": "3-5 minutes",
+          "directions": "Walk north on Lumpkin, then east on Hull Street. The parking deck is on the right.",
+          "landmarks": ["Hull Street"]
+        },
+        "Carlton Street Deck (Parking)": {
+          "distance": "0.1 miles",
+          "time": "2-3 minutes",
+          "directions": "Walk east on Carlton Street. The deck is right on Carlton — super close to Creswell.",
+          "landmarks": ["Carlton Street"]
+        },
+        "Chemistry Building": {
+          "distance": "0.4 miles",
+          "time": "6-8 minutes",
+          "directions": "Walk south on Lumpkin, then turn left on Cedar Street. The Chemistry Building is on Cedar near the science campus.",
+          "landmarks": ["Cedar Street"]
+        },
+        "North Campus Quad": {
+          "distance": "0.5 miles",
+          "time": "8-10 minutes",
+          "directions": "Walk north on Lumpkin past Hill Community to Broad Street. Cross Broad into North Campus. The quad is the historic green space with oaks.",
+          "landmarks": ["Broad Street", "North Campus"]
+        },
+        "Stegeman Coliseum": {
+          "distance": "0.8 miles",
+          "time": "13-15 minutes",
+          "directions": "Walk east and north to East Campus Road, then south past Brumby to Smith Street. Stegeman is on the left near Ramsey.",
+          "landmarks": ["East Campus Road", "Smith Street"]
+        },
+        "Performing Arts Center": {
+          "distance": "0.9 miles",
+          "time": "15-17 minutes",
+          "directions": "Walk to East Campus Road, then south to River Road. Turn left. The PAC is on River Road near Ramsey.",
+          "landmarks": ["River Road"]
+        },
+        "Engineering Complex": {
+          "distance": "0.6 miles",
+          "time": "10-12 minutes",
+          "directions": "Walk south on Lumpkin past Terry College, continue to D.W. Brooks Drive. Turn left (east). Engineering buildings are at the far south end.",
+          "landmarks": ["D.W. Brooks Drive"]
+        },
+        "UGA Transit Hub (East Campus)": {
+          "distance": "0.9 miles",
+          "time": "15-18 minutes",
+          "directions": "Walk to East Campus Road and head south past Snelling and Oglethorpe. The transit hub is near Rooker Hall at the southern end.",
+          "landmarks": ["East Campus Road", "Rooker Hall"]
+        }
+      }
+    },
+
+    "Myers Community": {
+      "description": "Myers Hall and Soule Hall. Located on west campus near Lumpkin Street.",
+      "centralPoint": "Myers Hall on Lumpkin Street",
+      "buildings": ["Myers Hall", "Soule Hall"],
+      "directions": {
+        "Bolton Dining Commons": {
+          "distance": "0.3 miles",
+          "time": "5-7 minutes",
+          "directions": "Walk south on Lumpkin Street, turn left on Carlton Street. Bolton is on the right side of Carlton.",
+          "landmarks": ["Carlton Street"]
+        },
+        "Snelling Dining Commons": {
+          "distance": "0.4 miles",
+          "time": "6-8 minutes",
+          "directions": "Walk east through the campus green space toward East Green Street. Snelling is on East Green Street near Brumby.",
+          "landmarks": ["East Green Street"]
+        },
+        "Tate Student Center": {
+          "distance": "0.3 miles",
+          "time": "5-6 minutes",
+          "directions": "Walk north toward Baxter Street. Tate is on the north side of Baxter at the Lumpkin intersection.",
+          "landmarks": ["Baxter Street"]
+        },
+        "Miller Learning Center (MLC)": {
+          "distance": "0.4 miles",
+          "time": "6-8 minutes",
+          "directions": "Walk north to Baldwin Street, then east. Turn south on Jackson Street. MLC is on your left.",
+          "landmarks": ["Baldwin Street", "Jackson Street"]
+        },
+        "Main Library": {
+          "distance": "0.5 miles",
+          "time": "8-10 minutes",
+          "directions": "Walk north to Baldwin, east across North Campus past the Chapel, then south on Jackson. Library is on the right.",
+          "landmarks": ["North Campus", "Jackson Street"]
+        },
+        "Ramsey Student Center": {
+          "distance": "0.7 miles",
+          "time": "12-14 minutes",
+          "directions": "Walk east to East Campus Road, then south past Snelling and Oglethorpe. Turn left on River Road. Ramsey is on the right.",
+          "landmarks": ["East Campus Road", "River Road"]
+        },
+        "University Health Center": {
+          "distance": "0.3 miles",
+          "time": "5-6 minutes",
+          "directions": "Walk south to Carlton Street. The Health Center is on Carlton near Bolton Dining.",
+          "landmarks": ["Carlton Street"]
+        },
+        "The Arch": {
+          "distance": "0.5 miles",
+          "time": "8-10 minutes",
+          "directions": "Walk north to Broad Street, then east to College Avenue. The Arch marks the entrance to North Campus.",
+          "landmarks": ["Broad Street", "College Avenue"]
+        },
+        "Five Points": {
+          "distance": "0.3 miles",
+          "time": "5-7 minutes",
+          "directions": "Walk northwest on Lumpkin toward the Baxter/Milledge intersection. Five Points is a short walk.",
+          "landmarks": ["Lumpkin Street", "Baxter Street"]
+        },
+        "Downtown Athens (Broad Street)": {
+          "distance": "0.6 miles",
+          "time": "10-12 minutes",
+          "directions": "Walk north on Lumpkin to Broad Street. Turn right on Broad and you're downtown.",
+          "landmarks": ["Broad Street"]
+        },
+        "Sanford Stadium": {
+          "distance": "0.5 miles",
+          "time": "8-10 minutes",
+          "directions": "Walk south to Carlton, then east past Bolton. Continue to Sanford Drive. The stadium is ahead.",
+          "landmarks": ["Sanford Drive"]
+        },
+        "Terry College of Business": {
+          "distance": "0.4 miles",
+          "time": "7-9 minutes",
+          "directions": "Walk south on Lumpkin past the Hill/Creswell area. Terry College is on South Lumpkin.",
+          "landmarks": ["South Lumpkin Street"]
+        },
+        "Founders Memorial Garden": {
+          "distance": "0.2 miles",
+          "time": "3-5 minutes",
+          "directions": "Walk south on Lumpkin. The garden is on the east side of the street, very close to Myers/Soule.",
+          "landmarks": ["Lumpkin Street"]
+        },
+        "Science Library": {
+          "distance": "0.6 miles",
+          "time": "10-12 minutes",
+          "directions": "Walk south on Lumpkin, then east on Cedar Street to D.W. Brooks Drive. Science Library is in the Science Learning Center.",
+          "landmarks": ["Cedar Street", "D.W. Brooks Drive"]
+        },
+        "Hull Street Deck (Parking)": {
+          "distance": "0.2 miles",
+          "time": "3-5 minutes",
+          "directions": "Walk south on Lumpkin, then east on Hull Street. The deck is on your right, very close.",
+          "landmarks": ["Hull Street"]
+        },
+        "Stegeman Coliseum": {
+          "distance": "0.7 miles",
+          "time": "12-14 minutes",
+          "directions": "Walk east to East Campus Road, south past Brumby to Smith Street. Stegeman is near Ramsey.",
+          "landmarks": ["East Campus Road", "Smith Street"]
+        },
+        "North Campus Quad": {
+          "distance": "0.4 miles",
+          "time": "6-8 minutes",
+          "directions": "Walk north to Broad Street and cross into North Campus. The quad is the historic green area with Old College and the Chapel.",
+          "landmarks": ["Broad Street", "North Campus"]
+        }
+      }
+    },
+
+    "Brumby Community": {
+      "description": "Brumby Hall. High-rise dorm on east campus near East Campus Road and Snelling.",
+      "centralPoint": "Brumby Hall on East Campus Road",
+      "buildings": ["Brumby Hall"],
+      "directions": {
+        "Bolton Dining Commons": {
+          "distance": "0.5 miles",
+          "time": "8-10 minutes",
+          "directions": "Walk west on East Green Street, cross Ag Drive, and continue west through the Hill Community area. Turn south on Lumpkin, then east on Carlton. Bolton is on Carlton.",
+          "landmarks": ["East Green Street", "Lumpkin Street", "Carlton Street"]
+        },
+        "Snelling Dining Commons": {
+          "distance": "0.1 miles",
+          "time": "2-3 minutes",
+          "directions": "Walk south from Brumby. Snelling is practically right next to you — just across East Green Street. One of the closest dining halls!",
+          "landmarks": ["East Green Street"]
+        },
+        "Oglethorpe Dining Commons": {
+          "distance": "0.3 miles",
+          "time": "5-6 minutes",
+          "directions": "Walk south on East Campus Road. Oglethorpe House (and its dining hall) is on your left, a short walk from Brumby.",
+          "landmarks": ["East Campus Road"]
+        },
+        "Village Summit Dining": {
+          "distance": "0.6 miles",
+          "time": "10-12 minutes",
+          "directions": "Walk south on East Campus Road past Oglethorpe and the intramural fields. Village Summit is near ECV at the south end.",
+          "landmarks": ["East Campus Road", "Intramural Fields"]
+        },
+        "The Niche": {
+          "distance": "0.1 miles",
+          "time": "2-3 minutes",
+          "directions": "Same as Snelling — The Niche is in the lower level of Snelling Dining, right next to Brumby.",
+          "landmarks": ["Snelling"]
+        },
+        "Tate Student Center": {
+          "distance": "0.4 miles",
+          "time": "6-8 minutes",
+          "directions": "Walk west from Brumby toward Lumpkin, then north to Baxter Street. Cross Baxter and Tate is on your right.",
+          "landmarks": ["Baxter Street"]
+        },
+        "Miller Learning Center (MLC)": {
+          "distance": "0.4 miles",
+          "time": "6-8 minutes",
+          "directions": "Walk northwest from Brumby through campus. Head toward Baldwin Street, then south on Jackson Street. MLC is on your left.",
+          "landmarks": ["Baldwin Street", "Jackson Street"]
+        },
+        "Main Library": {
+          "distance": "0.5 miles",
+          "time": "8-10 minutes",
+          "directions": "Walk northwest toward North Campus. Pass through to Jackson Street. Main Library is on Jackson, south of the quad.",
+          "landmarks": ["North Campus", "Jackson Street"]
+        },
+        "Ramsey Student Center": {
+          "distance": "0.5 miles",
+          "time": "8-10 minutes",
+          "directions": "Walk south on East Campus Road past Oglethorpe, turn left on River Road. Ramsey is on the right. Fairly close from Brumby!",
+          "landmarks": ["East Campus Road", "River Road"]
+        },
+        "University Health Center": {
+          "distance": "0.5 miles",
+          "time": "8-10 minutes",
+          "directions": "Walk west to Lumpkin, then south to Carlton. The Health Center is on Carlton near Bolton.",
+          "landmarks": ["Carlton Street"]
+        },
+        "Sanford Stadium": {
+          "distance": "0.3 miles",
+          "time": "5-7 minutes",
+          "directions": "Walk south and west from Brumby toward Sanford Drive. The stadium is hard to miss — it's the massive structure south of the dorms.",
+          "landmarks": ["Sanford Drive"]
+        },
+        "Stegeman Coliseum": {
+          "distance": "0.4 miles",
+          "time": "6-8 minutes",
+          "directions": "Walk south on East Campus Road to Smith Street. Stegeman is on Smith Street, near Ramsey Center.",
+          "landmarks": ["Smith Street"]
+        },
+        "The Arch": {
+          "distance": "0.5 miles",
+          "time": "8-10 minutes",
+          "directions": "Walk northwest through campus to Broad Street and College Avenue. The Arch is at the North Campus entrance.",
+          "landmarks": ["Broad Street", "College Avenue"]
+        },
+        "Five Points": {
+          "distance": "0.6 miles",
+          "time": "10-12 minutes",
+          "directions": "Walk west toward Lumpkin, then north past Baxter to the Lumpkin/Milledge intersection.",
+          "landmarks": ["Lumpkin Street", "Baxter Street"]
+        },
+        "Downtown Athens (Broad Street)": {
+          "distance": "0.6 miles",
+          "time": "10-12 minutes",
+          "directions": "Walk northwest to Broad Street. Turn right (east) on Broad to reach downtown shops and restaurants.",
+          "landmarks": ["Broad Street"]
+        },
+        "East Campus Deck (Parking)": {
+          "distance": "0.1 miles",
+          "time": "2-3 minutes",
+          "directions": "The East Campus Deck is right on East Campus Road, steps from Brumby. You're right next to it!",
+          "landmarks": ["East Campus Road"]
+        },
+        "Intramural Fields": {
+          "distance": "0.3 miles",
+          "time": "4-6 minutes",
+          "directions": "Walk south on East Campus Road past Oglethorpe. The intramural fields are the open green area on your right.",
+          "landmarks": ["East Campus Road"]
+        },
+        "Legion Pool": {
+          "distance": "0.4 miles",
+          "time": "6-8 minutes",
+          "directions": "Walk south on East Campus Road to Smith Street. Legion Pool is near Stegeman Coliseum.",
+          "landmarks": ["Smith Street"]
+        },
+        "Performing Arts Center": {
+          "distance": "0.5 miles",
+          "time": "8-10 minutes",
+          "directions": "Walk south on East Campus Road to River Road. Turn left. The PAC is on River Road.",
+          "landmarks": ["River Road"]
+        },
+        "Georgia Museum of Art": {
+          "distance": "0.5 miles",
+          "time": "8-10 minutes",
+          "directions": "Walk south on East Campus Road to River Road. Turn left. The museum is on River Road near the PAC.",
+          "landmarks": ["River Road"]
+        },
+        "Terry College of Business": {
+          "distance": "0.6 miles",
+          "time": "10-12 minutes",
+          "directions": "Walk west to Lumpkin, then south. Terry College is on South Lumpkin.",
+          "landmarks": ["South Lumpkin Street"]
+        },
+        "North Campus Quad": {
+          "distance": "0.5 miles",
+          "time": "8-10 minutes",
+          "directions": "Walk northwest toward Broad Street and enter North Campus. The quad has historic buildings and big oaks.",
+          "landmarks": ["Broad Street", "North Campus"]
+        },
+        "UGA Transit Hub (East Campus)": {
+          "distance": "0.5 miles",
+          "time": "8-10 minutes",
+          "directions": "Walk south on East Campus Road past Oglethorpe. The transit hub is near Rooker Hall.",
+          "landmarks": ["East Campus Road", "Rooker Hall"]
+        }
+      }
+    },
+
+    "Reed Community": {
+      "description": "Reed Hall and Payne Hall. Located on east campus.",
+      "centralPoint": "Reed Hall",
+      "buildings": ["Reed Hall", "Payne Hall"],
+      "directions": {
+        "Bolton Dining Commons": {
+          "distance": "0.5 miles",
+          "time": "8-10 minutes",
+          "directions": "Walk west toward Lumpkin, then south to Carlton Street. Bolton is on Carlton.",
+          "landmarks": ["Lumpkin Street", "Carlton Street"]
+        },
+        "Snelling Dining Commons": {
+          "distance": "0.2 miles",
+          "time": "3-5 minutes",
+          "directions": "Walk south toward East Green Street. Snelling is very close to Reed/Payne, near Brumby.",
+          "landmarks": ["East Green Street"]
+        },
+        "Oglethorpe Dining Commons": {
+          "distance": "0.3 miles",
+          "time": "5-7 minutes",
+          "directions": "Walk south on East Campus Road past Brumby. Oglethorpe House is on your left.",
+          "landmarks": ["East Campus Road"]
+        },
+        "Tate Student Center": {
+          "distance": "0.4 miles",
+          "time": "7-9 minutes",
+          "directions": "Walk west toward Baxter Street, then to the Lumpkin intersection. Tate is on the north side of Baxter.",
+          "landmarks": ["Baxter Street"]
+        },
+        "Miller Learning Center (MLC)": {
+          "distance": "0.4 miles",
+          "time": "6-8 minutes",
+          "directions": "Walk west toward Baldwin and Jackson Streets. MLC is on Jackson Street.",
+          "landmarks": ["Jackson Street"]
+        },
+        "Ramsey Student Center": {
+          "distance": "0.5 miles",
+          "time": "8-10 minutes",
+          "directions": "Walk south on East Campus Road past Oglethorpe, turn left on River Road. Ramsey is on the right.",
+          "landmarks": ["East Campus Road", "River Road"]
+        },
+        "The Arch": {
+          "distance": "0.5 miles",
+          "time": "8-10 minutes",
+          "directions": "Walk northwest to Broad Street and College Avenue. The Arch is at the North Campus entrance.",
+          "landmarks": ["Broad Street", "College Avenue"]
+        },
+        "Downtown Athens (Broad Street)": {
+          "distance": "0.6 miles",
+          "time": "10-12 minutes",
+          "directions": "Walk northwest to Broad Street, then east on Broad for downtown.",
+          "landmarks": ["Broad Street"]
+        },
+        "Sanford Stadium": {
+          "distance": "0.3 miles",
+          "time": "5-7 minutes",
+          "directions": "Walk south toward Sanford Drive. The stadium is very close to Reed/Payne.",
+          "landmarks": ["Sanford Drive"]
+        },
+        "East Campus Deck (Parking)": {
+          "distance": "0.2 miles",
+          "time": "3-5 minutes",
+          "directions": "Walk south on East Campus Road. The deck is a short walk on your right.",
+          "landmarks": ["East Campus Road"]
+        },
+        "Five Points": {
+          "distance": "0.6 miles",
+          "time": "10-12 minutes",
+          "directions": "Walk west to Lumpkin, then north to the Baxter/Milledge intersection.",
+          "landmarks": ["Lumpkin Street", "Baxter Street"]
+        },
+        "University Health Center": {
+          "distance": "0.5 miles",
+          "time": "8-10 minutes",
+          "directions": "Walk west to Lumpkin, south to Carlton. Health Center is on Carlton.",
+          "landmarks": ["Carlton Street"]
+        },
+        "Stegeman Coliseum": {
+          "distance": "0.4 miles",
+          "time": "6-8 minutes",
+          "directions": "Walk south to Smith Street. Stegeman is near Ramsey.",
+          "landmarks": ["Smith Street"]
+        },
+        "Intramural Fields": {
+          "distance": "0.4 miles",
+          "time": "6-8 minutes",
+          "directions": "Walk south on East Campus Road past Oglethorpe. Fields are on the east side.",
+          "landmarks": ["East Campus Road"]
+        }
+      }
+    },
+
+    "Oglethorpe Community": {
+      "description": "Oglethorpe House. Located on East Campus Road, south of Brumby.",
+      "centralPoint": "Oglethorpe House on East Campus Road",
+      "buildings": ["Oglethorpe House"],
+      "directions": {
+        "Bolton Dining Commons": {
+          "distance": "0.6 miles",
+          "time": "10-12 minutes",
+          "directions": "Walk north on East Campus Road past Brumby, then west to Lumpkin. Turn south on Lumpkin, then east on Carlton. Bolton is on Carlton.",
+          "landmarks": ["East Campus Road", "Carlton Street"]
+        },
+        "Snelling Dining Commons": {
+          "distance": "0.3 miles",
+          "time": "4-6 minutes",
+          "directions": "Walk north on East Campus Road past Brumby. Snelling is on East Green Street — a short walk from O-House.",
+          "landmarks": ["East Campus Road", "East Green Street"]
+        },
+        "Oglethorpe Dining Commons": {
+          "distance": "0.0 miles",
+          "time": "1-2 minutes",
+          "directions": "You're home! The Oglethorpe Dining Commons is inside Oglethorpe House on the ground floor.",
+          "landmarks": ["Your building!"]
+        },
+        "Village Summit Dining": {
+          "distance": "0.4 miles",
+          "time": "6-8 minutes",
+          "directions": "Walk south on East Campus Road past the intramural fields. Village Summit is near ECV at the south end.",
+          "landmarks": ["East Campus Road", "ECV"]
+        },
+        "Tate Student Center": {
+          "distance": "0.5 miles",
+          "time": "8-10 minutes",
+          "directions": "Walk north on East Campus Road to Baxter Street, then west. Tate is at Baxter and Lumpkin.",
+          "landmarks": ["East Campus Road", "Baxter Street"]
+        },
+        "Miller Learning Center (MLC)": {
+          "distance": "0.5 miles",
+          "time": "8-10 minutes",
+          "directions": "Walk north and west through campus toward Baldwin and Jackson Streets. MLC is on Jackson.",
+          "landmarks": ["Jackson Street"]
+        },
+        "Ramsey Student Center": {
+          "distance": "0.3 miles",
+          "time": "5-7 minutes",
+          "directions": "Walk south on East Campus Road, then turn left on River Road. Ramsey is right there. One of the closest dorms to the gym!",
+          "landmarks": ["River Road"]
+        },
+        "Sanford Stadium": {
+          "distance": "0.3 miles",
+          "time": "5-7 minutes",
+          "directions": "Walk west toward Sanford Drive. The stadium is close to Oglethorpe.",
+          "landmarks": ["Sanford Drive"]
+        },
+        "Stegeman Coliseum": {
+          "distance": "0.2 miles",
+          "time": "3-5 minutes",
+          "directions": "Walk south to Smith Street. Stegeman is very close to Oglethorpe.",
+          "landmarks": ["Smith Street"]
+        },
+        "The Arch": {
+          "distance": "0.6 miles",
+          "time": "10-12 minutes",
+          "directions": "Walk north on East Campus Road, then west through campus to Broad Street. The Arch is at Broad and College Avenue.",
+          "landmarks": ["Broad Street", "College Avenue"]
+        },
+        "Downtown Athens (Broad Street)": {
+          "distance": "0.7 miles",
+          "time": "12-14 minutes",
+          "directions": "Walk north to Broad Street, then east on Broad for downtown.",
+          "landmarks": ["Broad Street"]
+        },
+        "East Campus Deck (Parking)": {
+          "distance": "0.1 miles",
+          "time": "2-3 minutes",
+          "directions": "The deck is right on East Campus Road, very close to Oglethorpe. Steps away!",
+          "landmarks": ["East Campus Road"]
+        },
+        "Intramural Fields": {
+          "distance": "0.2 miles",
+          "time": "3-4 minutes",
+          "directions": "Walk south on East Campus Road. The fields are right there on your east side.",
+          "landmarks": ["East Campus Road"]
+        },
+        "Performing Arts Center": {
+          "distance": "0.3 miles",
+          "time": "5-7 minutes",
+          "directions": "Walk south to River Road. The PAC is on River Road, close to Ramsey.",
+          "landmarks": ["River Road"]
+        },
+        "Georgia Museum of Art": {
+          "distance": "0.3 miles",
+          "time": "5-7 minutes",
+          "directions": "Walk south to River Road. The museum is next to the PAC. Very close from O-House!",
+          "landmarks": ["River Road"]
+        },
+        "Legion Pool": {
+          "distance": "0.2 miles",
+          "time": "3-5 minutes",
+          "directions": "Walk south on East Campus Road to Smith Street. Legion Pool is right there near Stegeman.",
+          "landmarks": ["Smith Street"]
+        },
+        "Five Points": {
+          "distance": "0.7 miles",
+          "time": "12-14 minutes",
+          "directions": "Walk north on East Campus Road to Baxter, then west on Baxter to the Lumpkin/Milledge intersection.",
+          "landmarks": ["Baxter Street", "Lumpkin Street"]
+        },
+        "University Health Center": {
+          "distance": "0.6 miles",
+          "time": "10-12 minutes",
+          "directions": "Walk north and west to Carlton Street. Health Center is on Carlton near Bolton.",
+          "landmarks": ["Carlton Street"]
+        },
+        "UGA Transit Hub (East Campus)": {
+          "distance": "0.3 miles",
+          "time": "4-6 minutes",
+          "directions": "Walk south on East Campus Road. The bus hub is near Rooker Hall — a short walk south.",
+          "landmarks": ["East Campus Road"]
+        }
+      }
+    },
+
+    "ECV Community": {
+      "description": "Vandiver Hall, Rooker Hall, and McWhorter Hall (East Campus Village). Located on the far east/south side of campus.",
+      "centralPoint": "East Campus Village, East Campus Road (south end)",
+      "buildings": ["Vandiver Hall", "Rooker Hall", "McWhorter Hall"],
+      "directions": {
+        "Bolton Dining Commons": {
+          "distance": "0.9 miles",
+          "time": "15-18 minutes",
+          "directions": "Walk north on East Campus Road all the way past Oglethorpe, Brumby, then west to Lumpkin and south to Carlton. Bolton is on Carlton. Consider taking the UGA bus to save time.",
+          "landmarks": ["East Campus Road", "Carlton Street"]
+        },
+        "Snelling Dining Commons": {
+          "distance": "0.6 miles",
+          "time": "10-12 minutes",
+          "directions": "Walk north on East Campus Road past Oglethorpe and Brumby. Snelling is on East Green Street near Brumby.",
+          "landmarks": ["East Campus Road", "Brumby"]
+        },
+        "Village Summit Dining": {
+          "distance": "0.1 miles",
+          "time": "2-3 minutes",
+          "directions": "Village Summit is right in your neighborhood! Walk to the south end of the ECV complex. Your closest dining hall by far.",
+          "landmarks": ["ECV complex"]
+        },
+        "Oglethorpe Dining Commons": {
+          "distance": "0.3 miles",
+          "time": "5-7 minutes",
+          "directions": "Walk north on East Campus Road. Oglethorpe House is a short walk north from ECV.",
+          "landmarks": ["East Campus Road"]
+        },
+        "Tate Student Center": {
+          "distance": "0.8 miles",
+          "time": "14-16 minutes",
+          "directions": "Walk north on East Campus Road to Baxter, then west on Baxter. Tate is at Baxter and Lumpkin. Or take the UGA bus.",
+          "landmarks": ["East Campus Road", "Baxter Street"]
+        },
+        "Miller Learning Center (MLC)": {
+          "distance": "0.8 miles",
+          "time": "14-16 minutes",
+          "directions": "Walk north on East Campus Road toward campus, then northwest to Jackson Street. MLC is on Jackson. The UGA bus can shorten this trip.",
+          "landmarks": ["Jackson Street"]
+        },
+        "Ramsey Student Center": {
+          "distance": "0.3 miles",
+          "time": "4-6 minutes",
+          "directions": "Walk north toward River Road. Turn left. Ramsey Center is right there. One of the closest dorms to the gym!",
+          "landmarks": ["River Road"]
+        },
+        "Sanford Stadium": {
+          "distance": "0.5 miles",
+          "time": "8-10 minutes",
+          "directions": "Walk north on East Campus Road, then west toward Sanford Drive. The stadium is west of the east campus dorms.",
+          "landmarks": ["Sanford Drive"]
+        },
+        "Stegeman Coliseum": {
+          "distance": "0.2 miles",
+          "time": "3-5 minutes",
+          "directions": "Walk north to Smith Street. Stegeman is very close to ECV — one of the closest dorms to the coliseum!",
+          "landmarks": ["Smith Street"]
+        },
+        "The Arch": {
+          "distance": "0.9 miles",
+          "time": "15-18 minutes",
+          "directions": "Walk north on East Campus Road through campus to Broad Street and College Avenue. The Arch is at the North Campus entrance.",
+          "landmarks": ["Broad Street", "College Avenue"]
+        },
+        "Downtown Athens (Broad Street)": {
+          "distance": "1.0 miles",
+          "time": "17-20 minutes",
+          "directions": "Walk north through campus to Broad Street. Turn east for downtown. The UGA bus is recommended for this distance.",
+          "landmarks": ["Broad Street"]
+        },
+        "East Campus Deck (Parking)": {
+          "distance": "0.2 miles",
+          "time": "3-4 minutes",
+          "directions": "Walk north on East Campus Road. The deck is a short walk, near Oglethorpe.",
+          "landmarks": ["East Campus Road"]
+        },
+        "Performing Arts Center": {
+          "distance": "0.2 miles",
+          "time": "3-5 minutes",
+          "directions": "Walk north to River Road. The PAC is right there. Super close from ECV!",
+          "landmarks": ["River Road"]
+        },
+        "Georgia Museum of Art": {
+          "distance": "0.2 miles",
+          "time": "3-5 minutes",
+          "directions": "Walk north to River Road. The museum is next to the PAC, steps from ECV.",
+          "landmarks": ["River Road"]
+        },
+        "Intramural Fields": {
+          "distance": "0.2 miles",
+          "time": "3-4 minutes",
+          "directions": "Walk north on East Campus Road. The fields are right there between ECV and Oglethorpe.",
+          "landmarks": ["East Campus Road"]
+        },
+        "Legion Pool": {
+          "distance": "0.3 miles",
+          "time": "4-6 minutes",
+          "directions": "Walk north to Smith Street. Legion Pool is near Stegeman.",
+          "landmarks": ["Smith Street"]
+        },
+        "UGA Transit Hub (East Campus)": {
+          "distance": "0.1 miles",
+          "time": "1-2 minutes",
+          "directions": "The transit hub is right next to Rooker Hall in your community. Walk to the bus shelters by Rooker.",
+          "landmarks": ["Rooker Hall"]
+        },
+        "Five Points": {
+          "distance": "1.0 miles",
+          "time": "17-20 minutes",
+          "directions": "Walk north to Baxter, then west to Lumpkin/Milledge intersection. Consider taking the UGA bus.",
+          "landmarks": ["Baxter Street", "Lumpkin Street"]
+        },
+        "University Health Center": {
+          "distance": "0.8 miles",
+          "time": "14-16 minutes",
+          "directions": "Walk north on East Campus Road, then west to Carlton Street. Health Center is on Carlton. Bus recommended.",
+          "landmarks": ["Carlton Street"]
+        },
+        "Terry College of Business": {
+          "distance": "0.8 miles",
+          "time": "14-16 minutes",
+          "directions": "Walk north and west through campus to South Lumpkin Street. Terry College is on South Lumpkin. Bus recommended.",
+          "landmarks": ["South Lumpkin Street"]
+        },
+        "Engineering Complex": {
+          "distance": "0.5 miles",
+          "time": "8-10 minutes",
+          "directions": "Walk west toward D.W. Brooks Drive, then south. Engineering buildings are at the far end of D.W. Brooks.",
+          "landmarks": ["D.W. Brooks Drive"]
+        }
+      }
+    },
+
+    "Rutherford Community": {
+      "description": "Rutherford Hall. Suite-style living on east campus.",
+      "centralPoint": "Rutherford Hall on East Campus Road",
+      "buildings": ["Rutherford Hall"],
+      "directions": {
+        "Bolton Dining Commons": {
+          "distance": "0.6 miles",
+          "time": "10-12 minutes",
+          "directions": "Walk north and west to Lumpkin, then south to Carlton. Bolton is on Carlton.",
+          "landmarks": ["Lumpkin Street", "Carlton Street"]
+        },
+        "Snelling Dining Commons": {
+          "distance": "0.3 miles",
+          "time": "4-6 minutes",
+          "directions": "Walk west toward East Green Street. Snelling is near Brumby, a short walk from Rutherford.",
+          "landmarks": ["East Green Street"]
+        },
+        "Oglethorpe Dining Commons": {
+          "distance": "0.3 miles",
+          "time": "5-7 minutes",
+          "directions": "Walk south on East Campus Road. Oglethorpe House is a short walk south.",
+          "landmarks": ["East Campus Road"]
+        },
+        "Tate Student Center": {
+          "distance": "0.5 miles",
+          "time": "8-10 minutes",
+          "directions": "Walk west toward Baxter Street. Tate is at Baxter and Lumpkin.",
+          "landmarks": ["Baxter Street", "Lumpkin Street"]
+        },
+        "Ramsey Student Center": {
+          "distance": "0.4 miles",
+          "time": "6-8 minutes",
+          "directions": "Walk south on East Campus Road past Oglethorpe, turn left on River Road. Ramsey is on the right.",
+          "landmarks": ["River Road"]
+        },
+        "The Arch": {
+          "distance": "0.6 miles",
+          "time": "10-12 minutes",
+          "directions": "Walk northwest through campus to Broad Street and College Avenue.",
+          "landmarks": ["Broad Street", "College Avenue"]
+        },
+        "Downtown Athens (Broad Street)": {
+          "distance": "0.7 miles",
+          "time": "12-14 minutes",
+          "directions": "Walk northwest to Broad Street. Turn east on Broad for downtown.",
+          "landmarks": ["Broad Street"]
+        },
+        "East Campus Deck (Parking)": {
+          "distance": "0.2 miles",
+          "time": "3-4 minutes",
+          "directions": "East Campus Deck is on East Campus Road, close to Rutherford.",
+          "landmarks": ["East Campus Road"]
+        },
+        "Sanford Stadium": {
+          "distance": "0.3 miles",
+          "time": "5-7 minutes",
+          "directions": "Walk south and west toward Sanford Drive. The stadium is close.",
+          "landmarks": ["Sanford Drive"]
+        },
+        "Miller Learning Center (MLC)": {
+          "distance": "0.5 miles",
+          "time": "8-10 minutes",
+          "directions": "Walk northwest toward Baldwin and Jackson Streets. MLC is on Jackson.",
+          "landmarks": ["Jackson Street"]
+        },
+        "University Health Center": {
+          "distance": "0.5 miles",
+          "time": "8-10 minutes",
+          "directions": "Walk west to Lumpkin, south to Carlton. Health Center is on Carlton.",
+          "landmarks": ["Carlton Street"]
+        },
+        "Five Points": {
+          "distance": "0.7 miles",
+          "time": "12-14 minutes",
+          "directions": "Walk west to Baxter, then continue to the Lumpkin/Milledge intersection.",
+          "landmarks": ["Baxter Street", "Lumpkin Street"]
+        }
+      }
+    },
+
+    "Busbee Community": {
+      "description": "Busbee Hall. Located on east campus.",
+      "centralPoint": "Busbee Hall",
+      "buildings": ["Busbee Hall"],
+      "directions": {
+        "Bolton Dining Commons": {
+          "distance": "0.6 miles",
+          "time": "10-12 minutes",
+          "directions": "Walk west to Lumpkin Street, south to Carlton. Bolton is on Carlton.",
+          "landmarks": ["Lumpkin Street", "Carlton Street"]
+        },
+        "Snelling Dining Commons": {
+          "distance": "0.3 miles",
+          "time": "5-7 minutes",
+          "directions": "Walk toward East Green Street. Snelling is near Brumby, close to Busbee.",
+          "landmarks": ["East Green Street"]
+        },
+        "Oglethorpe Dining Commons": {
+          "distance": "0.4 miles",
+          "time": "6-8 minutes",
+          "directions": "Walk south on East Campus Road to Oglethorpe House.",
+          "landmarks": ["East Campus Road"]
+        },
+        "Tate Student Center": {
+          "distance": "0.5 miles",
+          "time": "8-10 minutes",
+          "directions": "Walk west to Baxter Street. Tate is at Baxter and Lumpkin.",
+          "landmarks": ["Baxter Street"]
+        },
+        "Ramsey Student Center": {
+          "distance": "0.5 miles",
+          "time": "8-10 minutes",
+          "directions": "Walk south past Oglethorpe, turn left on River Road. Ramsey is on the right.",
+          "landmarks": ["River Road"]
+        },
+        "The Arch": {
+          "distance": "0.6 miles",
+          "time": "10-12 minutes",
+          "directions": "Walk northwest to Broad Street and College Avenue. The Arch marks North Campus entrance.",
+          "landmarks": ["Broad Street", "College Avenue"]
+        },
+        "Downtown Athens (Broad Street)": {
+          "distance": "0.7 miles",
+          "time": "12-14 minutes",
+          "directions": "Walk northwest to Broad Street. Turn east for downtown.",
+          "landmarks": ["Broad Street"]
+        },
+        "East Campus Deck (Parking)": {
+          "distance": "0.2 miles",
+          "time": "3-5 minutes",
+          "directions": "Walk south on East Campus Road. The deck is close to Busbee.",
+          "landmarks": ["East Campus Road"]
+        },
+        "Sanford Stadium": {
+          "distance": "0.4 miles",
+          "time": "6-8 minutes",
+          "directions": "Walk south and west toward Sanford Drive.",
+          "landmarks": ["Sanford Drive"]
+        },
+        "Miller Learning Center (MLC)": {
+          "distance": "0.5 miles",
+          "time": "8-10 minutes",
+          "directions": "Walk northwest toward Jackson Street. MLC is on Jackson.",
+          "landmarks": ["Jackson Street"]
+        },
+        "University Health Center": {
+          "distance": "0.6 miles",
+          "time": "10-12 minutes",
+          "directions": "Walk west to Carlton Street. Health Center is on Carlton near Bolton.",
+          "landmarks": ["Carlton Street"]
+        }
+      }
+    },
+
+    "Brown Community": {
+      "description": "Brown Hall. Located south of the main campus core.",
+      "centralPoint": "Brown Hall",
+      "buildings": ["Brown Hall"],
+      "directions": {
+        "Bolton Dining Commons": {
+          "distance": "0.5 miles",
+          "time": "8-10 minutes",
+          "directions": "Walk north to Carlton Street. Bolton is on the east side of Carlton.",
+          "landmarks": ["Carlton Street"]
+        },
+        "Snelling Dining Commons": {
+          "distance": "0.5 miles",
+          "time": "8-10 minutes",
+          "directions": "Walk north and east to East Green Street. Snelling is near Brumby.",
+          "landmarks": ["East Green Street"]
+        },
+        "Tate Student Center": {
+          "distance": "0.5 miles",
+          "time": "8-10 minutes",
+          "directions": "Walk north to Baxter Street and Lumpkin. Tate is at the intersection.",
+          "landmarks": ["Baxter Street"]
+        },
+        "Miller Learning Center (MLC)": {
+          "distance": "0.5 miles",
+          "time": "8-10 minutes",
+          "directions": "Walk north to Baldwin Street, then east to Jackson Street. MLC is on Jackson.",
+          "landmarks": ["Jackson Street"]
+        },
+        "Main Library": {
+          "distance": "0.6 miles",
+          "time": "10-12 minutes",
+          "directions": "Walk north through campus to Jackson Street. Main Library is south of the quad.",
+          "landmarks": ["Jackson Street"]
+        },
+        "Science Library": {
+          "distance": "0.3 miles",
+          "time": "5-7 minutes",
+          "directions": "Walk south to D.W. Brooks Drive. The Science Library is in the Science Learning Center. Close to Brown!",
+          "landmarks": ["D.W. Brooks Drive"]
+        },
+        "Ramsey Student Center": {
+          "distance": "0.6 miles",
+          "time": "10-12 minutes",
+          "directions": "Walk east to East Campus Road area, then to River Road. Ramsey is on River Road.",
+          "landmarks": ["River Road"]
+        },
+        "The Arch": {
+          "distance": "0.6 miles",
+          "time": "10-12 minutes",
+          "directions": "Walk north to Broad Street and College Avenue.",
+          "landmarks": ["Broad Street", "College Avenue"]
+        },
+        "Downtown Athens (Broad Street)": {
+          "distance": "0.7 miles",
+          "time": "12-14 minutes",
+          "directions": "Walk north to Broad Street. Turn east for downtown.",
+          "landmarks": ["Broad Street"]
+        },
+        "Sanford Stadium": {
+          "distance": "0.3 miles",
+          "time": "5-7 minutes",
+          "directions": "Walk east toward Sanford Drive. The stadium is close to Brown Hall.",
+          "landmarks": ["Sanford Drive"]
+        },
+        "Terry College of Business": {
+          "distance": "0.2 miles",
+          "time": "3-5 minutes",
+          "directions": "Walk south on Lumpkin. Terry College is very close to Brown — right on South Lumpkin.",
+          "landmarks": ["South Lumpkin Street"]
+        },
+        "Chemistry Building": {
+          "distance": "0.2 miles",
+          "time": "3-5 minutes",
+          "directions": "Walk south to Cedar Street. Chemistry is close to Brown on the science campus.",
+          "landmarks": ["Cedar Street"]
+        },
+        "Boyd GSRC": {
+          "distance": "0.3 miles",
+          "time": "5-7 minutes",
+          "directions": "Walk south on D.W. Brooks Drive. Boyd GSRC is on D.W. Brooks, close to Brown.",
+          "landmarks": ["D.W. Brooks Drive"]
+        },
+        "Engineering Complex": {
+          "distance": "0.4 miles",
+          "time": "6-8 minutes",
+          "directions": "Walk south on D.W. Brooks Drive to the far end. Engineering buildings are there.",
+          "landmarks": ["D.W. Brooks Drive"]
+        },
+        "Five Points": {
+          "distance": "0.5 miles",
+          "time": "8-10 minutes",
+          "directions": "Walk north on Lumpkin past Hill Community to the Baxter/Milledge intersection.",
+          "landmarks": ["Lumpkin Street"]
+        },
+        "University Health Center": {
+          "distance": "0.4 miles",
+          "time": "6-8 minutes",
+          "directions": "Walk north to Carlton Street. Health Center is on Carlton.",
+          "landmarks": ["Carlton Street"]
+        },
+        "Hull Street Deck (Parking)": {
+          "distance": "0.3 miles",
+          "time": "5-7 minutes",
+          "directions": "Walk north on Lumpkin, then east on Hull Street. Deck is on the right.",
+          "landmarks": ["Hull Street"]
+        }
+      }
+    },
+
+    "Highland Community": {
+      "description": "Highland apartments. Located off Baxter Street, west of the main campus.",
+      "centralPoint": "Highland apartments off Baxter Street",
+      "buildings": ["Highland"],
+      "directions": {
+        "Bolton Dining Commons": {
+          "distance": "0.6 miles",
+          "time": "10-12 minutes",
+          "directions": "Walk east on Baxter to Lumpkin, then south to Carlton. Bolton is on Carlton.",
+          "landmarks": ["Baxter Street", "Carlton Street"]
+        },
+        "Snelling Dining Commons": {
+          "distance": "0.7 miles",
+          "time": "12-14 minutes",
+          "directions": "Walk east on Baxter, past Lumpkin, and continue east toward East Green Street. Snelling is near Brumby.",
+          "landmarks": ["Baxter Street", "East Green Street"]
+        },
+        "Tate Student Center": {
+          "distance": "0.4 miles",
+          "time": "7-9 minutes",
+          "directions": "Walk east on Baxter Street. Tate is at the Baxter and Lumpkin intersection.",
+          "landmarks": ["Baxter Street"]
+        },
+        "Miller Learning Center (MLC)": {
+          "distance": "0.6 miles",
+          "time": "10-12 minutes",
+          "directions": "Walk east on Baxter to Lumpkin, north to Baldwin, east to Jackson. MLC is on Jackson.",
+          "landmarks": ["Baldwin Street", "Jackson Street"]
+        },
+        "Five Points": {
+          "distance": "0.2 miles",
+          "time": "3-5 minutes",
+          "directions": "Five Points is right near Highland! Walk to the Baxter/Lumpkin/Milledge intersection. Your closest commercial area.",
+          "landmarks": ["Baxter Street", "Milledge Avenue"]
+        },
+        "Downtown Athens (Broad Street)": {
+          "distance": "0.8 miles",
+          "time": "14-16 minutes",
+          "directions": "Walk east on Baxter, north on Lumpkin to Broad Street. Turn east on Broad for downtown.",
+          "landmarks": ["Lumpkin Street", "Broad Street"]
+        },
+        "Ramsey Student Center": {
+          "distance": "1.0 miles",
+          "time": "17-20 minutes",
+          "directions": "Walk east on Baxter to East Campus Road, then south past Brumby and Oglethorpe. Turn left on River Road. Ramsey on the right. Bus recommended.",
+          "landmarks": ["East Campus Road", "River Road"]
+        },
+        "The Arch": {
+          "distance": "0.7 miles",
+          "time": "12-14 minutes",
+          "directions": "Walk east on Baxter, north on Lumpkin to Broad. East on Broad to College Avenue. The Arch is there.",
+          "landmarks": ["Broad Street", "College Avenue"]
+        },
+        "Sanford Stadium": {
+          "distance": "0.7 miles",
+          "time": "12-14 minutes",
+          "directions": "Walk east on Baxter, south on Lumpkin, east on Carlton to Sanford Drive.",
+          "landmarks": ["Sanford Drive"]
+        },
+        "University Health Center": {
+          "distance": "0.5 miles",
+          "time": "8-10 minutes",
+          "directions": "Walk east on Baxter to Lumpkin, south to Carlton. Health Center is on Carlton.",
+          "landmarks": ["Carlton Street"]
+        }
+      }
+    },
+
+    "University Village": {
+      "description": "Building 1516 / University Village. Off-campus UGA Housing, further from main campus.",
+      "centralPoint": "University Village on Rogers Road area",
+      "buildings": ["Building 1516"],
+      "directions": {
+        "Bolton Dining Commons": {
+          "distance": "1.2 miles",
+          "time": "20-25 minutes",
+          "directions": "Take the UGA bus from the nearby bus stop to campus. Walking: head toward East Campus Road, then north and west to Carlton Street. Bolton is on Carlton. Bus strongly recommended.",
+          "landmarks": ["Bus stop", "Carlton Street"]
+        },
+        "Tate Student Center": {
+          "distance": "1.0 miles",
+          "time": "18-22 minutes",
+          "directions": "Take the UGA bus to campus. If walking, head north/west toward Baxter Street. Tate is at Baxter and Lumpkin. Bus recommended.",
+          "landmarks": ["Baxter Street"]
+        },
+        "Village Summit Dining": {
+          "distance": "0.4 miles",
+          "time": "7-9 minutes",
+          "directions": "Walk toward East Campus Village. Village Summit is at the south end of East Campus Road. Your closest dining option.",
+          "landmarks": ["East Campus Road"]
+        },
+        "Ramsey Student Center": {
+          "distance": "0.5 miles",
+          "time": "8-10 minutes",
+          "directions": "Walk toward River Road. Ramsey is on River Road. One of the closer campus buildings from your location.",
+          "landmarks": ["River Road"]
+        },
+        "Oglethorpe Dining Commons": {
+          "distance": "0.6 miles",
+          "time": "10-12 minutes",
+          "directions": "Walk north toward East Campus Road. Oglethorpe House is on East Campus Road.",
+          "landmarks": ["East Campus Road"]
+        },
+        "Downtown Athens (Broad Street)": {
+          "distance": "1.3 miles",
+          "time": "22-28 minutes",
+          "directions": "Bus strongly recommended. Walk to the nearest bus stop and take a campus route to Broad Street.",
+          "landmarks": ["Bus stop", "Broad Street"]
+        },
+        "The Arch": {
+          "distance": "1.2 miles",
+          "time": "20-25 minutes",
+          "directions": "Bus recommended. If walking, head northwest through East Campus Road, across campus to Broad and College Avenue.",
+          "landmarks": ["Broad Street", "College Avenue"]
+        },
+        "UGA Transit Hub (East Campus)": {
+          "distance": "0.3 miles",
+          "time": "5-7 minutes",
+          "directions": "Walk north toward Rooker Hall. The transit hub with multiple bus routes is there.",
+          "landmarks": ["Rooker Hall"]
+        }
+      }
+    },
+
+    "Rogers Road Community": {
+      "description": "Rogers Road housing. Off-campus UGA Housing area.",
+      "centralPoint": "Rogers Road housing",
+      "buildings": ["Rogers Road"],
+      "directions": {
+        "Bolton Dining Commons": {
+          "distance": "1.0 miles",
+          "time": "18-22 minutes",
+          "directions": "Take the UGA bus from Rogers Road to campus. Walk to Carlton Street. Bolton is on Carlton. Bus recommended for this distance.",
+          "landmarks": ["Bus stop", "Carlton Street"]
+        },
+        "Tate Student Center": {
+          "distance": "0.9 miles",
+          "time": "16-20 minutes",
+          "directions": "Walk or take the bus north toward Baxter Street. Tate is at Baxter and Lumpkin.",
+          "landmarks": ["Baxter Street"]
+        },
+        "Ramsey Student Center": {
+          "distance": "0.4 miles",
+          "time": "7-9 minutes",
+          "directions": "Walk toward River Road. Ramsey is relatively close to Rogers Road housing.",
+          "landmarks": ["River Road"]
+        },
+        "Downtown Athens (Broad Street)": {
+          "distance": "1.2 miles",
+          "time": "20-25 minutes",
+          "directions": "Bus recommended. Take the UGA bus to campus, then walk to Broad Street.",
+          "landmarks": ["Broad Street"]
+        },
+        "The Arch": {
+          "distance": "1.1 miles",
+          "time": "18-22 minutes",
+          "directions": "Bus recommended. Head northwest through campus to Broad and College Avenue.",
+          "landmarks": ["Broad Street", "College Avenue"]
+        },
+        "Village Summit Dining": {
+          "distance": "0.3 miles",
+          "time": "5-7 minutes",
+          "directions": "Walk toward East Campus Village. Village Summit is nearby on East Campus Road.",
+          "landmarks": ["East Campus Road"]
+        },
+        "UGA Transit Hub (East Campus)": {
+          "distance": "0.4 miles",
+          "time": "6-8 minutes",
+          "directions": "Walk north toward Rooker Hall. Bus hub with multiple routes is there.",
+          "landmarks": ["Rooker Hall"]
+        }
+      }
+    },
+
+    "Brandon Oaks Community": {
+      "description": "Brandon Oaks apartments on East Campus Road.",
+      "centralPoint": "Brandon Oaks on East Campus Road",
+      "buildings": ["Brandon Oaks"],
+      "directions": {
+        "Bolton Dining Commons": {
+          "distance": "0.7 miles",
+          "time": "12-14 minutes",
+          "directions": "Walk north on East Campus Road, then west to Lumpkin, south to Carlton. Bolton on Carlton.",
+          "landmarks": ["East Campus Road", "Carlton Street"]
+        },
+        "Snelling Dining Commons": {
+          "distance": "0.4 miles",
+          "time": "7-9 minutes",
+          "directions": "Walk north on East Campus Road past Brumby. Snelling is on East Green Street.",
+          "landmarks": ["East Campus Road", "East Green Street"]
+        },
+        "Oglethorpe Dining Commons": {
+          "distance": "0.2 miles",
+          "time": "3-5 minutes",
+          "directions": "Walk south on East Campus Road. O-House is a short walk away.",
+          "landmarks": ["East Campus Road"]
+        },
+        "Village Summit Dining": {
+          "distance": "0.3 miles",
+          "time": "5-7 minutes",
+          "directions": "Walk south on East Campus Road to the ECV area. Village Summit is at the south end.",
+          "landmarks": ["East Campus Road"]
+        },
+        "Tate Student Center": {
+          "distance": "0.6 miles",
+          "time": "10-12 minutes",
+          "directions": "Walk north on East Campus Road to Baxter, then west. Tate at Baxter/Lumpkin.",
+          "landmarks": ["Baxter Street"]
+        },
+        "Ramsey Student Center": {
+          "distance": "0.3 miles",
+          "time": "5-7 minutes",
+          "directions": "Walk south to River Road. Ramsey is right there. Close from Brandon Oaks!",
+          "landmarks": ["River Road"]
+        },
+        "The Arch": {
+          "distance": "0.7 miles",
+          "time": "12-14 minutes",
+          "directions": "Walk north through campus to Broad Street and College Avenue.",
+          "landmarks": ["Broad Street", "College Avenue"]
+        },
+        "Downtown Athens (Broad Street)": {
+          "distance": "0.8 miles",
+          "time": "14-16 minutes",
+          "directions": "Walk north to Broad Street. Turn east for downtown.",
+          "landmarks": ["Broad Street"]
+        },
+        "East Campus Deck (Parking)": {
+          "distance": "0.2 miles",
+          "time": "3-4 minutes",
+          "directions": "The deck is on East Campus Road, very close to Brandon Oaks.",
+          "landmarks": ["East Campus Road"]
+        },
+        "UGA Transit Hub (East Campus)": {
+          "distance": "0.3 miles",
+          "time": "5-6 minutes",
+          "directions": "Walk south on East Campus Road. Bus hub is near Rooker Hall.",
+          "landmarks": ["Rooker Hall"]
+        },
+        "University Health Center": {
+          "distance": "0.6 miles",
+          "time": "10-12 minutes",
+          "directions": "Walk north and west to Carlton Street. Health Center on Carlton near Bolton.",
+          "landmarks": ["Carlton Street"]
+        },
+        "Miller Learning Center (MLC)": {
+          "distance": "0.6 miles",
+          "time": "10-12 minutes",
+          "directions": "Walk northwest toward Jackson Street. MLC is on Jackson.",
+          "landmarks": ["Jackson Street"]
+        }
+      }
+    },
+
+    "Black-Diallo-Miller Community": {
+      "description": "Black-Diallo-Miller (BDM) Hall. Located on east campus.",
+      "centralPoint": "BDM Hall",
+      "buildings": ["Black-Diallo-Miller Hall"],
+      "directions": {
+        "Bolton Dining Commons": {
+          "distance": "0.6 miles",
+          "time": "10-12 minutes",
+          "directions": "Walk west to Lumpkin, south to Carlton. Bolton is on Carlton.",
+          "landmarks": ["Lumpkin Street", "Carlton Street"]
+        },
+        "Snelling Dining Commons": {
+          "distance": "0.3 miles",
+          "time": "5-7 minutes",
+          "directions": "Walk toward East Green Street near Brumby. Snelling is close.",
+          "landmarks": ["East Green Street"]
+        },
+        "Tate Student Center": {
+          "distance": "0.5 miles",
+          "time": "8-10 minutes",
+          "directions": "Walk west to Baxter Street. Tate is at Baxter and Lumpkin.",
+          "landmarks": ["Baxter Street"]
+        },
+        "Miller Learning Center (MLC)": {
+          "distance": "0.5 miles",
+          "time": "8-10 minutes",
+          "directions": "Walk northwest toward Jackson Street. MLC is on Jackson.",
+          "landmarks": ["Jackson Street"]
+        },
+        "Ramsey Student Center": {
+          "distance": "0.5 miles",
+          "time": "8-10 minutes",
+          "directions": "Walk south past Oglethorpe to River Road. Ramsey is on River Road.",
+          "landmarks": ["River Road"]
+        },
+        "The Arch": {
+          "distance": "0.6 miles",
+          "time": "10-12 minutes",
+          "directions": "Walk northwest to Broad Street and College Avenue.",
+          "landmarks": ["Broad Street", "College Avenue"]
+        },
+        "Downtown Athens (Broad Street)": {
+          "distance": "0.7 miles",
+          "time": "12-14 minutes",
+          "directions": "Walk northwest to Broad Street. Turn east for downtown.",
+          "landmarks": ["Broad Street"]
+        },
+        "University Health Center": {
+          "distance": "0.5 miles",
+          "time": "8-10 minutes",
+          "directions": "Walk west to Carlton Street. Health Center is on Carlton near Bolton.",
+          "landmarks": ["Carlton Street"]
+        },
+        "Sanford Stadium": {
+          "distance": "0.4 miles",
+          "time": "6-8 minutes",
+          "directions": "Walk south and west toward Sanford Drive.",
+          "landmarks": ["Sanford Drive"]
+        },
+        "East Campus Deck (Parking)": {
+          "distance": "0.2 miles",
+          "time": "3-5 minutes",
+          "directions": "Walk south on East Campus Road. The deck is close.",
+          "landmarks": ["East Campus Road"]
+        }
+      }
+    }
+  },
+
+  "ugaBusInfo": {
+    "description": "UGA Campus Transit System provides free bus service throughout campus and to some off-campus areas.",
+    "website": "https://tps.uga.edu/transit",
+    "app": "UGA Bus app or TransLoc Rider app for real-time tracking",
+    "hours": "Routes typically run Mon-Fri 7am-7pm during the semester. Limited weekend service.",
+    "popularRoutes": [
+      {
+        "name": "East Campus Express",
+        "description": "Connects East Campus (ECV, Oglethorpe) to central campus (Tate, MLC area)"
+      },
+      {
+        "name": "Orbit",
+        "description": "Circular route covering north campus, south campus, and east campus"
+      },
+      {
+        "name": "Night Campus",
+        "description": "Evening route for getting around campus safely after dark"
+      }
+    ],
+    "tips": [
+      "All UGA buses are free with your UGA ID",
+      "Download the TransLoc app for real-time bus tracking",
+      "Most routes run every 10-15 minutes during peak hours",
+      "Buses don't run during breaks or university holidays"
+    ]
+  },
+
+  "safetyTips": {
+    "walkingAtNight": [
+      "Use well-lit main paths — avoid shortcuts through dark areas",
+      "Walk with a friend when possible, especially after dark",
+      "Use the UGA Safe app to request a safety escort from UGA Police",
+      "Keep your phone charged and accessible",
+      "Share your location with a friend when walking at night",
+      "Call UGA Police for an escort: (706) 542-2200",
+      "Walk facing traffic to increase visibility",
+      "Stay aware of your surroundings — avoid headphones at night"
+    ],
+    "blueEmergencyPhones": "Blue light emergency phones are located throughout campus. Press the button to connect directly to UGA Police.",
+    "safeEscort": "UGA Police offers free walking escorts 24/7. Call (706) 542-2200 to request one."
+  }
+}
