@@ -463,7 +463,7 @@ function appleMapsUrl(originAddr: string, destAddr: string): string {
   return `https://maps.apple.com/?saddr=${encodeURIComponent(originAddr)}&daddr=${encodeURIComponent(destAddr)}&dirflg=w`;
 }
 
-function getWalkingDirections(query: string, userLocation: string): string {
+function getWalkingDirections(query: string, userLocation: string, platform: 'ios' | 'android' | 'desktop' = 'desktop'): string {
   if (!userLocation) return '';
   const data = loadWalkingDirections();
   const destinations = data.campusDestinations as Record<string, any> | undefined;
@@ -541,16 +541,18 @@ function getWalkingDirections(query: string, userLocation: string): string {
     const dest = destinations[matchedDest] as any;
     const destAddress = dest.address as string;
 
-    const gUrl = googleMapsUrl(originAddress, destAddress);
-    const aUrl = appleMapsUrl(originAddress, destAddress);
-
     parts.push(`=== Directions: ${userLocation} → ${matchedDest} ===`);
     if (dest.description) parts.push(`About: ${dest.description}`);
     if (dest.hours) parts.push(`Hours: ${dest.hours}`);
     parts.push(`Address: ${destAddress}`);
     parts.push('');
-    parts.push(`Google Maps walking directions: ${gUrl}`);
-    parts.push(`Apple Maps walking directions: ${aUrl}`);
+    if (platform === 'ios') {
+      const aUrl = appleMapsUrl(originAddress, destAddress);
+      parts.push(`Open in Apple Maps: ${aUrl}`);
+    } else {
+      const gUrl = googleMapsUrl(originAddress, destAddress);
+      parts.push(`Open in Google Maps: ${gUrl}`);
+    }
   } else if (isDirectionsQuery(query)) {
     // No specific destination matched — list popular destinations with links
     parts.push(`=== Popular Campus Destinations from ${userLocation} ===`);
@@ -596,6 +598,7 @@ export async function generateRAGResponse(
   userQuery: string,
   conversationHistory: Message[] = [],
   userLocation?: string,
+  platform: 'ios' | 'android' | 'desktop' = 'desktop',
 ): Promise<{ response: string; sources: string[] }> {
   try {
     // 1. JSON keyword routing – structured, reliable for known topics
@@ -608,7 +611,7 @@ export async function generateRAGResponse(
     const buildingInfo = userLocation ? getBuildingPhoneInfo(userLocation) : '';
 
     // 4. Walking directions (if question is about directions/locations)
-    const walkingInfo = getWalkingDirections(userQuery, userLocation || '');
+    const walkingInfo = getWalkingDirections(userQuery, userLocation || '', platform);
 
     // Build the system prompt
     const locationContext = userLocation
@@ -621,7 +624,7 @@ export async function generateRAGResponse(
   IMPORTANT: Use ONLY the UGA policy excerpts and data provided below to answer questions accurately.
   If a specific item is not mentioned in the excerpts, say you could not find it in the policies. Do NOT assume it is allowed or prohibited.
 
-  For WALKING DIRECTIONS: When direction data with map links is provided, share the Google Maps and Apple Maps links so the student can get accurate turn-by-turn directions. Include the destination description and hours if available. Mention the UGA bus as an option. Be encouraging and friendly!
+  For WALKING DIRECTIONS: When direction data with a map link is provided, share the map link so the student can open it for accurate turn-by-turn walking directions on their device. Include the destination description and hours if available. Mention the UGA bus as an option. Be encouraging and friendly!
 
   Quote specific policies, numbers, rules, and details. Do NOT make up information or infer beyond the provided data. If the data doesn't cover something, say you couldn't find it in the policies and suggest contacting UGA Housing at 706-542-1421 or housing@uga.edu.
 
@@ -670,6 +673,7 @@ export async function generateStreamingRAGResponse(
   userQuery: string,
   conversationHistory: Message[] = [],
   userLocation?: string,
+  platform: 'ios' | 'android' | 'desktop' = 'desktop',
 ) {
   // 1. JSON keyword routing – structured, reliable
   const jsonContext = getRelevantSections(userQuery);
@@ -679,14 +683,14 @@ export async function generateStreamingRAGResponse(
   const buildingInfo = userLocation ? getBuildingPhoneInfo(userLocation) : '';
 
   // 3. Walking directions
-  const walkingInfo = getWalkingDirections(userQuery, userLocation || '');
+  const walkingInfo = getWalkingDirections(userQuery, userLocation || '', platform);
 
   const locationContext = userLocation
     ? `\nThe student lives in ${userLocation}. Tailor answers to their dorm when possible.`
     : `\nThe student has NOT told you their dorm. If the question is dorm-specific (including walking directions), ask which dorm they live in first.`;
 
   const systemPrompt = `You are AURA (AI-powered University Resident Assistant), a friendly UGA dorm assistant. Use ONLY the UGA policy excerpts and data below to answer accurately. Do NOT make up info or infer beyond the provided data.
-For WALKING DIRECTIONS: Share the Google Maps and Apple Maps links provided so students get accurate directions. Include destination info and hours. Mention the UGA bus as an option.
+For WALKING DIRECTIONS: Share the map link provided so students can open it for accurate walking directions on their device. Include destination info and hours. Mention the UGA bus as an option.
 ${locationContext}
 Be concise and helpful. Go Dawgs!`;
 

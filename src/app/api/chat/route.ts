@@ -15,6 +15,7 @@ interface ChatRequest {
   conversationHistory?: ChatMessage[];
   stream?: boolean;
   userLocation?: string;
+  platform?: 'ios' | 'android' | 'desktop';
 }
 
 function getClientIP(req: NextRequest): string {
@@ -36,7 +37,7 @@ export async function POST(request: NextRequest) {
     }
 
     const body = (await request.json()) as ChatRequest;
-    const { message, conversationHistory = [], stream = false, userLocation } = body;
+    const { message, conversationHistory = [], stream = false, userLocation, platform = 'desktop' } = body;
 
     // ── Input validation ──
     if (!message || typeof message !== 'string' || message.trim().length === 0) {
@@ -54,6 +55,7 @@ export async function POST(request: NextRequest) {
         message,
         safeHistory,
         userLocation,
+        platform,
       );
 
       const encoder = new TextEncoder();
@@ -88,6 +90,7 @@ export async function POST(request: NextRequest) {
         message,
         safeHistory,
         userLocation,
+        platform,
       );
 
       return NextResponse.json({

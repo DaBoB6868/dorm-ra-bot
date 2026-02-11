@@ -23,6 +23,15 @@ export function ChatComponent() {
   const [showScheduleModal, setShowScheduleModal] = useState(false);
   const [userLocation, setUserLocation] = useState<string>('');
 
+  // Detect user's platform for native map links
+  const platform: 'ios' | 'android' | 'desktop' = (() => {
+    if (typeof navigator === 'undefined') return 'desktop';
+    const ua = navigator.userAgent;
+    if (/iPhone|iPad|iPod/i.test(ua)) return 'ios';
+    if (/Android/i.test(ua)) return 'android';
+    return 'desktop';
+  })();
+
   // All known dorm names for auto-detection from user messages
   const DORM_NAMES = [
     'boggs hall', 'boggs', 'church hall', 'church', 'hill hall', 'hill', 'mell hall', 'mell',
@@ -99,6 +108,7 @@ export function ChatComponent() {
           conversationHistory,
           stream: false,
           userLocation: effectiveLocation || undefined,
+          platform,
         }),
       });
 
