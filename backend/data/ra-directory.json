@@ -66,7 +66,7 @@
     "id": "ra-008",
     "name": "Ashley Davis",
     "dorm": "Mary Lyndon Hall",
-    "community": "Hill Community",
+    "community": "Myers Community",
     "floor": 2,
     "email": "placeholder@uga.edu",
     "available": true
@@ -84,7 +84,7 @@
     "id": "ra-010",
     "name": "Megan Wilson",
     "dorm": "Morris Hall",
-    "community": "Hill Community",
+    "community": "Morris Community",
     "floor": 2,
     "email": "placeholder@uga.edu",
     "available": true
@@ -147,7 +147,7 @@
     "id": "ra-017",
     "name": "Kevin Robinson",
     "dorm": "Rutherford Hall",
-    "community": "Rutherford Community",
+    "community": "Myers Community",
     "floor": 3,
     "email": "placeholder@uga.edu",
     "available": true
